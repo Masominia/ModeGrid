@@ -1,0 +1,16 @@
+# O band; indices given as numbers, so the group index here has no material dispersion.
+# Reference: the same grid solved with a sparse eigen-solver in SciPy.
+title Silicon strip 400 x 220 nm at 1.31 um
+wavelength 1.31
+grid dx=0.025 dy=0.02
+window width=3.0 ymin=-1.0 ymax=1.22
+background 1.4468
+rect 3.5066 -0.2 0.2 0 0.22
+symmetry even
+field te
+expect neff 2.608871511 2e-8
+expect group_index 4.018981708 2e-6
+expect confinement 0.753150064 1e-6
+expect area 0.098694454 1e-5
+expect guided yes
+expect cells 6660
