@@ -1,0 +1,20 @@
+# Where the waveguide library lives and how the report groups it.
+cases_dir: cases
+fast_every: 9            # in fast mode only every n-th structure is solved
+fast_families: [strip_te_w, coupler_te_gap, mirror_]   # always solved: the studies need them
+
+families:
+  silicon strips: [strip_]
+  rib waveguides: [rib_]
+  silicon nitride: [sin_]
+  wavelength: [band_]
+  antisymmetric mode: [odd_]
+  directional couplers: [coupler_]
+  slot waveguides: [slot_]
+  slab limit: [slablimit_]
+  grid convergence: [conv_, cut_]
+  scalar field: [scalar_]
+  window and mirror: [window_, mirror_]
+
+# Structures shown in the overview figure.
+gallery: [strip_te_w450, strip_tm_w450, rib_slab90, slot_gap100, odd_te_w700, sin_te_1000x400]
