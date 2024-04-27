@@ -1,0 +1,12 @@
+# The walls are metallic; a guided mode must not feel them.
+# Reference: the same grid solved with a sparse eigen-solver in SciPy. The index must stay within 5e-5 of the standard window.
+title Silicon strip 450 x 220 nm in a 2 um wide window
+grid dx=0.025 dy=0.02
+window width=2 ymin=-0.6 ymax=0.82
+rect si -0.225 0.225 0 0.22
+symmetry even
+field te
+expect neff 2.416544808 2e-8
+expect guided yes
+expect cells 2840
+expect neff 2.4165803 5e-5
