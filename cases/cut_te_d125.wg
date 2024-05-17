@@ -1,0 +1,12 @@
+# Cells cut by an interface take an area-weighted permittivity: usable, but the index scatters from grid to grid.
+# Reference: the same grid solved with a sparse eigen-solver in SciPy.
+title Silicon strip 450 x 220 nm on a 12.5 nm grid that cuts its walls, quasi-TE
+grid dx=0.0125 dy=0.0125
+window width=2.4 ymin=-0.8 ymax=1.0
+rect si -0.225 0.225 0 0.22
+symmetry even
+field te
+expect neff 2.410513617 2e-8
+expect group_index 4.098639263 2e-6
+expect guided yes
+expect cells 13824
