@@ -1,0 +1,15 @@
+# The normal field jumps by the permittivity ratio at each wall, so the quasi-TE mode peaks inside the low-index slot.
+# Reference: the same grid solved with a sparse eigen-solver in SciPy.
+title Slot waveguide: two 220 x 220 nm rails, 60 nm slot
+grid dx=0.01 dy=0.02
+window width=3.0 ymin=-1.0 ymax=1.22
+rect si 0.03 0.25 0 0.22
+rect si -0.25 -0.03 0 0.22
+symmetry even
+field te
+expect neff 1.919065887 2e-8
+expect group_index 3.233417250 2e-6
+expect confinement 0.192841813 1e-6
+expect area 0.076758041 1e-5
+expect guided yes
+expect cells 16650
