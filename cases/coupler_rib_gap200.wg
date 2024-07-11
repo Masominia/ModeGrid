@@ -1,0 +1,16 @@
+# The shared slab carries the field between the ribs: stronger coupling than between strips.
+# Reference: the same grid solved with a sparse eigen-solver in SciPy.
+title Two 500 nm ribs on a 90 nm slab, 200 nm apart
+grid dx=0.025 dy=0.01
+window width=5.0 ymin=-1.0 ymax=1.22
+layer si 0 0.09
+rect si 0.1 0.6 0 0.22
+rect si -0.6 -0.1 0 0.22
+field te
+coupler
+expect n_even 2.603975148 2e-8
+expect n_odd 2.553473559 2e-8
+expect splitting 0.050501589 1e-4
+expect coupling_length 15.346051918 1e-4
+expect guided yes
+expect cells 22200
