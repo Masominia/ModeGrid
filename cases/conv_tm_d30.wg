@@ -1,0 +1,12 @@
+# The same waveguide on six grids that all place cell edges on its walls.
+# Reference: the same grid solved with a sparse eigen-solver in SciPy.
+title Silicon strip 480 x 240 nm on a 30 nm grid, quasi-TM
+grid dx=0.03 dy=0.03
+window width=2.4 ymin=-0.72 ymax=0.96
+rect si -0.24 0.24 0 0.24
+symmetry even
+field tm
+expect neff 1.995914899 2e-8
+expect group_index 4.195683636 2e-6
+expect guided yes
+expect cells 2240
