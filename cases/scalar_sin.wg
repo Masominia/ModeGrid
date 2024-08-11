@@ -1,0 +1,14 @@
+# At low contrast the scalar index sits between the two polarisations.
+# Reference: the same grid solved with a sparse eigen-solver in SciPy.
+title Silicon nitride 1000 x 400 nm, scalar field
+grid dx=0.05 dy=0.04
+window width=6.0 ymin=-2.0 ymax=2.4
+rect sin -0.5 0.5 0 0.4
+symmetry even
+field scalar
+expect neff 1.662096332 2e-8
+expect group_index 2.042061284 2e-6
+expect confinement 0.658751049 1e-6
+expect area 0.700728847 1e-5
+expect guided yes
+expect cells 6600
