@@ -1,0 +1,16 @@
+# No top oxide: air above and beside the core, oxide below.
+# Reference: the same grid solved with a sparse eigen-solver in SciPy.
+title Air-clad silicon strip 500 x 220 nm on oxide
+grid dx=0.025 dy=0.02
+window width=3.0 ymin=-1.0 ymax=1.22
+background air
+layer sio2 -1.0 0
+rect si -0.25 0.25 0 0.22
+symmetry even
+field te
+expect neff 2.444661146 2e-8
+expect group_index 4.160793001 2e-6
+expect confinement 0.721304741 1e-6
+expect area 0.130680718 1e-5
+expect guided yes
+expect cells 6660
