@@ -1,0 +1,15 @@
+# Low index contrast: a large mode, and a regime where the semi-vectorial approximation is good.
+# Reference: the same grid solved with a sparse eigen-solver in SciPy. Bounds: cladding index and slab index.
+title Silicon nitride 1000 x 400 nm, quasi-TM
+grid dx=0.05 dy=0.04
+window width=6.0 ymin=-2.0 ymax=2.4
+rect sin -0.5 0.5 0 0.4
+symmetry even
+field tm
+expect neff 1.570205664 2e-8
+expect group_index 1.955993741 2e-6
+expect confinement 0.361297794 1e-6
+expect area 1.218400028 1e-5
+expect guided yes
+expect cells 6600
+expect neff_between 1.444 1.641680
