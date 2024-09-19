@@ -1,0 +1,74 @@
+{
+ "case": "scalar_w1000",
+ "title": "Silicon strip 1000 x 220 nm, scalar field",
+ "notes": [
+  "Ignoring polarisation overestimates the index of a high-contrast strip.",
+  "Reference: the same grid solved with a sparse eigen-solver in SciPy."
+ ],
+ "metrics": {
+  "wavelength": 1.55,
+  "nx": 60.0,
+  "ny": 111.0,
+  "dx": 0.025,
+  "dy": 0.02,
+  "x0": 0.0,
+  "y0": -1.0,
+  "neff": 2.7754200602,
+  "group_index": 3.78925682,
+  "n_cladding": 1.444,
+  "guided": 1.0,
+  "converged": 1.0,
+  "iterations": 14.0,
+  "confinement": 0.8053166,
+  "area": 0.23689613,
+  "rms_x": 0.21583857,
+  "rms_y": 0.08921183,
+  "centre_y": 0.11
+ },
+ "checks": [
+  {
+   "check": "neff 2.775420060 2e-8",
+   "status": "PASS",
+   "detail": "2.77542006, expected 2.77542006, off by 2.38e-10"
+  },
+  {
+   "check": "group_index 3.789256819 2e-6",
+   "status": "PASS",
+   "detail": "3.78925682, expected 3.78925682, off by 4.43e-10"
+  },
+  {
+   "check": "confinement 0.805316599 1e-6",
+   "status": "PASS",
+   "detail": "0.80531660, expected 0.80531660, off by -3.44e-10"
+  },
+  {
+   "check": "area 0.236896129 1e-5",
+   "status": "PASS",
+   "detail": "0.236896, expected 0.236896, relative error 4.00e-09"
+  },
+  {
+   "check": "guided yes",
+   "status": "PASS",
+   "detail": "index 2.775420, cladding 1.444000, difference 1.33e+00"
+  },
+  {
+   "check": "cells 6660",
+   "status": "PASS",
+   "detail": "6660 cells (60 by 111)"
+  }
+ ],
+ "against_reference": {
+  "largest_differences": {
+   "neff": 3.808464654753152e-11,
+   "group_index": 5.561355820304925e-10,
+   "n_cladding": 0.0,
+   "guided": 0.0,
+   "confinement": 1.1443110903286424e-09,
+   "area": 4.769701499827063e-09,
+   "rms_x": 2.9123914391249173e-10,
+   "rms_y": 1.8432101261955935e-09,
+   "centre_y": 1.3877787807814457e-17
+  },
+  "field": 5.593183496598302e-07
+ }
+}
