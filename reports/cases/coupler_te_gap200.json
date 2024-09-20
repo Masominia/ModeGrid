@@ -1,0 +1,83 @@
+{
+ "case": "coupler_te_gap200",
+ "title": "Two 450 x 220 nm strips, 200 nm apart, quasi-TE",
+ "notes": [
+  "Even and odd supermodes; the power crosses over in lambda / (2 (n_even - n_odd)). The splitting falls exponentially with the gap.",
+  "Reference: the same grid solved with a sparse eigen-solver in SciPy."
+ ],
+ "metrics": {
+  "wavelength": 1.55,
+  "nx": 80.0,
+  "ny": 111.0,
+  "dx": 0.025,
+  "dy": 0.02,
+  "x0": 0.0,
+  "y0": -1.0,
+  "neff": 2.4343609813,
+  "group_index": 3.99672656,
+  "n_cladding": 1.444,
+  "guided": 1.0,
+  "converged": 1.0,
+  "iterations": 22.0,
+  "confinement": 0.63042626,
+  "area": 0.30041319,
+  "rms_x": 0.33751413,
+  "rms_y": 0.10004081,
+  "centre_y": 0.11,
+  "n_even": 2.4343609813,
+  "n_odd": 2.4009532708,
+  "odd_guided": 1.0,
+  "splitting": 0.0334077105,
+  "coupling_length": 23.198237
+ },
+ "checks": [
+  {
+   "check": "n_even 2.434360981 2e-8",
+   "status": "PASS",
+   "detail": "2.43436098, expected 2.43436098, off by 3.05e-10"
+  },
+  {
+   "check": "n_odd 2.400953271 2e-8",
+   "status": "PASS",
+   "detail": "2.40095327, expected 2.40095327, off by -2.02e-10"
+  },
+  {
+   "check": "splitting 0.033407711 1e-4",
+   "status": "PASS",
+   "detail": "0.0334077, expected 0.0334077, relative error -1.48e-08"
+  },
+  {
+   "check": "coupling_length 23.198237421 1e-4",
+   "status": "PASS",
+   "detail": "23.1982, expected 23.1982, relative error -1.98e-11"
+  },
+  {
+   "check": "guided yes",
+   "status": "PASS",
+   "detail": "index 2.434361, cladding 1.444000, difference 9.90e-01"
+  },
+  {
+   "check": "cells 8880",
+   "status": "PASS",
+   "detail": "8880 cells (80 by 111)"
+  }
+ ],
+ "against_reference": {
+  "largest_differences": {
+   "neff": 4.5923265190594975e-12,
+   "group_index": 4.634479910947675e-09,
+   "n_cladding": 0.0,
+   "guided": 0.0,
+   "confinement": 1.485735645623265e-09,
+   "area": 6.0755058328767175e-09,
+   "rms_x": 4.048927138011749e-09,
+   "rms_y": 2.8814325231385496e-09,
+   "centre_y": 1.3877787807814457e-17,
+   "n_even": 4.5923265190594975e-12,
+   "n_odd": 1.6231460620019789e-12,
+   "splitting": 6.2151603308358006e-12,
+   "coupling_length": 1.8128297766767146e-08
+  },
+  "field": 5.874341592850738e-07
+ }
+}
