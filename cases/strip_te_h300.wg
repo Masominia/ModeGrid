@@ -1,0 +1,15 @@
+# Thicker silicon confines more strongly.
+# Reference: the same grid solved with a sparse eigen-solver in SciPy. Bounds: cladding index and slab index.
+title Silicon strip 450 x 300 nm, quasi-TE
+grid dx=0.025 dy=0.02
+window width=3.0 ymin=-1.0 ymax=1.22
+rect si -0.225 0.225 0 0.3
+symmetry even
+field te
+expect neff 2.624055651 2e-8
+expect group_index 4.177303071 2e-6
+expect confinement 0.763713856 1e-6
+expect area 0.145216054 1e-5
+expect guided yes
+expect cells 6660
+expect neff_between 1.444 3.049161
