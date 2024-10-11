@@ -1,0 +1,69 @@
+{
+ "case": "slablimit_sin400_tm",
+ "title": "400 nm nitride film, TM, between distant walls",
+ "notes": [
+  "With no structure in x the field is a half cosine between the walls and the index follows from the exact slab index.",
+  "Reference: analytic slab index 1.641680, lowered by the lateral half cosine to 1.638820; agreement limited by the grid."
+ ],
+ "metrics": {
+  "wavelength": 1.55,
+  "nx": 40.0,
+  "ny": 280.0,
+  "dx": 0.1,
+  "dy": 0.01,
+  "x0": 0.0,
+  "y0": -1.2,
+  "neff": 1.6387502616,
+  "group_index": 1.97729681,
+  "n_cladding": 1.64161079,
+  "guided": 0.0,
+  "converged": 1.0,
+  "iterations": 36.0,
+  "confinement": 0.4207812,
+  "area": 5.28479362,
+  "rms_x": 1.44604914,
+  "rms_y": 0.30006962,
+  "centre_y": 0.2
+ },
+ "checks": [
+  {
+   "check": "neff 1.638750262 2e-8",
+   "status": "PASS",
+   "detail": "1.63875026, expected 1.63875026, off by -4.41e-10"
+  },
+  {
+   "check": "confinement 0.420781197 1e-6",
+   "status": "PASS",
+   "detail": "0.42078120, expected 0.42078120, off by 6.06e-11"
+  },
+  {
+   "check": "guided no",
+   "status": "PASS",
+   "detail": "index 1.638750, cladding 1.641611, difference -2.86e-03"
+  },
+  {
+   "check": "cells 11200",
+   "status": "PASS",
+   "detail": "11200 cells (40 by 280)"
+  },
+  {
+   "check": "neff 1.638820 3e-3",
+   "status": "PASS",
+   "detail": "1.63875026, expected 1.63882000, off by -6.97e-05"
+  }
+ ],
+ "against_reference": {
+  "largest_differences": {
+   "neff": 4.085576321699591e-11,
+   "group_index": 4.6343551218797074e-09,
+   "n_cladding": 1.960752893381823e-09,
+   "guided": 0.0,
+   "confinement": 2.939422538705827e-09,
+   "area": 6.023227053356826e-07,
+   "rms_x": 7.636698038382406e-07,
+   "rms_y": 4.054587277035893e-09,
+   "centre_y": 1.0824674490095276e-15
+  },
+  "field": 2.054529436411569e-06
+ }
+}
