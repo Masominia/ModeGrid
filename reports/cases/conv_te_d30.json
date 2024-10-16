@@ -1,0 +1,64 @@
+{
+ "case": "conv_te_d30",
+ "title": "Silicon strip 480 x 240 nm on a 30 nm grid, quasi-TE",
+ "notes": [
+  "The same waveguide on six grids that all place cell edges on its walls.",
+  "Reference: the same grid solved with a sparse eigen-solver in SciPy."
+ ],
+ "metrics": {
+  "wavelength": 1.55,
+  "nx": 40.0,
+  "ny": 56.0,
+  "dx": 0.03,
+  "dy": 0.03,
+  "x0": 0.0,
+  "y0": -0.72,
+  "neff": 2.5330767888,
+  "group_index": 4.11147163,
+  "n_cladding": 1.444,
+  "guided": 1.0,
+  "converged": 1.0,
+  "iterations": 21.0,
+  "confinement": 0.72927429,
+  "area": 0.13863629,
+  "rms_x": 0.13500099,
+  "rms_y": 0.0965215,
+  "centre_y": 0.12
+ },
+ "checks": [
+  {
+   "check": "neff 2.533076789 2e-8",
+   "status": "PASS",
+   "detail": "2.53307679, expected 2.53307679, off by -2.09e-10"
+  },
+  {
+   "check": "group_index 4.111471625 2e-6",
+   "status": "PASS",
+   "detail": "4.11147163, expected 4.11147163, off by 2.17e-10"
+  },
+  {
+   "check": "guided yes",
+   "status": "PASS",
+   "detail": "index 2.533077, cladding 1.444000, difference 1.09e+00"
+  },
+  {
+   "check": "cells 2240",
+   "status": "PASS",
+   "detail": "2240 cells (40 by 56)"
+  }
+ ],
+ "against_reference": {
+  "largest_differences": {
+   "neff": 8.709921672789278e-12,
+   "group_index": 4.783825779952622e-09,
+   "n_cladding": 0.0,
+   "guided": 0.0,
+   "confinement": 4.119704022365056e-09,
+   "area": 1.8243492883534699e-09,
+   "rms_x": 2.675310528665875e-10,
+   "rms_y": 9.355959063039876e-11,
+   "centre_y": 2.220446049250313e-16
+  },
+  "field": 3.056357112046734e-06
+ }
+}
