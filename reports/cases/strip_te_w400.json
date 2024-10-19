@@ -1,0 +1,79 @@
+{
+ "case": "strip_te_w400",
+ "title": "Silicon strip 400 x 220 nm, quasi-TE",
+ "notes": [
+  "The fundamental quasi-TE mode of a buried strip; the index rises with width towards the slab value.",
+  "Reference: the same grid solved with a sparse eigen-solver in SciPy. Bounds: cladding index and slab index."
+ ],
+ "metrics": {
+  "wavelength": 1.55,
+  "nx": 60.0,
+  "ny": 111.0,
+  "dx": 0.025,
+  "dy": 0.02,
+  "x0": 0.0,
+  "y0": -1.0,
+  "neff": 2.3142327394,
+  "group_index": 4.14440534,
+  "n_cladding": 1.444,
+  "guided": 1.0,
+  "converged": 1.0,
+  "iterations": 26.0,
+  "confinement": 0.61086775,
+  "area": 0.14401261,
+  "rms_x": 0.14140886,
+  "rms_y": 0.10306804,
+  "centre_y": 0.11
+ },
+ "checks": [
+  {
+   "check": "neff 2.314232739 2e-8",
+   "status": "PASS",
+   "detail": "2.31423274, expected 2.31423274, off by 4.19e-10"
+  },
+  {
+   "check": "group_index 4.144405345 2e-6",
+   "status": "PASS",
+   "detail": "4.14440534, expected 4.14440535, off by -6.84e-11"
+  },
+  {
+   "check": "confinement 0.610867753 1e-6",
+   "status": "PASS",
+   "detail": "0.61086775, expected 0.61086775, off by -3.54e-10"
+  },
+  {
+   "check": "area 0.144012613 1e-5",
+   "status": "PASS",
+   "detail": "0.144013, expected 0.144013, relative error -2.29e-09"
+  },
+  {
+   "check": "guided yes",
+   "status": "PASS",
+   "detail": "index 2.314233, cladding 1.444000, difference 8.70e-01"
+  },
+  {
+   "check": "cells 6660",
+   "status": "PASS",
+   "detail": "6660 cells (60 by 111)"
+  },
+  {
+   "check": "neff_between 1.444 2.847782",
+   "status": "PASS",
+   "detail": "2.314233, expected between 1.444000 and 2.847782"
+  }
+ ],
+ "against_reference": {
+  "largest_differences": {
+   "neff": 1.8952839297980972e-11,
+   "group_index": 4.931512087580359e-09,
+   "n_cladding": 0.0,
+   "guided": 0.0,
+   "confinement": 2.6460607038814032e-09,
+   "area": 1.8537039266880274e-08,
+   "rms_x": 1.1836995827962937e-09,
+   "rms_y": 8.084394265139849e-10,
+   "centre_y": 6.938893903907228e-17
+  },
+  "field": 3.933940676858423e-06
+ }
+}
