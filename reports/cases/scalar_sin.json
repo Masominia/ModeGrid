@@ -1,0 +1,74 @@
+{
+ "case": "scalar_sin",
+ "title": "Silicon nitride 1000 x 400 nm, scalar field",
+ "notes": [
+  "At low contrast the scalar index sits between the two polarisations.",
+  "Reference: the same grid solved with a sparse eigen-solver in SciPy."
+ ],
+ "metrics": {
+  "wavelength": 1.55,
+  "nx": 60.0,
+  "ny": 110.0,
+  "dx": 0.05,
+  "dy": 0.04,
+  "x0": 0.0,
+  "y0": -2.0,
+  "neff": 1.6620963321,
+  "group_index": 2.04206128,
+  "n_cladding": 1.444,
+  "guided": 1.0,
+  "converged": 1.0,
+  "iterations": 18.0,
+  "confinement": 0.65875105,
+  "area": 0.70072885,
+  "rms_x": 0.29325251,
+  "rms_y": 0.21812403,
+  "centre_y": 0.2
+ },
+ "checks": [
+  {
+   "check": "neff 1.662096332 2e-8",
+   "status": "PASS",
+   "detail": "1.66209633, expected 1.66209633, off by 9.68e-11"
+  },
+  {
+   "check": "group_index 2.042061284 2e-6",
+   "status": "PASS",
+   "detail": "2.04206128, expected 2.04206128, off by 3.29e-10"
+  },
+  {
+   "check": "confinement 0.658751049 1e-6",
+   "status": "PASS",
+   "detail": "0.65875105, expected 0.65875105, off by -1.99e-09"
+  },
+  {
+   "check": "area 0.700728847 1e-5",
+   "status": "PASS",
+   "detail": "0.700729, expected 0.700729, relative error 5.87e-09"
+  },
+  {
+   "check": "guided yes",
+   "status": "PASS",
+   "detail": "index 1.662096, cladding 1.444000, difference 2.18e-01"
+  },
+  {
+   "check": "cells 6600",
+   "status": "PASS",
+   "detail": "6600 cells (60 by 110)"
+  }
+ ],
+ "against_reference": {
+  "largest_differences": {
+   "neff": 3.2234215296966795e-12,
+   "group_index": 4.328024161281974e-09,
+   "n_cladding": 0.0,
+   "guided": 0.0,
+   "confinement": 1.2483426514720009e-09,
+   "area": 3.939856274026907e-09,
+   "rms_x": 2.2945402244900492e-09,
+   "rms_y": 1.0199968369928314e-09,
+   "centre_y": 1.1102230246251565e-16
+  },
+  "field": 3.6349035459675884e-06
+ }
+}
