@@ -1,0 +1,83 @@
+{
+ "case": "coupler_tm_gap200",
+ "title": "Two 450 x 220 nm strips, 200 nm apart, quasi-TM",
+ "notes": [
+  "TM modes reach further into the gap and couple over a shorter length.",
+  "Reference: the same grid solved with a sparse eigen-solver in SciPy."
+ ],
+ "metrics": {
+  "wavelength": 1.55,
+  "nx": 80.0,
+  "ny": 111.0,
+  "dx": 0.025,
+  "dy": 0.02,
+  "x0": 0.0,
+  "y0": -1.0,
+  "neff": 1.8803537808,
+  "group_index": 3.58284571,
+  "n_cladding": 1.444,
+  "guided": 1.0,
+  "converged": 1.0,
+  "iterations": 38.0,
+  "confinement": 0.17404392,
+  "area": 0.57358202,
+  "rms_x": 0.33702366,
+  "rms_y": 0.19974402,
+  "centre_y": 0.11,
+  "n_even": 1.8803537808,
+  "n_odd": 1.7628800323,
+  "odd_guided": 1.0,
+  "splitting": 0.1174737485,
+  "coupling_length": 6.597219
+ },
+ "checks": [
+  {
+   "check": "n_even 1.880353781 2e-8",
+   "status": "PASS",
+   "detail": "1.88035378, expected 1.88035378, off by -2.18e-10"
+  },
+  {
+   "check": "n_odd 1.762880032 2e-8",
+   "status": "PASS",
+   "detail": "1.76288003, expected 1.76288003, off by 3.01e-10"
+  },
+  {
+   "check": "splitting 0.117473748 1e-4",
+   "status": "PASS",
+   "detail": "0.117474, expected 0.117474, relative error 4.10e-09"
+  },
+  {
+   "check": "coupling_length 6.597218613 1e-4",
+   "status": "PASS",
+   "detail": "6.59722, expected 6.59722, relative error -2.37e-11"
+  },
+  {
+   "check": "guided yes",
+   "status": "PASS",
+   "detail": "index 1.880354, cladding 1.444000, difference 4.36e-01"
+  },
+  {
+   "check": "cells 8880",
+   "status": "PASS",
+   "detail": "8880 cells (80 by 111)"
+  }
+ ],
+ "against_reference": {
+  "largest_differences": {
+   "neff": 1.8199219908865416e-11,
+   "group_index": 3.91868049121058e-09,
+   "n_cladding": 0.0,
+   "guided": 0.0,
+   "confinement": 4.923492613606584e-09,
+   "area": 8.25022557782645e-09,
+   "rms_x": 1.1056970894429696e-09,
+   "rms_y": 4.136177234048688e-10,
+   "centre_y": 1.3877787807814457e-17,
+   "n_even": 1.8199219908865416e-11,
+   "n_odd": 7.078782005009998e-13,
+   "splitting": 1.8907181376093263e-11,
+   "coupling_length": 5.8684756992656665e-08
+  },
+  "field": 7.145514167286875e-07
+ }
+}
