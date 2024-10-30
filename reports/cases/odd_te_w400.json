@@ -1,0 +1,64 @@
+{
+ "case": "odd_te_w400",
+ "title": "Silicon strip 400 x 220 nm, first antisymmetric quasi-TE mode",
+ "notes": [
+  "An odd mirror at the centre selects the first higher-order mode. Below the cut-off width the solver returns a box mode under the cladding index.",
+  "Reference: the same grid solved with a sparse eigen-solver in SciPy."
+ ],
+ "metrics": {
+  "wavelength": 1.55,
+  "nx": 60.0,
+  "ny": 111.0,
+  "dx": 0.025,
+  "dy": 0.02,
+  "x0": 0.0,
+  "y0": -1.0,
+  "neff": 1.3358639335,
+  "group_index": 1.7573919,
+  "n_cladding": 1.444,
+  "guided": 0.0,
+  "converged": 1.0,
+  "iterations": 49.0,
+  "confinement": 0.00785156,
+  "area": 2.45794841,
+  "rms_x": 0.70373813,
+  "rms_y": 0.35778033,
+  "centre_y": 0.11
+ },
+ "checks": [
+  {
+   "check": "neff 1.335863934 2e-8",
+   "status": "PASS",
+   "detail": "1.33586393, expected 1.33586393, off by -4.95e-10"
+  },
+  {
+   "check": "confinement 0.007851557 1e-6",
+   "status": "PASS",
+   "detail": "0.00785156, expected 0.00785156, off by 4.45e-10"
+  },
+  {
+   "check": "guided no",
+   "status": "PASS",
+   "detail": "index 1.335864, cladding 1.444000, difference -1.08e-01"
+  },
+  {
+   "check": "cells 6660",
+   "status": "PASS",
+   "detail": "6660 cells (60 by 111)"
+  }
+ ],
+ "against_reference": {
+  "largest_differences": {
+   "neff": 4.636957484649429e-12,
+   "group_index": 1.0063083699662911e-09,
+   "n_cladding": 0.0,
+   "guided": 0.0,
+   "confinement": 2.554618364070116e-09,
+   "area": 4.1156515149732157e-10,
+   "rms_x": 1.9111102700364313e-09,
+   "rms_y": 3.6859749141804343e-09,
+   "centre_y": 2.373101715136272e-15
+  },
+  "field": 1.2912936264462517e-06
+ }
+}
