@@ -1,0 +1,79 @@
+{
+ "case": "sin_tm_1600x800",
+ "title": "Silicon nitride 1600 x 800 nm, quasi-TM",
+ "notes": [
+  "Low index contrast: a large mode, and a regime where the semi-vectorial approximation is good.",
+  "Reference: the same grid solved with a sparse eigen-solver in SciPy. Bounds: cladding index and slab index."
+ ],
+ "metrics": {
+  "wavelength": 1.55,
+  "nx": 60.0,
+  "ny": 110.0,
+  "dx": 0.05,
+  "dy": 0.04,
+  "x0": 0.0,
+  "y0": -2.0,
+  "neff": 1.8042145151,
+  "group_index": 2.14024731,
+  "n_cladding": 1.444,
+  "guided": 1.0,
+  "converged": 1.0,
+  "iterations": 16.0,
+  "confinement": 0.83768617,
+  "area": 1.17122559,
+  "rms_x": 0.37155221,
+  "rms_y": 0.25856037,
+  "centre_y": 0.39999862
+ },
+ "checks": [
+  {
+   "check": "neff 1.804214515 2e-8",
+   "status": "PASS",
+   "detail": "1.80421452, expected 1.80421451, off by 1.48e-10"
+  },
+  {
+   "check": "group_index 2.140247306 2e-6",
+   "status": "PASS",
+   "detail": "2.14024731, expected 2.14024731, off by -9.59e-11"
+  },
+  {
+   "check": "confinement 0.837686168 1e-6",
+   "status": "PASS",
+   "detail": "0.83768617, expected 0.83768617, off by -4.62e-10"
+  },
+  {
+   "check": "area 1.171225594 1e-5",
+   "status": "PASS",
+   "detail": "1.17123, expected 1.17123, relative error 3.32e-10"
+  },
+  {
+   "check": "guided yes",
+   "status": "PASS",
+   "detail": "index 1.804215, cladding 1.444000, difference 3.60e-01"
+  },
+  {
+   "check": "cells 6600",
+   "status": "PASS",
+   "detail": "6600 cells (60 by 110)"
+  },
+  {
+   "check": "neff_between 1.444 1.844650",
+   "status": "PASS",
+   "detail": "1.804215, expected between 1.444000 and 1.844650"
+  }
+ ],
+ "against_reference": {
+  "largest_differences": {
+   "neff": 4.8042902989209324e-11,
+   "group_index": 4.095984440510847e-09,
+   "n_cladding": 0.0,
+   "guided": 0.0,
+   "confinement": 2.461715165047451e-09,
+   "area": 3.747021494791048e-09,
+   "rms_x": 7.392186307519921e-10,
+   "rms_y": 3.343914367626155e-09,
+   "centre_y": 6.003142982713428e-10
+  },
+  "field": 6.090995541698293e-07
+ }
+}
