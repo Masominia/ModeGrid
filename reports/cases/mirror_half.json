@@ -1,0 +1,74 @@
+{
+ "case": "mirror_half",
+ "title": "Silicon strip 450 x 220 nm, right half with an even mirror",
+ "notes": [
+  "Solving the whole structure and solving half of it with a mirror must give the same mode.",
+  "Reference: the same grid solved with a sparse eigen-solver in SciPy. The two files expect the same index."
+ ],
+ "metrics": {
+  "wavelength": 1.55,
+  "nx": 48.0,
+  "ny": 91.0,
+  "dx": 0.025,
+  "dy": 0.02,
+  "x0": 0.0,
+  "y0": -0.8,
+  "neff": 2.4165790177,
+  "group_index": 4.10312546,
+  "n_cladding": 1.444,
+  "guided": 1.0,
+  "converged": 1.0,
+  "iterations": 23.0,
+  "confinement": 0.67014451,
+  "area": 0.13893483,
+  "rms_x": 0.13780666,
+  "rms_y": 0.09854092,
+  "centre_y": 0.11
+ },
+ "checks": [
+  {
+   "check": "neff 2.416579018 2e-8",
+   "status": "PASS",
+   "detail": "2.41657902, expected 2.41657902, off by -3.09e-10"
+  },
+  {
+   "check": "confinement 0.670144512 1e-6",
+   "status": "PASS",
+   "detail": "0.67014451, expected 0.67014451, off by 4.46e-10"
+  },
+  {
+   "check": "area 0.138934825 1e-5",
+   "status": "PASS",
+   "detail": "0.138935, expected 0.138935, relative error 1.60e-09"
+  },
+  {
+   "check": "rms_x 0.137806657 1e-6",
+   "status": "PASS",
+   "detail": "0.13780666, expected 0.13780666, off by 1.58e-11"
+  },
+  {
+   "check": "guided yes",
+   "status": "PASS",
+   "detail": "index 2.416579, cladding 1.444000, difference 9.73e-01"
+  },
+  {
+   "check": "cells 4368",
+   "status": "PASS",
+   "detail": "4368 cells (48 by 91)"
+  }
+ ],
+ "against_reference": {
+  "largest_differences": {
+   "neff": 9.212186569129699e-12,
+   "group_index": 1.1819789591527297e-10,
+   "n_cladding": 0.0,
+   "guided": 0.0,
+   "confinement": 2.4460876657528274e-09,
+   "area": 3.4385530400340524e-08,
+   "rms_x": 2.984192615240744e-09,
+   "rms_y": 3.4801345694113195e-09,
+   "centre_y": 5.551115123125783e-17
+  },
+  "field": 3.978961344179406e-06
+ }
+}
