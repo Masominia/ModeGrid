@@ -1,0 +1,79 @@
+{
+ "case": "strip_te_h400",
+ "title": "Silicon strip 450 x 400 nm, quasi-TE",
+ "notes": [
+  "Thicker silicon confines more strongly.",
+  "Reference: the same grid solved with a sparse eigen-solver in SciPy. Bounds: cladding index and slab index."
+ ],
+ "metrics": {
+  "wavelength": 1.55,
+  "nx": 60.0,
+  "ny": 111.0,
+  "dx": 0.025,
+  "dy": 0.02,
+  "x0": 0.0,
+  "y0": -1.0,
+  "neff": 2.7724619052,
+  "group_index": 4.17304539,
+  "n_cladding": 1.444,
+  "guided": 1.0,
+  "converged": 1.0,
+  "iterations": 17.0,
+  "confinement": 0.81853907,
+  "area": 0.16352667,
+  "rms_x": 0.12772519,
+  "rms_y": 0.11358915,
+  "centre_y": 0.19999994
+ },
+ "checks": [
+  {
+   "check": "neff 2.772461905 2e-8",
+   "status": "PASS",
+   "detail": "2.77246191, expected 2.77246191, off by 2.44e-10"
+  },
+  {
+   "check": "group_index 4.173045391 2e-6",
+   "status": "PASS",
+   "detail": "4.17304539, expected 4.17304539, off by 1.12e-10"
+  },
+  {
+   "check": "confinement 0.818539073 1e-6",
+   "status": "PASS",
+   "detail": "0.81853907, expected 0.81853907, off by -5.18e-11"
+  },
+  {
+   "check": "area 0.163526668 1e-5",
+   "status": "PASS",
+   "detail": "0.163527, expected 0.163527, relative error 2.14e-09"
+  },
+  {
+   "check": "guided yes",
+   "status": "PASS",
+   "detail": "index 2.772462, cladding 1.444000, difference 1.33e+00"
+  },
+  {
+   "check": "cells 6660",
+   "status": "PASS",
+   "detail": "6660 cells (60 by 111)"
+  },
+  {
+   "check": "neff_between 1.444 3.190201",
+   "status": "PASS",
+   "detail": "2.772462, expected between 1.444000 and 3.190201"
+  }
+ ],
+ "against_reference": {
+  "largest_differences": {
+   "neff": 4.3643755276434604e-11,
+   "group_index": 1.1110632414101929e-09,
+   "n_cladding": 0.0,
+   "guided": 0.0,
+   "confinement": 2.9482194463525957e-09,
+   "area": 1.0088241307469376e-08,
+   "rms_x": 2.735306869894316e-09,
+   "rms_y": 1.9886007840419495e-09,
+   "centre_y": 1.2908993318738737e-09
+  },
+  "field": 4.396948247122807e-06
+ }
+}
