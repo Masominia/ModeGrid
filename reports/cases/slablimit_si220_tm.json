@@ -1,0 +1,69 @@
+{
+ "case": "slablimit_si220_tm",
+ "title": "220 nm silicon film, TM, between distant walls",
+ "notes": [
+  "With no structure in x the field is a half cosine between the walls and the index follows from the exact slab index.",
+  "Reference: analytic slab index 2.053320, lowered by the lateral half cosine to 2.051033; agreement limited by the grid."
+ ],
+ "metrics": {
+  "wavelength": 1.55,
+  "nx": 40.0,
+  "ny": 262.0,
+  "dx": 0.1,
+  "dy": 0.01,
+  "x0": 0.0,
+  "y0": -1.2,
+  "neff": 2.0528953776,
+  "group_index": 3.98537167,
+  "n_cladding": 2.05517955,
+  "guided": 0.0,
+  "converged": 1.0,
+  "iterations": 85.0,
+  "confinement": 0.19627212,
+  "area": 2.50766479,
+  "rms_x": 1.44605347,
+  "rms_y": 0.19119206,
+  "centre_y": 0.11
+ },
+ "checks": [
+  {
+   "check": "neff 2.052895378 2e-8",
+   "status": "PASS",
+   "detail": "2.05289538, expected 2.05289538, off by -3.96e-10"
+  },
+  {
+   "check": "confinement 0.196272117 1e-6",
+   "status": "PASS",
+   "detail": "0.19627212, expected 0.19627212, off by -3.56e-11"
+  },
+  {
+   "check": "guided no",
+   "status": "PASS",
+   "detail": "index 2.052895, cladding 2.055180, difference -2.28e-03"
+  },
+  {
+   "check": "cells 10480",
+   "status": "PASS",
+   "detail": "10480 cells (40 by 262)"
+  },
+  {
+   "check": "neff 2.051033 3e-3",
+   "status": "PASS",
+   "detail": "2.05289538, expected 2.05103300, off by 1.86e-03"
+  }
+ ],
+ "against_reference": {
+  "largest_differences": {
+   "neff": 4.417799459588423e-12,
+   "group_index": 8.420402153319628e-10,
+   "n_cladding": 2.0189934168968193e-09,
+   "guided": 0.0,
+   "confinement": 3.0355862823405744e-09,
+   "area": 4.039534572076154e-06,
+   "rms_x": 5.0936699302894795e-06,
+   "rms_y": 3.736880194171732e-09,
+   "centre_y": 6.800116025829084e-16
+  },
+  "field": 3.7022443067682943e-06
+ }
+}
