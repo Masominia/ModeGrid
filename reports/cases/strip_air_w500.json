@@ -1,0 +1,74 @@
+{
+ "case": "strip_air_w500",
+ "title": "Air-clad silicon strip 500 x 220 nm on oxide",
+ "notes": [
+  "No top oxide: air above and beside the core, oxide below.",
+  "Reference: the same grid solved with a sparse eigen-solver in SciPy."
+ ],
+ "metrics": {
+  "wavelength": 1.55,
+  "nx": 60.0,
+  "ny": 111.0,
+  "dx": 0.025,
+  "dy": 0.02,
+  "x0": 0.0,
+  "y0": -1.0,
+  "neff": 2.4446611457,
+  "group_index": 4.160793,
+  "n_cladding": 1.444,
+  "guided": 1.0,
+  "converged": 1.0,
+  "iterations": 22.0,
+  "confinement": 0.72130474,
+  "area": 0.13068072,
+  "rms_x": 0.13267916,
+  "rms_y": 0.09361561,
+  "centre_y": 0.10429779
+ },
+ "checks": [
+  {
+   "check": "neff 2.444661146 2e-8",
+   "status": "PASS",
+   "detail": "2.44466115, expected 2.44466115, off by -3.50e-10"
+  },
+  {
+   "check": "group_index 4.160793001 2e-6",
+   "status": "PASS",
+   "detail": "4.16079300, expected 4.16079300, off by 3.25e-10"
+  },
+  {
+   "check": "confinement 0.721304741 1e-6",
+   "status": "PASS",
+   "detail": "0.72130474, expected 0.72130474, off by 3.81e-10"
+  },
+  {
+   "check": "area 0.130680718 1e-5",
+   "status": "PASS",
+   "detail": "0.130681, expected 0.130681, relative error 1.04e-09"
+  },
+  {
+   "check": "guided yes",
+   "status": "PASS",
+   "detail": "index 2.444661, cladding 1.444000, difference 1.00e+00"
+  },
+  {
+   "check": "cells 6660",
+   "status": "PASS",
+   "detail": "6660 cells (60 by 111)"
+  }
+ ],
+ "against_reference": {
+  "largest_differences": {
+   "neff": 4.9751758268712365e-11,
+   "group_index": 1.3272893895077686e-09,
+   "n_cladding": 0.0,
+   "guided": 0.0,
+   "confinement": 1.381044278936372e-09,
+   "area": 1.4267318632358366e-08,
+   "rms_x": 4.000679731941403e-09,
+   "rms_y": 3.616461130562243e-09,
+   "centre_y": 3.467934370227077e-09
+  },
+  "field": 3.967815245281389e-06
+ }
+}
