@@ -1,0 +1,74 @@
+{
+ "case": "band_o_1310",
+ "title": "Silicon strip 400 x 220 nm at 1.31 um",
+ "notes": [
+  "O band; indices given as numbers, so the group index here has no material dispersion.",
+  "Reference: the same grid solved with a sparse eigen-solver in SciPy."
+ ],
+ "metrics": {
+  "wavelength": 1.31,
+  "nx": 60.0,
+  "ny": 111.0,
+  "dx": 0.025,
+  "dy": 0.02,
+  "x0": 0.0,
+  "y0": -1.0,
+  "neff": 2.6088715109,
+  "group_index": 4.01898171,
+  "n_cladding": 1.4468,
+  "guided": 1.0,
+  "converged": 1.0,
+  "iterations": 20.0,
+  "confinement": 0.75315006,
+  "area": 0.09869445,
+  "rms_x": 0.11152858,
+  "rms_y": 0.0818782,
+  "centre_y": 0.11
+ },
+ "checks": [
+  {
+   "check": "neff 2.608871511 2e-8",
+   "status": "PASS",
+   "detail": "2.60887151, expected 2.60887151, off by -1.23e-10"
+  },
+  {
+   "check": "group_index 4.018981708 2e-6",
+   "status": "PASS",
+   "detail": "4.01898171, expected 4.01898171, off by 3.04e-10"
+  },
+  {
+   "check": "confinement 0.753150064 1e-6",
+   "status": "PASS",
+   "detail": "0.75315006, expected 0.75315006, off by 1.32e-10"
+  },
+  {
+   "check": "area 0.098694454 1e-5",
+   "status": "PASS",
+   "detail": "0.0986945, expected 0.0986945, relative error -3.98e-09"
+  },
+  {
+   "check": "guided yes",
+   "status": "PASS",
+   "detail": "index 2.608872, cladding 1.446800, difference 1.16e+00"
+  },
+  {
+   "check": "cells 6660",
+   "status": "PASS",
+   "detail": "6660 cells (60 by 111)"
+  }
+ ],
+ "against_reference": {
+  "largest_differences": {
+   "neff": 2.268896182044955e-11,
+   "group_index": 1.6960761684003955e-09,
+   "n_cladding": 0.0,
+   "guided": 0.0,
+   "confinement": 4.132039710391666e-09,
+   "area": 3.655129912031977e-08,
+   "rms_x": 3.534500206403557e-09,
+   "rms_y": 3.0075661267003895e-09,
+   "centre_y": 4.163336342344337e-17
+  },
+  "field": 3.344676981750465e-06
+ }
+}
