@@ -1,0 +1,79 @@
+{
+ "case": "sin_te_1000x800",
+ "title": "Silicon nitride 1000 x 800 nm, quasi-TE",
+ "notes": [
+  "Low index contrast: a large mode, and a regime where the semi-vectorial approximation is good.",
+  "Reference: the same grid solved with a sparse eigen-solver in SciPy. Bounds: cladding index and slab index."
+ ],
+ "metrics": {
+  "wavelength": 1.55,
+  "nx": 60.0,
+  "ny": 110.0,
+  "dx": 0.05,
+  "dy": 0.04,
+  "x0": 0.0,
+  "y0": -2.0,
+  "neff": 1.7762781729,
+  "group_index": 2.13982364,
+  "n_cladding": 1.444,
+  "guided": 1.0,
+  "converged": 1.0,
+  "iterations": 16.0,
+  "confinement": 0.83378308,
+  "area": 0.80177582,
+  "rms_x": 0.27747238,
+  "rms_y": 0.24211218,
+  "centre_y": 0.39999865
+ },
+ "checks": [
+  {
+   "check": "neff 1.776278173 2e-8",
+   "status": "PASS",
+   "detail": "1.77627817, expected 1.77627817, off by -9.68e-11"
+  },
+  {
+   "check": "group_index 2.139823638 2e-6",
+   "status": "PASS",
+   "detail": "2.13982364, expected 2.13982364, off by 4.69e-10"
+  },
+  {
+   "check": "confinement 0.833783079 1e-6",
+   "status": "PASS",
+   "detail": "0.83378308, expected 0.83378308, off by -1.82e-10"
+  },
+  {
+   "check": "area 0.801775825 1e-5",
+   "status": "PASS",
+   "detail": "0.801776, expected 0.801776, relative error -5.04e-10"
+  },
+  {
+   "check": "guided yes",
+   "status": "PASS",
+   "detail": "index 1.776278, cladding 1.444000, difference 3.32e-01"
+  },
+  {
+   "check": "cells 6600",
+   "status": "PASS",
+   "detail": "6600 cells (60 by 110)"
+  },
+  {
+   "check": "neff_between 1.444 1.883557",
+   "status": "PASS",
+   "detail": "1.776278, expected between 1.444000 and 1.883557"
+  }
+ ],
+ "against_reference": {
+  "largest_differences": {
+   "neff": 3.1530333899354446e-12,
+   "group_index": 1.5311489853786497e-09,
+   "n_cladding": 0.0,
+   "guided": 0.0,
+   "confinement": 1.1816135847553255e-09,
+   "area": 5.731668443015806e-09,
+   "rms_x": 4.0933895162353906e-10,
+   "rms_y": 2.722136072108583e-09,
+   "centre_y": 2.163082712947073e-09
+  },
+  "field": 5.058829720700539e-07
+ }
+}
