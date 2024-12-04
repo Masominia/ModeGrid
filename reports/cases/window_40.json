@@ -1,0 +1,64 @@
+{
+ "case": "window_40",
+ "title": "Silicon strip 450 x 220 nm in a 4 um wide window",
+ "notes": [
+  "The walls are metallic; a guided mode must not feel them.",
+  "Reference: the same grid solved with a sparse eigen-solver in SciPy. The index must stay within 5e-5 of the standard window."
+ ],
+ "metrics": {
+  "wavelength": 1.55,
+  "nx": 80.0,
+  "ny": 151.0,
+  "dx": 0.025,
+  "dy": 0.02,
+  "x0": 0.0,
+  "y0": -1.4,
+  "neff": 2.4165803967,
+  "group_index": 4.10308916,
+  "n_cladding": 1.444,
+  "guided": 1.0,
+  "converged": 1.0,
+  "iterations": 24.0,
+  "confinement": 0.67013663,
+  "area": 0.13893805,
+  "rms_x": 0.13780929,
+  "rms_y": 0.09855929,
+  "centre_y": 0.11
+ },
+ "checks": [
+  {
+   "check": "neff 2.416580397 2e-8",
+   "status": "PASS",
+   "detail": "2.41658040, expected 2.41658040, off by -2.58e-10"
+  },
+  {
+   "check": "guided yes",
+   "status": "PASS",
+   "detail": "index 2.416580, cladding 1.444000, difference 9.73e-01"
+  },
+  {
+   "check": "cells 12080",
+   "status": "PASS",
+   "detail": "12080 cells (80 by 151)"
+  },
+  {
+   "check": "neff 2.4165803 5e-5",
+   "status": "PASS",
+   "detail": "2.41658040, expected 2.41658030, off by 9.67e-08"
+  }
+ ],
+ "against_reference": {
+  "largest_differences": {
+   "neff": 4.18527434931093e-11,
+   "group_index": 1.0015881457547948e-09,
+   "n_cladding": 0.0,
+   "guided": 0.0,
+   "confinement": 2.2771102781149466e-09,
+   "area": 1.9628332542909148e-08,
+   "rms_x": 3.2085860357522478e-09,
+   "rms_y": 4.21058783672823e-09,
+   "centre_y": 6.938893903907228e-17
+  },
+  "field": 3.907625681875566e-06
+ }
+}
