@@ -1,0 +1,64 @@
+{
+ "case": "cut_te_d400",
+ "title": "Silicon strip 450 x 220 nm on a 40 nm grid that cuts its walls, quasi-TE",
+ "notes": [
+  "Cells cut by an interface take an area-weighted permittivity: usable, but the index scatters from grid to grid.",
+  "Reference: the same grid solved with a sparse eigen-solver in SciPy."
+ ],
+ "metrics": {
+  "wavelength": 1.55,
+  "nx": 30.0,
+  "ny": 45.0,
+  "dx": 0.04,
+  "dy": 0.04,
+  "x0": 0.0,
+  "y0": -0.8,
+  "neff": 2.4175783251,
+  "group_index": 4.09871289,
+  "n_cladding": 1.444,
+  "guided": 1.0,
+  "converged": 1.0,
+  "iterations": 23.0,
+  "confinement": 0.63266819,
+  "area": 0.13967434,
+  "rms_x": 0.14051695,
+  "rms_y": 0.09841348,
+  "centre_y": 0.10880756
+ },
+ "checks": [
+  {
+   "check": "neff 2.417578325 2e-8",
+   "status": "PASS",
+   "detail": "2.41757833, expected 2.41757833, off by 1.29e-10"
+  },
+  {
+   "check": "group_index 4.098712889 2e-6",
+   "status": "PASS",
+   "detail": "4.09871289, expected 4.09871289, off by -3.82e-10"
+  },
+  {
+   "check": "guided yes",
+   "status": "PASS",
+   "detail": "index 2.417578, cladding 1.444000, difference 9.74e-01"
+  },
+  {
+   "check": "cells 1350",
+   "status": "PASS",
+   "detail": "1350 cells (30 by 45)"
+  }
+ ],
+ "against_reference": {
+  "largest_differences": {
+   "neff": 2.9247271271515274e-11,
+   "group_index": 1.382869818655763e-09,
+   "n_cladding": 0.0,
+   "guided": 0.0,
+   "confinement": 3.1665655653156932e-09,
+   "area": 1.0647613244764541e-08,
+   "rms_x": 1.5280989806853995e-09,
+   "rms_y": 3.980663632052739e-09,
+   "centre_y": 4.854505131213216e-09
+  },
+  "field": 2.2386402342285423e-06
+ }
+}
