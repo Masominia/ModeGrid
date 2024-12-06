@@ -1,0 +1,79 @@
+{
+ "case": "sin_tm_1000x400",
+ "title": "Silicon nitride 1000 x 400 nm, quasi-TM",
+ "notes": [
+  "Low index contrast: a large mode, and a regime where the semi-vectorial approximation is good.",
+  "Reference: the same grid solved with a sparse eigen-solver in SciPy. Bounds: cladding index and slab index."
+ ],
+ "metrics": {
+  "wavelength": 1.55,
+  "nx": 60.0,
+  "ny": 110.0,
+  "dx": 0.05,
+  "dy": 0.04,
+  "x0": 0.0,
+  "y0": -2.0,
+  "neff": 1.5702056645,
+  "group_index": 1.95599374,
+  "n_cladding": 1.444,
+  "guided": 1.0,
+  "converged": 1.0,
+  "iterations": 30.0,
+  "confinement": 0.36129779,
+  "area": 1.21840003,
+  "rms_x": 0.34410874,
+  "rms_y": 0.32775207,
+  "centre_y": 0.2
+ },
+ "checks": [
+  {
+   "check": "neff 1.570205664 2e-8",
+   "status": "PASS",
+   "detail": "1.57020566, expected 1.57020566, off by 4.83e-10"
+  },
+  {
+   "check": "group_index 1.955993741 2e-6",
+   "status": "PASS",
+   "detail": "1.95599374, expected 1.95599374, off by -1.83e-10"
+  },
+  {
+   "check": "confinement 0.361297794 1e-6",
+   "status": "PASS",
+   "detail": "0.36129779, expected 0.36129779, off by -3.98e-10"
+  },
+  {
+   "check": "area 1.218400028 1e-5",
+   "status": "PASS",
+   "detail": "1.2184, expected 1.2184, relative error 2.85e-10"
+  },
+  {
+   "check": "guided yes",
+   "status": "PASS",
+   "detail": "index 1.570206, cladding 1.444000, difference 1.26e-01"
+  },
+  {
+   "check": "cells 6600",
+   "status": "PASS",
+   "detail": "6600 cells (60 by 110)"
+  },
+  {
+   "check": "neff_between 1.444 1.641680",
+   "status": "PASS",
+   "detail": "1.570206, expected between 1.444000 and 1.641680"
+  }
+ ],
+ "against_reference": {
+  "largest_differences": {
+   "neff": 1.6936008151446913e-11,
+   "group_index": 8.163749676270982e-10,
+   "n_cladding": 0.0,
+   "guided": 0.0,
+   "confinement": 3.602583897865941e-09,
+   "area": 1.358882515984226e-09,
+   "rms_x": 3.6512248224873645e-09,
+   "rms_y": 1.1364448271322658e-10,
+   "centre_y": 5.551115123125783e-16
+  },
+  "field": 5.749528664197559e-07
+ }
+}
