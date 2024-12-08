@@ -1,0 +1,5791 @@
+{
+ "structures": 95,
+ "cells": 848514,
+ "families": {
+  "wavelength": {
+   "structures": 6,
+   "checks": 36,
+   "passed": 36
+  },
+  "grid convergence": {
+   "structures": 18,
+   "checks": 72,
+   "passed": 72
+  },
+  "directional couplers": {
+   "structures": 10,
+   "checks": 60,
+   "passed": 60
+  },
+  "window and mirror": {
+   "structures": 6,
+   "checks": 28,
+   "passed": 28
+  },
+  "antisymmetric mode": {
+   "structures": 6,
+   "checks": 24,
+   "passed": 24
+  },
+  "rib waveguides": {
+   "structures": 7,
+   "checks": 56,
+   "passed": 56
+  },
+  "scalar field": {
+   "structures": 3,
+   "checks": 18,
+   "passed": 18
+  },
+  "silicon nitride": {
+   "structures": 8,
+   "checks": 56,
+   "passed": 56
+  },
+  "slab limit": {
+   "structures": 6,
+   "checks": 30,
+   "passed": 30
+  },
+  "slot waveguides": {
+   "structures": 3,
+   "checks": 18,
+   "passed": 18
+  },
+  "silicon strips": {
+   "structures": 22,
+   "checks": 152,
+   "passed": 152
+  }
+ },
+ "largest_differences": {
+  "neff": 4.9751758268712365e-11,
+  "group_index": 4.992347868437719e-09,
+  "n_cladding": 4.576425682856211e-09,
+  "guided": 0.0,
+  "confinement": 4.923492613606584e-09,
+  "area": 4.039534572076154e-06,
+  "rms_x": 5.0936699302894795e-06,
+  "rms_y": 4.991258836795076e-09,
+  "centre_y": 4.854505131213216e-09,
+  "field": 4.428795989612781e-06,
+  "n_even": 4.923350616081734e-11,
+  "n_odd": 4.836042677425212e-11,
+  "splitting": 4.075856666063693e-11,
+  "coupling_length": 5.8684756992656665e-08
+ },
+ "studies": {
+  "convergence_te": {
+   "limit": 2.5218332466,
+   "rows": [
+    {
+     "cell, nm": 10,
+     "n_eff": 2.5242739546,
+     "above the extrapolated value": 0.002440707999999958
+    },
+    {
+     "cell, nm": 12,
+     "n_eff": 2.5247620962,
+     "above the extrapolated value": 0.0029288495999999498
+    },
+    {
+     "cell, nm": 15,
+     "n_eff": 2.5256594893,
+     "above the extrapolated value": 0.003826242700000204
+    },
+    {
+     "cell, nm": 20,
+     "n_eff": 2.5275928892,
+     "above the extrapolated value": 0.00575964260000017
+    },
+    {
+     "cell, nm": 30,
+     "n_eff": 2.5330767888,
+     "above the extrapolated value": 0.0112435421999999
+    },
+    {
+     "cell, nm": 40,
+     "n_eff": 2.5406568712,
+     "above the extrapolated value": 0.018823624599999977
+    }
+   ]
+  },
+  "convergence_tm": {
+   "limit": 1.9785592417000004,
+   "rows": [
+    {
+     "cell, nm": 10,
+     "n_eff": 1.9822939652,
+     "above the extrapolated value": 0.0037347234999995926
+    },
+    {
+     "cell, nm": 12,
+     "n_eff": 1.9830409099,
+     "above the extrapolated value": 0.004481668199999511
+    },
+    {
+     "cell, nm": 15,
+     "n_eff": 1.9844166639,
+     "above the extrapolated value": 0.005857422199999629
+    },
+    {
+     "cell, nm": 20,
+     "n_eff": 1.9873919817,
+     "above the extrapolated value": 0.008832739999999673
+    },
+    {
+     "cell, nm": 30,
+     "n_eff": 1.9959148989,
+     "above the extrapolated value": 0.01735565719999954
+    },
+    {
+     "cell, nm": 40,
+     "n_eff": 2.0078992211,
+     "above the extrapolated value": 0.02933997939999977
+    }
+   ]
+  },
+  "width_sweep": [
+   {
+    "width, nm": 300,
+    "n_eff": 1.9877102759,
+    "group index": 4.01379214,
+    "confinement": 0.38250571,
+    "effective index method": 2.020076795414249,
+    "difference": 0.03236651951424907
+   },
+   {
+    "width, nm": 350,
+    "n_eff": 2.1750940933,
+    "group index": 4.14884537,
+    "confinement": 0.51919795,
+    "effective index method": 2.187998425367767,
+    "difference": 0.01290433206776731
+   },
+   {
+    "width, nm": 400,
+    "n_eff": 2.3142327394,
+    "group index": 4.14440534,
+    "confinement": 0.61086775,
+    "effective index method": 2.3185483514550467,
+    "difference": 0.004315612055046714
+   },
+   {
+    "width, nm": 450,
+    "n_eff": 2.4165803429,
+    "group index": 4.10309092,
+    "confinement": 0.67013701,
+    "effective index method": 2.4169700740172004,
+    "difference": 0.0003897311172003093
+   },
+   {
+    "width, nm": 500,
+    "n_eff": 2.4929734166,
+    "group index": 4.05672315,
+    "confinement": 0.70896538,
+    "effective index method": 2.491433230518291,
+    "difference": -0.0015401860817090274
+   },
+   {
+    "width, nm": 550,
+    "n_eff": 2.5511497862,
+    "group index": 4.01425763,
+    "confinement": 0.73511991,
+    "effective index method": 2.548591114776652,
+    "difference": -0.002558671423348091
+   },
+   {
+    "width, nm": 600,
+    "n_eff": 2.5963462827,
+    "group index": 3.97760588,
+    "confinement": 0.75327426,
+    "effective index method": 2.593216226226998,
+    "difference": -0.0031300564730019076
+   },
+   {
+    "width, nm": 700,
+    "n_eff": 2.6608647559,
+    "group index": 3.92037505,
+    "confinement": 0.77572594,
+    "effective index method": 2.657189436396958,
+    "difference": -0.003675319503042118
+   },
+   {
+    "width, nm": 800,
+    "n_eff": 2.7037179561,
+    "group index": 3.87941613,
+    "confinement": 0.78825657,
+    "effective index method": 2.699822647364208,
+    "difference": -0.0038953087357920246
+   },
+   {
+    "width, nm": 1000,
+    "n_eff": 2.7552717023,
+    "group index": 3.82710462,
+    "confinement": 0.80060353,
+    "effective index method": 2.751228666236588,
+    "difference": -0.004043036063412053
+   }
+  ],
+  "couplers": {
+   "decay_nm": 116.3269949357012,
+   "rows": [
+    {
+     "gap, nm": 100,
+     "n_even - n_odd": 0.0812706712,
+     "coupling length, um": 9.536035
+    },
+    {
+     "gap, nm": 150,
+     "n_even - n_odd": 0.0515877251,
+     "coupling length, um": 15.022954
+    },
+    {
+     "gap, nm": 200,
+     "n_even - n_odd": 0.0334077105,
+     "coupling length, um": 23.198237
+    },
+    {
+     "gap, nm": 250,
+     "n_even - n_odd": 0.0217822574,
+     "coupling length, um": 35.579416
+    },
+    {
+     "gap, nm": 300,
+     "n_even - n_odd": 0.0142448458,
+     "coupling length, um": 54.405643
+    },
+    {
+     "gap, nm": 400,
+     "n_even - n_odd": 0.0061239042,
+     "coupling length, um": 126.553253
+    }
+   ]
+  }
+ },
+ "structures_table": {
+  "band_c_1500": {
+   "family": "wavelength",
+   "cells": 6660,
+   "n_eff": 2.4709940054,
+   "group index": 4.1029371,
+   "guided": "yes",
+   "confinement": 0.69652561,
+   "area, um2": 0.12945011,
+   "checks": 6,
+   "passed": 6
+  },
+  "band_c_1530": {
+   "family": "wavelength",
+   "cells": 6660,
+   "n_eff": 2.4383458921,
+   "group index": 4.10358382,
+   "guided": "yes",
+   "confinement": 0.68082772,
+   "area, um2": 0.13499983,
+   "checks": 6,
+   "passed": 6
+  },
+  "band_c_1570": {
+   "family": "wavelength",
+   "cells": 6660,
+   "n_eff": 2.3948261804,
+   "group index": 4.10180736,
+   "guided": "yes",
+   "confinement": 0.65927159,
+   "area, um2": 0.14307946,
+   "checks": 6,
+   "passed": 6
+  },
+  "band_c_1600": {
+   "family": "wavelength",
+   "cells": 6660,
+   "n_eff": 2.3622387143,
+   "group index": 4.09830055,
+   "guided": "yes",
+   "confinement": 0.64265817,
+   "area, um2": 0.14969925,
+   "checks": 6,
+   "passed": 6
+  },
+  "band_o_1270": {
+   "family": "wavelength",
+   "cells": 6660,
+   "n_eff": 2.6598053228,
+   "group index": 4.01426349,
+   "guided": "yes",
+   "confinement": 0.77379277,
+   "area, um2": 0.09352284,
+   "checks": 6,
+   "passed": 6
+  },
+  "band_o_1310": {
+   "family": "wavelength",
+   "cells": 6660,
+   "n_eff": 2.6088715109,
+   "group index": 4.01898171,
+   "guided": "yes",
+   "confinement": 0.75315006,
+   "area, um2": 0.09869445,
+   "checks": 6,
+   "passed": 6
+  },
+  "conv_te_d10": {
+   "family": "grid convergence",
+   "cells": 20160,
+   "n_eff": 2.5242739546,
+   "group index": 4.09915089,
+   "guided": "yes",
+   "confinement": 0.72207208,
+   "area, um2": 0.13983222,
+   "checks": 4,
+   "passed": 4
+  },
+  "conv_te_d12": {
+   "family": "grid convergence",
+   "cells": 14000,
+   "n_eff": 2.5247620962,
+   "group index": 4.0998478,
+   "guided": "yes",
+   "confinement": 0.72247561,
+   "area, um2": 0.13976549,
+   "checks": 4,
+   "passed": 4
+  },
+  "conv_te_d15": {
+   "family": "grid convergence",
+   "cells": 8960,
+   "n_eff": 2.5256594893,
+   "group index": 4.10112477,
+   "guided": "yes",
+   "confinement": 0.72321565,
+   "area, um2": 0.13964307,
+   "checks": 4,
+   "passed": 4
+  },
+  "conv_te_d20": {
+   "family": "grid convergence",
+   "cells": 5040,
+   "n_eff": 2.5275928892,
+   "group index": 4.10385749,
+   "guided": "yes",
+   "confinement": 0.72480393,
+   "area, um2": 0.13938002,
+   "checks": 4,
+   "passed": 4
+  },
+  "conv_te_d30": {
+   "family": "grid convergence",
+   "cells": 2240,
+   "n_eff": 2.5330767888,
+   "group index": 4.11147163,
+   "guided": "yes",
+   "confinement": 0.72927429,
+   "area, um2": 0.13863629,
+   "checks": 4,
+   "passed": 4
+  },
+  "conv_te_d40": {
+   "family": "grid convergence",
+   "cells": 1260,
+   "n_eff": 2.5406568712,
+   "group index": 4.12166266,
+   "guided": "yes",
+   "confinement": 0.73538241,
+   "area, um2": 0.13761321,
+   "checks": 4,
+   "passed": 4
+  },
+  "conv_tm_d10": {
+   "family": "grid convergence",
+   "cells": 20160,
+   "n_eff": 1.9822939652,
+   "group index": 4.1603791,
+   "guided": "yes",
+   "confinement": 0.26230619,
+   "area, um2": 0.26397997,
+   "checks": 4,
+   "passed": 4
+  },
+  "conv_tm_d12": {
+   "family": "grid convergence",
+   "cells": 14000,
+   "n_eff": 1.9830409099,
+   "group index": 4.16235868,
+   "guided": "yes",
+   "confinement": 0.2628248,
+   "area, um2": 0.26405385,
+   "checks": 4,
+   "passed": 4
+  },
+  "conv_tm_d15": {
+   "family": "grid convergence",
+   "cells": 8960,
+   "n_eff": 1.9844166639,
+   "group index": 4.16599137,
+   "guided": "yes",
+   "confinement": 0.26378118,
+   "area, um2": 0.26418952,
+   "checks": 4,
+   "passed": 4
+  },
+  "conv_tm_d20": {
+   "family": "grid convergence",
+   "cells": 5040,
+   "n_eff": 1.9873919817,
+   "group index": 4.17378886,
+   "guided": "yes",
+   "confinement": 0.26585489,
+   "area, um2": 0.26448164,
+   "checks": 4,
+   "passed": 4
+  },
+  "conv_tm_d30": {
+   "family": "grid convergence",
+   "cells": 2240,
+   "n_eff": 1.9959148989,
+   "group index": 4.19568364,
+   "guided": "yes",
+   "confinement": 0.27183643,
+   "area, um2": 0.26531079,
+   "checks": 4,
+   "passed": 4
+  },
+  "conv_tm_d40": {
+   "family": "grid convergence",
+   "cells": 1260,
+   "n_eff": 2.0078992211,
+   "group index": 4.22537614,
+   "guided": "yes",
+   "confinement": 0.28035105,
+   "area, um2": 0.26645691,
+   "checks": 4,
+   "passed": 4
+  },
+  "coupler_rib_gap200": {
+   "family": "directional couplers",
+   "cells": 22200,
+   "n_eff": 2.6039751478,
+   "group index": 3.78269653,
+   "guided": "yes",
+   "confinement": 0.69543914,
+   "area, um2": 0.35919045,
+   "checks": 6,
+   "passed": 6
+  },
+  "coupler_rib_gap300": {
+   "family": "directional couplers",
+   "cells": 22200,
+   "n_eff": 2.5918220416,
+   "group index": 3.81110396,
+   "guided": "yes",
+   "confinement": 0.70124287,
+   "area, um2": 0.36631485,
+   "checks": 6,
+   "passed": 6
+  },
+  "coupler_te_gap100": {
+   "family": "directional couplers",
+   "cells": 8880,
+   "n_eff": 2.4650274034,
+   "group index": 3.89758794,
+   "guided": "yes",
+   "confinement": 0.59891594,
+   "area, um2": 0.27064615,
+   "checks": 6,
+   "passed": 6
+  },
+  "coupler_te_gap150": {
+   "family": "directional couplers",
+   "cells": 8880,
+   "n_eff": 2.445241104,
+   "group index": 3.95571087,
+   "guided": "yes",
+   "confinement": 0.61689068,
+   "area, um2": 0.29724128,
+   "checks": 6,
+   "passed": 6
+  },
+  "coupler_te_gap200": {
+   "family": "directional couplers",
+   "cells": 8880,
+   "n_eff": 2.4343609813,
+   "group index": 3.99672656,
+   "guided": "yes",
+   "confinement": 0.63042626,
+   "area, um2": 0.30041319,
+   "checks": 6,
+   "passed": 6
+  },
+  "coupler_te_gap250": {
+   "family": "directional couplers",
+   "cells": 8880,
+   "n_eff": 2.4278780055,
+   "group index": 4.02626892,
+   "guided": "yes",
+   "confinement": 0.64067244,
+   "area, um2": 0.29743528,
+   "checks": 6,
+   "passed": 6
+  },
+  "coupler_te_gap300": {
+   "family": "directional couplers",
+   "cells": 8880,
+   "n_eff": 2.4238560315,
+   "group index": 4.04772102,
+   "guided": "yes",
+   "confinement": 0.64842441,
+   "area, um2": 0.2933607,
+   "checks": 6,
+   "passed": 6
+  },
+  "coupler_te_gap400": {
+   "family": "directional couplers",
+   "cells": 8880,
+   "n_eff": 2.4196636383,
+   "group index": 4.07463576,
+   "guided": "yes",
+   "confinement": 0.658603,
+   "area, um2": 0.28660186,
+   "checks": 6,
+   "passed": 6
+  },
+  "coupler_tm_gap200": {
+   "family": "directional couplers",
+   "cells": 8880,
+   "n_eff": 1.8803537808,
+   "group index": 3.58284571,
+   "guided": "yes",
+   "confinement": 0.17404392,
+   "area, um2": 0.57358202,
+   "checks": 6,
+   "passed": 6
+  },
+  "coupler_tm_gap300": {
+   "family": "directional couplers",
+   "cells": 8880,
+   "n_eff": 1.8585809675,
+   "group index": 3.58578086,
+   "guided": "yes",
+   "confinement": 0.17036224,
+   "area, um2": 0.60037768,
+   "checks": 6,
+   "passed": 6
+  },
+  "cut_te_d125": {
+   "family": "grid convergence",
+   "cells": 13824,
+   "n_eff": 2.410513617,
+   "group index": 4.09863926,
+   "guided": "yes",
+   "confinement": 0.65282296,
+   "area, um2": 0.13964329,
+   "checks": 4,
+   "passed": 4
+  },
+  "cut_te_d250": {
+   "family": "grid convergence",
+   "cells": 3456,
+   "n_eff": 2.4140216795,
+   "group index": 4.10361035,
+   "guided": "yes",
+   "confinement": 0.63116016,
+   "area, um2": 0.13905475,
+   "checks": 4,
+   "passed": 4
+  },
+  "cut_te_d400": {
+   "family": "grid convergence",
+   "cells": 1350,
+   "n_eff": 2.4175783251,
+   "group index": 4.09871289,
+   "guided": "yes",
+   "confinement": 0.63266819,
+   "area, um2": 0.13967434,
+   "checks": 4,
+   "passed": 4
+  },
+  "cut_tm_d125": {
+   "family": "grid convergence",
+   "cells": 13824,
+   "n_eff": 1.8272967658,
+   "group index": 3.74181236,
+   "guided": "yes",
+   "confinement": 0.17275857,
+   "area, um2": 0.28786053,
+   "checks": 4,
+   "passed": 4
+  },
+  "cut_tm_d250": {
+   "family": "grid convergence",
+   "cells": 3456,
+   "n_eff": 1.8366893248,
+   "group index": 3.77513563,
+   "guided": "yes",
+   "confinement": 0.17434695,
+   "area, um2": 0.28727338,
+   "checks": 4,
+   "passed": 4
+  },
+  "cut_tm_d400": {
+   "family": "grid convergence",
+   "cells": 1350,
+   "n_eff": 1.8562712587,
+   "group index": 3.83466472,
+   "guided": "yes",
+   "confinement": 0.17122316,
+   "area, um2": 0.29746385,
+   "checks": 4,
+   "passed": 4
+  },
+  "mirror_full": {
+   "family": "window and mirror",
+   "cells": 8736,
+   "n_eff": 2.4165790177,
+   "group index": 4.10312546,
+   "guided": "yes",
+   "confinement": 0.67014451,
+   "area, um2": 0.13893483,
+   "checks": 6,
+   "passed": 6
+  },
+  "mirror_half": {
+   "family": "window and mirror",
+   "cells": 4368,
+   "n_eff": 2.4165790177,
+   "group index": 4.10312546,
+   "guided": "yes",
+   "confinement": 0.67014451,
+   "area, um2": 0.13893483,
+   "checks": 6,
+   "passed": 6
+  },
+  "odd_te_w1000": {
+   "family": "antisymmetric mode",
+   "cells": 6660,
+   "n_eff": 2.4494540911,
+   "group index": 4.20446231,
+   "guided": "yes",
+   "confinement": 0.74643325,
+   "area, um2": 0.24294048,
+   "checks": 4,
+   "passed": 4
+  },
+  "odd_te_w400": {
+   "family": "antisymmetric mode",
+   "cells": 6660,
+   "n_eff": 1.3358639335,
+   "group index": 1.7573919,
+   "guided": "no",
+   "confinement": 0.00785156,
+   "area, um2": 2.45794841,
+   "checks": 4,
+   "passed": 4
+  },
+  "odd_te_w500": {
+   "family": "antisymmetric mode",
+   "cells": 6660,
+   "n_eff": 1.4547243158,
+   "group index": 3.17650101,
+   "guided": "yes",
+   "confinement": 0.11082778,
+   "area, um2": 0.63896856,
+   "checks": 4,
+   "passed": 4
+  },
+  "odd_te_w600": {
+   "family": "antisymmetric mode",
+   "cells": 6660,
+   "n_eff": 1.7654005611,
+   "group index": 4.55662754,
+   "guided": "yes",
+   "confinement": 0.3856928,
+   "area, um2": 0.3053247,
+   "checks": 4,
+   "passed": 4
+  },
+  "odd_te_w700": {
+   "family": "antisymmetric mode",
+   "cells": 6660,
+   "n_eff": 2.0361845019,
+   "group index": 4.59756325,
+   "guided": "yes",
+   "confinement": 0.56865918,
+   "area, um2": 0.25103127,
+   "checks": 4,
+   "passed": 4
+  },
+  "odd_te_w800": {
+   "family": "antisymmetric mode",
+   "cells": 6660,
+   "n_eff": 2.224450006,
+   "group index": 4.44889141,
+   "guided": "yes",
+   "confinement": 0.66442224,
+   "area, um2": 0.23464228,
+   "checks": 4,
+   "passed": 4
+  },
+  "rib_slab130": {
+   "family": "rib waveguides",
+   "cells": 17760,
+   "n_eff": 2.6471558385,
+   "group index": 3.79395687,
+   "guided": "yes",
+   "confinement": 0.73786847,
+   "area, um2": 0.2100747,
+   "checks": 8,
+   "passed": 8
+  },
+  "rib_slab150": {
+   "family": "rib waveguides",
+   "cells": 17760,
+   "n_eff": 2.6862427118,
+   "group index": 3.76203566,
+   "guided": "yes",
+   "confinement": 0.751414,
+   "area, um2": 0.24141536,
+   "checks": 8,
+   "passed": 8
+  },
+  "rib_slab50": {
+   "family": "rib waveguides",
+   "cells": 17760,
+   "n_eff": 2.5264681023,
+   "group index": 3.96022117,
+   "guided": "yes",
+   "confinement": 0.70677894,
+   "area, um2": 0.15254068,
+   "checks": 8,
+   "passed": 8
+  },
+  "rib_slab90": {
+   "family": "rib waveguides",
+   "cells": 17760,
+   "n_eff": 2.5781099005,
+   "group index": 3.87318412,
+   "guided": "yes",
+   "confinement": 0.71700494,
+   "area, um2": 0.17291694,
+   "checks": 8,
+   "passed": 8
+  },
+  "rib_w1000": {
+   "family": "rib waveguides",
+   "cells": 17760,
+   "n_eff": 2.7638787085,
+   "group index": 3.79610107,
+   "guided": "yes",
+   "confinement": 0.79657441,
+   "area, um2": 0.23433141,
+   "checks": 8,
+   "passed": 8
+  },
+  "rib_w400": {
+   "family": "rib waveguides",
+   "cells": 17760,
+   "n_eff": 2.4783040804,
+   "group index": 3.84108264,
+   "guided": "yes",
+   "confinement": 0.65342897,
+   "area, um2": 0.1840219,
+   "checks": 8,
+   "passed": 8
+  },
+  "rib_w700": {
+   "family": "rib waveguides",
+   "cells": 17760,
+   "n_eff": 2.6908477919,
+   "group index": 3.84400563,
+   "guided": "yes",
+   "confinement": 0.77207436,
+   "area, um2": 0.18706017,
+   "checks": 8,
+   "passed": 8
+  },
+  "scalar_sin": {
+   "family": "scalar field",
+   "cells": 6600,
+   "n_eff": 1.6620963321,
+   "group index": 2.04206128,
+   "guided": "yes",
+   "confinement": 0.65875105,
+   "area, um2": 0.70072885,
+   "checks": 6,
+   "passed": 6
+  },
+  "scalar_w1000": {
+   "family": "scalar field",
+   "cells": 6660,
+   "n_eff": 2.7754200602,
+   "group index": 3.78925682,
+   "guided": "yes",
+   "confinement": 0.8053166,
+   "area, um2": 0.23689613,
+   "checks": 6,
+   "passed": 6
+  },
+  "scalar_w450": {
+   "family": "scalar field",
+   "cells": 6660,
+   "n_eff": 2.5791999705,
+   "group index": 3.88123718,
+   "guided": "yes",
+   "confinement": 0.75680582,
+   "area, um2": 0.13440278,
+   "checks": 6,
+   "passed": 6
+  },
+  "sin_te_1000x400": {
+   "family": "silicon nitride",
+   "cells": 6600,
+   "n_eff": 1.6420092619,
+   "group index": 2.05057371,
+   "guided": "yes",
+   "confinement": 0.6163607,
+   "area, um2": 0.72976467,
+   "checks": 7,
+   "passed": 7
+  },
+  "sin_te_1000x800": {
+   "family": "silicon nitride",
+   "cells": 6600,
+   "n_eff": 1.7762781729,
+   "group index": 2.13982364,
+   "guided": "yes",
+   "confinement": 0.83378308,
+   "area, um2": 0.80177582,
+   "checks": 7,
+   "passed": 7
+  },
+  "sin_te_1200x400": {
+   "family": "silicon nitride",
+   "cells": 6600,
+   "n_eff": 1.6668343963,
+   "group index": 2.05551872,
+   "guided": "yes",
+   "confinement": 0.65646325,
+   "area, um2": 0.76515815,
+   "checks": 7,
+   "passed": 7
+  },
+  "sin_te_1600x400": {
+   "family": "silicon nitride",
+   "cells": 6600,
+   "n_eff": 1.6959283293,
+   "group index": 2.05138481,
+   "guided": "yes",
+   "confinement": 0.69324546,
+   "area, um2": 0.89134547,
+   "checks": 7,
+   "passed": 7
+  },
+  "sin_te_1600x800": {
+   "family": "silicon nitride",
+   "cells": 6600,
+   "n_eff": 1.8352818903,
+   "group index": 2.11399778,
+   "guided": "yes",
+   "confinement": 0.89845004,
+   "area, um2": 1.04937176,
+   "checks": 7,
+   "passed": 7
+  },
+  "sin_te_800x400": {
+   "family": "silicon nitride",
+   "cells": 6600,
+   "n_eff": 1.6047401589,
+   "group index": 2.0263216,
+   "guided": "yes",
+   "confinement": 0.54154142,
+   "area, um2": 0.7450687,
+   "checks": 7,
+   "passed": 7
+  },
+  "sin_tm_1000x400": {
+   "family": "silicon nitride",
+   "cells": 6600,
+   "n_eff": 1.5702056645,
+   "group index": 1.95599374,
+   "guided": "yes",
+   "confinement": 0.36129779,
+   "area, um2": 1.21840003,
+   "checks": 7,
+   "passed": 7
+  },
+  "sin_tm_1600x800": {
+   "family": "silicon nitride",
+   "cells": 6600,
+   "n_eff": 1.8042145151,
+   "group index": 2.14024731,
+   "guided": "yes",
+   "confinement": 0.83768617,
+   "area, um2": 1.17122559,
+   "checks": 7,
+   "passed": 7
+  },
+  "slablimit_si220_te": {
+   "family": "slab limit",
+   "cells": 10480,
+   "n_eff": 2.8471562371,
+   "group index": 3.71501836,
+   "guided": "no",
+   "confinement": 0.81110943,
+   "area, um2": 1.5966545,
+   "checks": 5,
+   "passed": 5
+  },
+  "slablimit_si220_tm": {
+   "family": "slab limit",
+   "cells": 10480,
+   "n_eff": 2.0528953776,
+   "group index": 3.98537167,
+   "guided": "no",
+   "confinement": 0.19627212,
+   "area, um2": 2.50766479,
+   "checks": 5,
+   "passed": 5
+  },
+  "slablimit_si340_te": {
+   "family": "slab limit",
+   "cells": 10960,
+   "n_eff": 3.1148374767,
+   "group index": 3.75569047,
+   "guided": "no",
+   "confinement": 0.91853184,
+   "area, um2": 1.89575272,
+   "checks": 5,
+   "passed": 5
+  },
+  "slablimit_si340_tm": {
+   "family": "slab limit",
+   "cells": 10960,
+   "n_eff": 2.7950946595,
+   "group index": 4.24229874,
+   "guided": "no",
+   "confinement": 0.71491943,
+   "area, um2": 2.18508804,
+   "checks": 5,
+   "passed": 5
+  },
+  "slablimit_sin400_te": {
+   "family": "slab limit",
+   "cells": 11200,
+   "n_eff": 1.7407538313,
+   "group index": 2.02149782,
+   "guided": "no",
+   "confinement": 0.72288715,
+   "area, um2": 3.54276575,
+   "checks": 5,
+   "passed": 5
+  },
+  "slablimit_sin400_tm": {
+   "family": "slab limit",
+   "cells": 11200,
+   "n_eff": 1.6387502616,
+   "group index": 1.97729681,
+   "guided": "no",
+   "confinement": 0.4207812,
+   "area, um2": 5.28479362,
+   "checks": 5,
+   "passed": 5
+  },
+  "slot_gap100": {
+   "family": "slot waveguides",
+   "cells": 16650,
+   "n_eff": 1.8369973578,
+   "group index": 3.07663576,
+   "guided": "yes",
+   "confinement": 0.16255656,
+   "area, um2": 0.13974252,
+   "checks": 6,
+   "passed": 6
+  },
+  "slot_gap140": {
+   "family": "slot waveguides",
+   "cells": 16650,
+   "n_eff": 1.788002103,
+   "group index": 2.97918014,
+   "guided": "yes",
+   "confinement": 0.14579206,
+   "area, um2": 0.20749728,
+   "checks": 6,
+   "passed": 6
+  },
+  "slot_gap60": {
+   "family": "slot waveguides",
+   "cells": 16650,
+   "n_eff": 1.9190658874,
+   "group index": 3.23341725,
+   "guided": "yes",
+   "confinement": 0.19284181,
+   "area, um2": 0.07675804,
+   "checks": 6,
+   "passed": 6
+  },
+  "strip_air_w400": {
+   "family": "silicon strips",
+   "cells": 6660,
+   "n_eff": 2.2337907246,
+   "group index": 4.33101194,
+   "guided": "yes",
+   "confinement": 0.61909555,
+   "area, um2": 0.13486508,
+   "checks": 6,
+   "passed": 6
+  },
+  "strip_air_w500": {
+   "family": "silicon strips",
+   "cells": 6660,
+   "n_eff": 2.4446611457,
+   "group index": 4.160793,
+   "guided": "yes",
+   "confinement": 0.72130474,
+   "area, um2": 0.13068072,
+   "checks": 6,
+   "passed": 6
+  },
+  "strip_te_h180": {
+   "family": "silicon strips",
+   "cells": 6660,
+   "n_eff": 2.2609164993,
+   "group index": 3.97956062,
+   "guided": "yes",
+   "confinement": 0.58877751,
+   "area, um2": 0.14371157,
+   "checks": 7,
+   "passed": 7
+  },
+  "strip_te_h260": {
+   "family": "silicon strips",
+   "cells": 6660,
+   "n_eff": 2.5341532582,
+   "group index": 4.15700285,
+   "guided": "yes",
+   "confinement": 0.72540424,
+   "area, um2": 0.14048384,
+   "checks": 7,
+   "passed": 7
+  },
+  "strip_te_h300": {
+   "family": "silicon strips",
+   "cells": 6660,
+   "n_eff": 2.624055651,
+   "group index": 4.17730307,
+   "guided": "yes",
+   "confinement": 0.76371386,
+   "area, um2": 0.14521605,
+   "checks": 7,
+   "passed": 7
+  },
+  "strip_te_h340": {
+   "family": "silicon strips",
+   "cells": 6660,
+   "n_eff": 2.6939276966,
+   "group index": 4.18109845,
+   "guided": "yes",
+   "confinement": 0.79091048,
+   "area, um2": 0.15175565,
+   "checks": 7,
+   "passed": 7
+  },
+  "strip_te_h400": {
+   "family": "silicon strips",
+   "cells": 6660,
+   "n_eff": 2.7724619052,
+   "group index": 4.17304539,
+   "guided": "yes",
+   "confinement": 0.81853907,
+   "area, um2": 0.16352667,
+   "checks": 7,
+   "passed": 7
+  },
+  "strip_te_w1000": {
+   "family": "silicon strips",
+   "cells": 6660,
+   "n_eff": 2.7552717023,
+   "group index": 3.82710462,
+   "guided": "yes",
+   "confinement": 0.80060353,
+   "area, um2": 0.21520132,
+   "checks": 7,
+   "passed": 7
+  },
+  "strip_te_w300": {
+   "family": "silicon strips",
+   "cells": 6660,
+   "n_eff": 1.9877102759,
+   "group index": 4.01379214,
+   "guided": "yes",
+   "confinement": 0.38250571,
+   "area, um2": 0.19331379,
+   "checks": 7,
+   "passed": 7
+  },
+  "strip_te_w350": {
+   "family": "silicon strips",
+   "cells": 6660,
+   "n_eff": 2.1750940933,
+   "group index": 4.14884537,
+   "guided": "yes",
+   "confinement": 0.51919795,
+   "area, um2": 0.15936162,
+   "checks": 7,
+   "passed": 7
+  },
+  "strip_te_w400": {
+   "family": "silicon strips",
+   "cells": 6660,
+   "n_eff": 2.3142327394,
+   "group index": 4.14440534,
+   "guided": "yes",
+   "confinement": 0.61086775,
+   "area, um2": 0.14401261,
+   "checks": 7,
+   "passed": 7
+  },
+  "strip_te_w450": {
+   "family": "silicon strips",
+   "cells": 6660,
+   "n_eff": 2.4165803429,
+   "group index": 4.10309092,
+   "guided": "yes",
+   "confinement": 0.67013701,
+   "area, um2": 0.13893789,
+   "checks": 7,
+   "passed": 7
+  },
+  "strip_te_w500": {
+   "family": "silicon strips",
+   "cells": 6660,
+   "n_eff": 2.4929734166,
+   "group index": 4.05672315,
+   "guided": "yes",
+   "confinement": 0.70896538,
+   "area, um2": 0.13940947,
+   "checks": 7,
+   "passed": 7
+  },
+  "strip_te_w550": {
+   "family": "silicon strips",
+   "cells": 6660,
+   "n_eff": 2.5511497862,
+   "group index": 4.01425763,
+   "guided": "yes",
+   "confinement": 0.73511991,
+   "area, um2": 0.14301482,
+   "checks": 7,
+   "passed": 7
+  },
+  "strip_te_w600": {
+   "family": "silicon strips",
+   "cells": 6660,
+   "n_eff": 2.5963462827,
+   "group index": 3.97760588,
+   "guided": "yes",
+   "confinement": 0.75327426,
+   "area, um2": 0.14850283,
+   "checks": 7,
+   "passed": 7
+  },
+  "strip_te_w700": {
+   "family": "silicon strips",
+   "cells": 6660,
+   "n_eff": 2.6608647559,
+   "group index": 3.92037505,
+   "guided": "yes",
+   "confinement": 0.77572594,
+   "area, um2": 0.16267166,
+   "checks": 7,
+   "passed": 7
+  },
+  "strip_te_w800": {
+   "family": "silicon strips",
+   "cells": 6660,
+   "n_eff": 2.7037179561,
+   "group index": 3.87941613,
+   "guided": "yes",
+   "confinement": 0.78825657,
+   "area, um2": 0.1791457,
+   "checks": 7,
+   "passed": 7
+  },
+  "strip_tm_w1000": {
+   "family": "silicon strips",
+   "cells": 6660,
+   "n_eff": 1.9786208073,
+   "group index": 4.01590735,
+   "guided": "yes",
+   "confinement": 0.19502335,
+   "area, um2": 0.42766133,
+   "checks": 7,
+   "passed": 7
+  },
+  "strip_tm_w350": {
+   "family": "silicon strips",
+   "cells": 6660,
+   "n_eff": 1.756205927,
+   "group index": 3.51152763,
+   "guided": "yes",
+   "confinement": 0.15832696,
+   "area, um2": 0.28573134,
+   "checks": 7,
+   "passed": 7
+  },
+  "strip_tm_w450": {
+   "family": "silicon strips",
+   "cells": 6660,
+   "n_eff": 1.8255902223,
+   "group index": 3.74012772,
+   "guided": "yes",
+   "confinement": 0.17357935,
+   "area, um2": 0.28920171,
+   "checks": 7,
+   "passed": 7
+  },
+  "strip_tm_w550": {
+   "family": "silicon strips",
+   "cells": 6660,
+   "n_eff": 1.874590194,
+   "group index": 3.86411575,
+   "guided": "yes",
+   "confinement": 0.18216845,
+   "area, um2": 0.30632357,
+   "checks": 7,
+   "passed": 7
+  },
+  "strip_tm_w700": {
+   "family": "silicon strips",
+   "cells": 6660,
+   "n_eff": 1.9241782768,
+   "group index": 3.95639602,
+   "guided": "yes",
+   "confinement": 0.18918373,
+   "area, um2": 0.34233211,
+   "checks": 7,
+   "passed": 7
+  },
+  "window_20": {
+   "family": "window and mirror",
+   "cells": 2840,
+   "n_eff": 2.4165448079,
+   "group index": 4.10379365,
+   "guided": "yes",
+   "confinement": 0.67028544,
+   "area, um2": 0.13887757,
+   "checks": 4,
+   "passed": 4
+  },
+  "window_30": {
+   "family": "window and mirror",
+   "cells": 6660,
+   "n_eff": 2.4165803429,
+   "group index": 4.10309092,
+   "guided": "yes",
+   "confinement": 0.67013701,
+   "area, um2": 0.13893789,
+   "checks": 4,
+   "passed": 4
+  },
+  "window_40": {
+   "family": "window and mirror",
+   "cells": 12080,
+   "n_eff": 2.4165803967,
+   "group index": 4.10308916,
+   "guided": "yes",
+   "confinement": 0.67013663,
+   "area, um2": 0.13893805,
+   "checks": 4,
+   "passed": 4
+  },
+  "window_50": {
+   "family": "window and mirror",
+   "cells": 19100,
+   "n_eff": 2.4165803968,
+   "group index": 4.10308916,
+   "guided": "yes",
+   "confinement": 0.67013663,
+   "area, um2": 0.13893805,
+   "checks": 4,
+   "passed": 4
+  }
+ },
+ "checks": [
+  {
+   "area": "independent solution",
+   "check": "band_c_1500: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 3.6e-06 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "band_c_1500: the iteration converged",
+   "status": "PASS",
+   "detail": "23 iterations on 6660 cells"
+  },
+  {
+   "area": "wavelength",
+   "check": "band_c_1500: neff 2.470994005 2e-8",
+   "status": "PASS",
+   "detail": "2.47099401, expected 2.47099401, off by 4.38e-10"
+  },
+  {
+   "area": "wavelength",
+   "check": "band_c_1500: group_index 4.102937097 2e-6",
+   "status": "PASS",
+   "detail": "4.10293710, expected 4.10293710, off by 2.54e-10"
+  },
+  {
+   "area": "wavelength",
+   "check": "band_c_1500: confinement 0.696525610 1e-6",
+   "status": "PASS",
+   "detail": "0.69652561, expected 0.69652561, off by 2.66e-10"
+  },
+  {
+   "area": "wavelength",
+   "check": "band_c_1500: area 0.129450107 1e-5",
+   "status": "PASS",
+   "detail": "0.12945, expected 0.12945, relative error 1.70e-09"
+  },
+  {
+   "area": "wavelength",
+   "check": "band_c_1500: guided yes",
+   "status": "PASS",
+   "detail": "index 2.470994, cladding 1.444600, difference 1.03e+00"
+  },
+  {
+   "area": "wavelength",
+   "check": "band_c_1500: cells 6660",
+   "status": "PASS",
+   "detail": "6660 cells (60 by 111)"
+  },
+  {
+   "area": "independent solution",
+   "check": "band_c_1530: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 3.6e-06 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "band_c_1530: the iteration converged",
+   "status": "PASS",
+   "detail": "23 iterations on 6660 cells"
+  },
+  {
+   "area": "wavelength",
+   "check": "band_c_1530: neff 2.438345892 2e-8",
+   "status": "PASS",
+   "detail": "2.43834589, expected 2.43834589, off by 9.46e-11"
+  },
+  {
+   "area": "wavelength",
+   "check": "band_c_1530: group_index 4.103583821 2e-6",
+   "status": "PASS",
+   "detail": "4.10358382, expected 4.10358382, off by 3.09e-10"
+  },
+  {
+   "area": "wavelength",
+   "check": "band_c_1530: confinement 0.680827715 1e-6",
+   "status": "PASS",
+   "detail": "0.68082772, expected 0.68082772, off by 4.79e-10"
+  },
+  {
+   "area": "wavelength",
+   "check": "band_c_1530: area 0.134999825 1e-5",
+   "status": "PASS",
+   "detail": "0.135, expected 0.135, relative error 3.28e-09"
+  },
+  {
+   "area": "wavelength",
+   "check": "band_c_1530: guided yes",
+   "status": "PASS",
+   "detail": "index 2.438346, cladding 1.444240, difference 9.94e-01"
+  },
+  {
+   "area": "wavelength",
+   "check": "band_c_1530: cells 6660",
+   "status": "PASS",
+   "detail": "6660 cells (60 by 111)"
+  },
+  {
+   "area": "independent solution",
+   "check": "band_c_1570: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 4.0e-06 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "band_c_1570: the iteration converged",
+   "status": "PASS",
+   "detail": "24 iterations on 6660 cells"
+  },
+  {
+   "area": "wavelength",
+   "check": "band_c_1570: neff 2.394826180 2e-8",
+   "status": "PASS",
+   "detail": "2.39482618, expected 2.39482618, off by 4.14e-10"
+  },
+  {
+   "area": "wavelength",
+   "check": "band_c_1570: group_index 4.101807356 2e-6",
+   "status": "PASS",
+   "detail": "4.10180736, expected 4.10180736, off by -1.22e-10"
+  },
+  {
+   "area": "wavelength",
+   "check": "band_c_1570: confinement 0.659271592 1e-6",
+   "status": "PASS",
+   "detail": "0.65927159, expected 0.65927159, off by -3.97e-10"
+  },
+  {
+   "area": "wavelength",
+   "check": "band_c_1570: area 0.143079463 1e-5",
+   "status": "PASS",
+   "detail": "0.143079, expected 0.143079, relative error 1.39e-09"
+  },
+  {
+   "area": "wavelength",
+   "check": "band_c_1570: guided yes",
+   "status": "PASS",
+   "detail": "index 2.394826, cladding 1.443760, difference 9.51e-01"
+  },
+  {
+   "area": "wavelength",
+   "check": "band_c_1570: cells 6660",
+   "status": "PASS",
+   "detail": "6660 cells (60 by 111)"
+  },
+  {
+   "area": "independent solution",
+   "check": "band_c_1600: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 4.0e-06 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "band_c_1600: the iteration converged",
+   "status": "PASS",
+   "detail": "25 iterations on 6660 cells"
+  },
+  {
+   "area": "wavelength",
+   "check": "band_c_1600: neff 2.362238714 2e-8",
+   "status": "PASS",
+   "detail": "2.36223871, expected 2.36223871, off by 2.97e-10"
+  },
+  {
+   "area": "wavelength",
+   "check": "band_c_1600: group_index 4.098300548 2e-6",
+   "status": "PASS",
+   "detail": "4.09830055, expected 4.09830055, off by -3.31e-10"
+  },
+  {
+   "area": "wavelength",
+   "check": "band_c_1600: confinement 0.642658171 1e-6",
+   "status": "PASS",
+   "detail": "0.64265817, expected 0.64265817, off by -3.39e-10"
+  },
+  {
+   "area": "wavelength",
+   "check": "band_c_1600: area 0.149699247 1e-5",
+   "status": "PASS",
+   "detail": "0.149699, expected 0.149699, relative error 1.56e-09"
+  },
+  {
+   "area": "wavelength",
+   "check": "band_c_1600: guided yes",
+   "status": "PASS",
+   "detail": "index 2.362239, cladding 1.443400, difference 9.19e-01"
+  },
+  {
+   "area": "wavelength",
+   "check": "band_c_1600: cells 6660",
+   "status": "PASS",
+   "detail": "6660 cells (60 by 111)"
+  },
+  {
+   "area": "independent solution",
+   "check": "band_o_1270: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 3.3e-06 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "band_o_1270: the iteration converged",
+   "status": "PASS",
+   "detail": "20 iterations on 6660 cells"
+  },
+  {
+   "area": "wavelength",
+   "check": "band_o_1270: neff 2.659805323 2e-8",
+   "status": "PASS",
+   "detail": "2.65980532, expected 2.65980532, off by -2.05e-10"
+  },
+  {
+   "area": "wavelength",
+   "check": "band_o_1270: group_index 4.014263487 2e-6",
+   "status": "PASS",
+   "detail": "4.01426349, expected 4.01426349, off by -1.51e-11"
+  },
+  {
+   "area": "wavelength",
+   "check": "band_o_1270: confinement 0.773792767 1e-6",
+   "status": "PASS",
+   "detail": "0.77379277, expected 0.77379277, off by 4.92e-10"
+  },
+  {
+   "area": "wavelength",
+   "check": "band_o_1270: area 0.093522844 1e-5",
+   "status": "PASS",
+   "detail": "0.0935228, expected 0.0935228, relative error 2.31e-09"
+  },
+  {
+   "area": "wavelength",
+   "check": "band_o_1270: guided yes",
+   "status": "PASS",
+   "detail": "index 2.659805, cladding 1.447300, difference 1.21e+00"
+  },
+  {
+   "area": "wavelength",
+   "check": "band_o_1270: cells 6660",
+   "status": "PASS",
+   "detail": "6660 cells (60 by 111)"
+  },
+  {
+   "area": "independent solution",
+   "check": "band_o_1310: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 3.3e-06 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "band_o_1310: the iteration converged",
+   "status": "PASS",
+   "detail": "20 iterations on 6660 cells"
+  },
+  {
+   "area": "wavelength",
+   "check": "band_o_1310: neff 2.608871511 2e-8",
+   "status": "PASS",
+   "detail": "2.60887151, expected 2.60887151, off by -1.23e-10"
+  },
+  {
+   "area": "wavelength",
+   "check": "band_o_1310: group_index 4.018981708 2e-6",
+   "status": "PASS",
+   "detail": "4.01898171, expected 4.01898171, off by 3.04e-10"
+  },
+  {
+   "area": "wavelength",
+   "check": "band_o_1310: confinement 0.753150064 1e-6",
+   "status": "PASS",
+   "detail": "0.75315006, expected 0.75315006, off by 1.32e-10"
+  },
+  {
+   "area": "wavelength",
+   "check": "band_o_1310: area 0.098694454 1e-5",
+   "status": "PASS",
+   "detail": "0.0986945, expected 0.0986945, relative error -3.98e-09"
+  },
+  {
+   "area": "wavelength",
+   "check": "band_o_1310: guided yes",
+   "status": "PASS",
+   "detail": "index 2.608872, cladding 1.446800, difference 1.16e+00"
+  },
+  {
+   "area": "wavelength",
+   "check": "band_o_1310: cells 6660",
+   "status": "PASS",
+   "detail": "6660 cells (60 by 111)"
+  },
+  {
+   "area": "independent solution",
+   "check": "conv_te_d10: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 9.1e-07 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "conv_te_d10: the iteration converged",
+   "status": "PASS",
+   "detail": "21 iterations on 20160 cells"
+  },
+  {
+   "area": "grid convergence",
+   "check": "conv_te_d10: neff 2.524273955 2e-8",
+   "status": "PASS",
+   "detail": "2.52427395, expected 2.52427395, off by -3.58e-10"
+  },
+  {
+   "area": "grid convergence",
+   "check": "conv_te_d10: group_index 4.099150887 2e-6",
+   "status": "PASS",
+   "detail": "4.09915089, expected 4.09915089, off by -2.12e-10"
+  },
+  {
+   "area": "grid convergence",
+   "check": "conv_te_d10: guided yes",
+   "status": "PASS",
+   "detail": "index 2.524274, cladding 1.444000, difference 1.08e+00"
+  },
+  {
+   "area": "grid convergence",
+   "check": "conv_te_d10: cells 20160",
+   "status": "PASS",
+   "detail": "20160 cells (120 by 168)"
+  },
+  {
+   "area": "independent solution",
+   "check": "conv_te_d12: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 7.6e-07 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "conv_te_d12: the iteration converged",
+   "status": "PASS",
+   "detail": "21 iterations on 14000 cells"
+  },
+  {
+   "area": "grid convergence",
+   "check": "conv_te_d12: neff 2.524762096 2e-8",
+   "status": "PASS",
+   "detail": "2.52476210, expected 2.52476210, off by 1.57e-10"
+  },
+  {
+   "area": "grid convergence",
+   "check": "conv_te_d12: group_index 4.099847798 2e-6",
+   "status": "PASS",
+   "detail": "4.09984780, expected 4.09984780, off by 3.31e-10"
+  },
+  {
+   "area": "grid convergence",
+   "check": "conv_te_d12: guided yes",
+   "status": "PASS",
+   "detail": "index 2.524762, cladding 1.444000, difference 1.08e+00"
+  },
+  {
+   "area": "grid convergence",
+   "check": "conv_te_d12: cells 14000",
+   "status": "PASS",
+   "detail": "14000 cells (100 by 140)"
+  },
+  {
+   "area": "independent solution",
+   "check": "conv_te_d15: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 6.1e-07 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "conv_te_d15: the iteration converged",
+   "status": "PASS",
+   "detail": "21 iterations on 8960 cells"
+  },
+  {
+   "area": "grid convergence",
+   "check": "conv_te_d15: neff 2.525659489 2e-8",
+   "status": "PASS",
+   "detail": "2.52565949, expected 2.52565949, off by 3.42e-10"
+  },
+  {
+   "area": "grid convergence",
+   "check": "conv_te_d15: group_index 4.101124773 2e-6",
+   "status": "PASS",
+   "detail": "4.10112477, expected 4.10112477, off by 2.61e-10"
+  },
+  {
+   "area": "grid convergence",
+   "check": "conv_te_d15: guided yes",
+   "status": "PASS",
+   "detail": "index 2.525659, cladding 1.444000, difference 1.08e+00"
+  },
+  {
+   "area": "grid convergence",
+   "check": "conv_te_d15: cells 8960",
+   "status": "PASS",
+   "detail": "8960 cells (80 by 112)"
+  },
+  {
+   "area": "independent solution",
+   "check": "conv_te_d20: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 4.4e-06 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "conv_te_d20: the iteration converged",
+   "status": "PASS",
+   "detail": "21 iterations on 5040 cells"
+  },
+  {
+   "area": "grid convergence",
+   "check": "conv_te_d20: neff 2.527592889 2e-8",
+   "status": "PASS",
+   "detail": "2.52759289, expected 2.52759289, off by 2.19e-10"
+  },
+  {
+   "area": "grid convergence",
+   "check": "conv_te_d20: group_index 4.103857490 2e-6",
+   "status": "PASS",
+   "detail": "4.10385749, expected 4.10385749, off by -2.51e-10"
+  },
+  {
+   "area": "grid convergence",
+   "check": "conv_te_d20: guided yes",
+   "status": "PASS",
+   "detail": "index 2.527593, cladding 1.444000, difference 1.08e+00"
+  },
+  {
+   "area": "grid convergence",
+   "check": "conv_te_d20: cells 5040",
+   "status": "PASS",
+   "detail": "5040 cells (60 by 84)"
+  },
+  {
+   "area": "independent solution",
+   "check": "conv_te_d30: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 3.1e-06 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "conv_te_d30: the iteration converged",
+   "status": "PASS",
+   "detail": "21 iterations on 2240 cells"
+  },
+  {
+   "area": "grid convergence",
+   "check": "conv_te_d30: neff 2.533076789 2e-8",
+   "status": "PASS",
+   "detail": "2.53307679, expected 2.53307679, off by -2.09e-10"
+  },
+  {
+   "area": "grid convergence",
+   "check": "conv_te_d30: group_index 4.111471625 2e-6",
+   "status": "PASS",
+   "detail": "4.11147163, expected 4.11147163, off by 2.17e-10"
+  },
+  {
+   "area": "grid convergence",
+   "check": "conv_te_d30: guided yes",
+   "status": "PASS",
+   "detail": "index 2.533077, cladding 1.444000, difference 1.09e+00"
+  },
+  {
+   "area": "grid convergence",
+   "check": "conv_te_d30: cells 2240",
+   "status": "PASS",
+   "detail": "2240 cells (40 by 56)"
+  },
+  {
+   "area": "independent solution",
+   "check": "conv_te_d40: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 2.3e-06 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "conv_te_d40: the iteration converged",
+   "status": "PASS",
+   "detail": "21 iterations on 1260 cells"
+  },
+  {
+   "area": "grid convergence",
+   "check": "conv_te_d40: neff 2.540656871 2e-8",
+   "status": "PASS",
+   "detail": "2.54065687, expected 2.54065687, off by 2.37e-10"
+  },
+  {
+   "area": "grid convergence",
+   "check": "conv_te_d40: group_index 4.121662665 2e-6",
+   "status": "PASS",
+   "detail": "4.12166266, expected 4.12166266, off by -8.20e-12"
+  },
+  {
+   "area": "grid convergence",
+   "check": "conv_te_d40: guided yes",
+   "status": "PASS",
+   "detail": "index 2.540657, cladding 1.444000, difference 1.10e+00"
+  },
+  {
+   "area": "grid convergence",
+   "check": "conv_te_d40: cells 1260",
+   "status": "PASS",
+   "detail": "1260 cells (30 by 42)"
+  },
+  {
+   "area": "independent solution",
+   "check": "conv_tm_d10: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 1.1e-06 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "conv_tm_d10: the iteration converged",
+   "status": "PASS",
+   "detail": "31 iterations on 20160 cells"
+  },
+  {
+   "area": "grid convergence",
+   "check": "conv_tm_d10: neff 1.982293965 2e-8",
+   "status": "PASS",
+   "detail": "1.98229397, expected 1.98229396, off by 1.85e-10"
+  },
+  {
+   "area": "grid convergence",
+   "check": "conv_tm_d10: group_index 4.160379098 2e-6",
+   "status": "PASS",
+   "detail": "4.16037910, expected 4.16037910, off by 4.45e-10"
+  },
+  {
+   "area": "grid convergence",
+   "check": "conv_tm_d10: guided yes",
+   "status": "PASS",
+   "detail": "index 1.982294, cladding 1.444000, difference 5.38e-01"
+  },
+  {
+   "area": "grid convergence",
+   "check": "conv_tm_d10: cells 20160",
+   "status": "PASS",
+   "detail": "20160 cells (120 by 168)"
+  },
+  {
+   "area": "independent solution",
+   "check": "conv_tm_d12: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 8.9e-07 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "conv_tm_d12: the iteration converged",
+   "status": "PASS",
+   "detail": "31 iterations on 14000 cells"
+  },
+  {
+   "area": "grid convergence",
+   "check": "conv_tm_d12: neff 1.983040910 2e-8",
+   "status": "PASS",
+   "detail": "1.98304091, expected 1.98304091, off by -1.36e-10"
+  },
+  {
+   "area": "grid convergence",
+   "check": "conv_tm_d12: group_index 4.162358678 2e-6",
+   "status": "PASS",
+   "detail": "4.16235868, expected 4.16235868, off by 4.05e-12"
+  },
+  {
+   "area": "grid convergence",
+   "check": "conv_tm_d12: guided yes",
+   "status": "PASS",
+   "detail": "index 1.983041, cladding 1.444000, difference 5.39e-01"
+  },
+  {
+   "area": "grid convergence",
+   "check": "conv_tm_d12: cells 14000",
+   "status": "PASS",
+   "detail": "14000 cells (100 by 140)"
+  },
+  {
+   "area": "independent solution",
+   "check": "conv_tm_d15: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 7.2e-07 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "conv_tm_d15: the iteration converged",
+   "status": "PASS",
+   "detail": "31 iterations on 8960 cells"
+  },
+  {
+   "area": "grid convergence",
+   "check": "conv_tm_d15: neff 1.984416664 2e-8",
+   "status": "PASS",
+   "detail": "1.98441666, expected 1.98441666, off by -1.13e-10"
+  },
+  {
+   "area": "grid convergence",
+   "check": "conv_tm_d15: group_index 4.165991373 2e-6",
+   "status": "PASS",
+   "detail": "4.16599137, expected 4.16599137, off by 8.22e-11"
+  },
+  {
+   "area": "grid convergence",
+   "check": "conv_tm_d15: guided yes",
+   "status": "PASS",
+   "detail": "index 1.984417, cladding 1.444000, difference 5.40e-01"
+  },
+  {
+   "area": "grid convergence",
+   "check": "conv_tm_d15: cells 8960",
+   "status": "PASS",
+   "detail": "8960 cells (80 by 112)"
+  },
+  {
+   "area": "independent solution",
+   "check": "conv_tm_d20: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 5.5e-07 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "conv_tm_d20: the iteration converged",
+   "status": "PASS",
+   "detail": "31 iterations on 5040 cells"
+  },
+  {
+   "area": "grid convergence",
+   "check": "conv_tm_d20: neff 1.987391982 2e-8",
+   "status": "PASS",
+   "detail": "1.98739198, expected 1.98739198, off by -3.06e-10"
+  },
+  {
+   "area": "grid convergence",
+   "check": "conv_tm_d20: group_index 4.173788856 2e-6",
+   "status": "PASS",
+   "detail": "4.17378886, expected 4.17378886, off by 2.15e-11"
+  },
+  {
+   "area": "grid convergence",
+   "check": "conv_tm_d20: guided yes",
+   "status": "PASS",
+   "detail": "index 1.987392, cladding 1.444000, difference 5.43e-01"
+  },
+  {
+   "area": "grid convergence",
+   "check": "conv_tm_d20: cells 5040",
+   "status": "PASS",
+   "detail": "5040 cells (60 by 84)"
+  },
+  {
+   "area": "independent solution",
+   "check": "conv_tm_d30: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 3.7e-06 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "conv_tm_d30: the iteration converged",
+   "status": "PASS",
+   "detail": "31 iterations on 2240 cells"
+  },
+  {
+   "area": "grid convergence",
+   "check": "conv_tm_d30: neff 1.995914899 2e-8",
+   "status": "PASS",
+   "detail": "1.99591490, expected 1.99591490, off by -1.39e-10"
+  },
+  {
+   "area": "grid convergence",
+   "check": "conv_tm_d30: group_index 4.195683636 2e-6",
+   "status": "PASS",
+   "detail": "4.19568364, expected 4.19568364, off by -5.76e-11"
+  },
+  {
+   "area": "grid convergence",
+   "check": "conv_tm_d30: guided yes",
+   "status": "PASS",
+   "detail": "index 1.995915, cladding 1.444000, difference 5.52e-01"
+  },
+  {
+   "area": "grid convergence",
+   "check": "conv_tm_d30: cells 2240",
+   "status": "PASS",
+   "detail": "2240 cells (40 by 56)"
+  },
+  {
+   "area": "independent solution",
+   "check": "conv_tm_d40: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 2.8e-06 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "conv_tm_d40: the iteration converged",
+   "status": "PASS",
+   "detail": "31 iterations on 1260 cells"
+  },
+  {
+   "area": "grid convergence",
+   "check": "conv_tm_d40: neff 2.007899221 2e-8",
+   "status": "PASS",
+   "detail": "2.00789922, expected 2.00789922, off by 1.42e-10"
+  },
+  {
+   "area": "grid convergence",
+   "check": "conv_tm_d40: group_index 4.225376137 2e-6",
+   "status": "PASS",
+   "detail": "4.22537614, expected 4.22537614, off by -3.66e-11"
+  },
+  {
+   "area": "grid convergence",
+   "check": "conv_tm_d40: guided yes",
+   "status": "PASS",
+   "detail": "index 2.007899, cladding 1.444000, difference 5.64e-01"
+  },
+  {
+   "area": "grid convergence",
+   "check": "conv_tm_d40: cells 1260",
+   "status": "PASS",
+   "detail": "1260 cells (30 by 42)"
+  },
+  {
+   "area": "independent solution",
+   "check": "coupler_rib_gap200: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "13 quantities agree, field within 9.3e-07 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "coupler_rib_gap200: the iteration converged",
+   "status": "PASS",
+   "detail": "24 iterations on 22200 cells"
+  },
+  {
+   "area": "directional couplers",
+   "check": "coupler_rib_gap200: n_even 2.603975148 2e-8",
+   "status": "PASS",
+   "detail": "2.60397515, expected 2.60397515, off by -1.96e-10"
+  },
+  {
+   "area": "directional couplers",
+   "check": "coupler_rib_gap200: n_odd 2.553473559 2e-8",
+   "status": "PASS",
+   "detail": "2.55347356, expected 2.55347356, off by 2.44e-10"
+  },
+  {
+   "area": "directional couplers",
+   "check": "coupler_rib_gap200: splitting 0.050501589 1e-4",
+   "status": "PASS",
+   "detail": "0.0505016, expected 0.0505016, relative error -8.71e-09"
+  },
+  {
+   "area": "directional couplers",
+   "check": "coupler_rib_gap200: coupling_length 15.346051918 1e-4",
+   "status": "PASS",
+   "detail": "15.3461, expected 15.3461, relative error 2.05e-11"
+  },
+  {
+   "area": "directional couplers",
+   "check": "coupler_rib_gap200: guided yes",
+   "status": "PASS",
+   "detail": "index 2.603975, cladding 2.105056, difference 4.99e-01"
+  },
+  {
+   "area": "directional couplers",
+   "check": "coupler_rib_gap200: cells 22200",
+   "status": "PASS",
+   "detail": "22200 cells (100 by 222)"
+  },
+  {
+   "area": "independent solution",
+   "check": "coupler_rib_gap300: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "13 quantities agree, field within 9.2e-07 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "coupler_rib_gap300: the iteration converged",
+   "status": "PASS",
+   "detail": "24 iterations on 22200 cells"
+  },
+  {
+   "area": "directional couplers",
+   "check": "coupler_rib_gap300: n_even 2.591822042 2e-8",
+   "status": "PASS",
+   "detail": "2.59182204, expected 2.59182204, off by -4.08e-10"
+  },
+  {
+   "area": "directional couplers",
+   "check": "coupler_rib_gap300: n_odd 2.564427152 2e-8",
+   "status": "PASS",
+   "detail": "2.56442715, expected 2.56442715, off by -4.48e-10"
+  },
+  {
+   "area": "directional couplers",
+   "check": "coupler_rib_gap300: splitting 0.027394890 1e-4",
+   "status": "PASS",
+   "detail": "0.0273949, expected 0.0273949, relative error 1.49e-09"
+  },
+  {
+   "area": "directional couplers",
+   "check": "coupler_rib_gap300: coupling_length 28.289947463 1e-4",
+   "status": "PASS",
+   "detail": "28.2899, expected 28.2899, relative error -1.01e-11"
+  },
+  {
+   "area": "directional couplers",
+   "check": "coupler_rib_gap300: guided yes",
+   "status": "PASS",
+   "detail": "index 2.591822, cladding 2.105056, difference 4.87e-01"
+  },
+  {
+   "area": "directional couplers",
+   "check": "coupler_rib_gap300: cells 22200",
+   "status": "PASS",
+   "detail": "22200 cells (100 by 222)"
+  },
+  {
+   "area": "independent solution",
+   "check": "coupler_te_gap100: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "13 quantities agree, field within 5.4e-07 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "coupler_te_gap100: the iteration converged",
+   "status": "PASS",
+   "detail": "21 iterations on 8880 cells"
+  },
+  {
+   "area": "directional couplers",
+   "check": "coupler_te_gap100: n_even 2.465027403 2e-8",
+   "status": "PASS",
+   "detail": "2.46502740, expected 2.46502740, off by 4.49e-10"
+  },
+  {
+   "area": "directional couplers",
+   "check": "coupler_te_gap100: n_odd 2.383756732 2e-8",
+   "status": "PASS",
+   "detail": "2.38375673, expected 2.38375673, off by 2.18e-10"
+  },
+  {
+   "area": "directional couplers",
+   "check": "coupler_te_gap100: splitting 0.081270671 1e-4",
+   "status": "PASS",
+   "detail": "0.0812707, expected 0.0812707, relative error 2.84e-09"
+  },
+  {
+   "area": "directional couplers",
+   "check": "coupler_te_gap100: coupling_length 9.536035427 1e-4",
+   "status": "PASS",
+   "detail": "9.53604, expected 9.53604, relative error -4.34e-11"
+  },
+  {
+   "area": "directional couplers",
+   "check": "coupler_te_gap100: guided yes",
+   "status": "PASS",
+   "detail": "index 2.465027, cladding 1.444000, difference 1.02e+00"
+  },
+  {
+   "area": "directional couplers",
+   "check": "coupler_te_gap100: cells 8880",
+   "status": "PASS",
+   "detail": "8880 cells (80 by 111)"
+  },
+  {
+   "area": "independent solution",
+   "check": "coupler_te_gap150: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "13 quantities agree, field within 6.0e-07 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "coupler_te_gap150: the iteration converged",
+   "status": "PASS",
+   "detail": "21 iterations on 8880 cells"
+  },
+  {
+   "area": "directional couplers",
+   "check": "coupler_te_gap150: n_even 2.445241104 2e-8",
+   "status": "PASS",
+   "detail": "2.44524110, expected 2.44524110, off by -3.50e-11"
+  },
+  {
+   "area": "directional couplers",
+   "check": "coupler_te_gap150: n_odd 2.393653379 2e-8",
+   "status": "PASS",
+   "detail": "2.39365338, expected 2.39365338, off by -1.60e-10"
+  },
+  {
+   "area": "directional couplers",
+   "check": "coupler_te_gap150: splitting 0.051587725 1e-4",
+   "status": "PASS",
+   "detail": "0.0515877, expected 0.0515877, relative error 2.42e-09"
+  },
+  {
+   "area": "directional couplers",
+   "check": "coupler_te_gap150: coupling_length 15.022953583 1e-4",
+   "status": "PASS",
+   "detail": "15.023, expected 15.023, relative error -6.47e-12"
+  },
+  {
+   "area": "directional couplers",
+   "check": "coupler_te_gap150: guided yes",
+   "status": "PASS",
+   "detail": "index 2.445241, cladding 1.444000, difference 1.00e+00"
+  },
+  {
+   "area": "directional couplers",
+   "check": "coupler_te_gap150: cells 8880",
+   "status": "PASS",
+   "detail": "8880 cells (80 by 111)"
+  },
+  {
+   "area": "independent solution",
+   "check": "coupler_te_gap200: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "13 quantities agree, field within 5.9e-07 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "coupler_te_gap200: the iteration converged",
+   "status": "PASS",
+   "detail": "22 iterations on 8880 cells"
+  },
+  {
+   "area": "directional couplers",
+   "check": "coupler_te_gap200: n_even 2.434360981 2e-8",
+   "status": "PASS",
+   "detail": "2.43436098, expected 2.43436098, off by 3.05e-10"
+  },
+  {
+   "area": "directional couplers",
+   "check": "coupler_te_gap200: n_odd 2.400953271 2e-8",
+   "status": "PASS",
+   "detail": "2.40095327, expected 2.40095327, off by -2.02e-10"
+  },
+  {
+   "area": "directional couplers",
+   "check": "coupler_te_gap200: splitting 0.033407711 1e-4",
+   "status": "PASS",
+   "detail": "0.0334077, expected 0.0334077, relative error -1.48e-08"
+  },
+  {
+   "area": "directional couplers",
+   "check": "coupler_te_gap200: coupling_length 23.198237421 1e-4",
+   "status": "PASS",
+   "detail": "23.1982, expected 23.1982, relative error -1.98e-11"
+  },
+  {
+   "area": "directional couplers",
+   "check": "coupler_te_gap200: guided yes",
+   "status": "PASS",
+   "detail": "index 2.434361, cladding 1.444000, difference 9.90e-01"
+  },
+  {
+   "area": "directional couplers",
+   "check": "coupler_te_gap200: cells 8880",
+   "status": "PASS",
+   "detail": "8880 cells (80 by 111)"
+  },
+  {
+   "area": "independent solution",
+   "check": "coupler_te_gap250: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "13 quantities agree, field within 5.8e-07 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "coupler_te_gap250: the iteration converged",
+   "status": "PASS",
+   "detail": "22 iterations on 8880 cells"
+  },
+  {
+   "area": "directional couplers",
+   "check": "coupler_te_gap250: n_even 2.427878006 2e-8",
+   "status": "PASS",
+   "detail": "2.42787801, expected 2.42787801, off by -4.55e-10"
+  },
+  {
+   "area": "directional couplers",
+   "check": "coupler_te_gap250: n_odd 2.406095748 2e-8",
+   "status": "PASS",
+   "detail": "2.40609575, expected 2.40609575, off by 1.44e-10"
+  },
+  {
+   "area": "directional couplers",
+   "check": "coupler_te_gap250: splitting 0.021782257 1e-4",
+   "status": "PASS",
+   "detail": "0.0217823, expected 0.0217823, relative error 1.84e-08"
+  },
+  {
+   "area": "directional couplers",
+   "check": "coupler_te_gap250: coupling_length 35.579416116 1e-4",
+   "status": "PASS",
+   "detail": "35.5794, expected 35.5794, relative error -9.78e-12"
+  },
+  {
+   "area": "directional couplers",
+   "check": "coupler_te_gap250: guided yes",
+   "status": "PASS",
+   "detail": "index 2.427878, cladding 1.444000, difference 9.84e-01"
+  },
+  {
+   "area": "directional couplers",
+   "check": "coupler_te_gap250: cells 8880",
+   "status": "PASS",
+   "detail": "8880 cells (80 by 111)"
+  },
+  {
+   "area": "independent solution",
+   "check": "coupler_te_gap300: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "13 quantities agree, field within 5.8e-07 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "coupler_te_gap300: the iteration converged",
+   "status": "PASS",
+   "detail": "23 iterations on 8880 cells"
+  },
+  {
+   "area": "directional couplers",
+   "check": "coupler_te_gap300: n_even 2.423856032 2e-8",
+   "status": "PASS",
+   "detail": "2.42385603, expected 2.42385603, off by -4.69e-10"
+  },
+  {
+   "area": "directional couplers",
+   "check": "coupler_te_gap300: n_odd 2.409611186 2e-8",
+   "status": "PASS",
+   "detail": "2.40961119, expected 2.40961119, off by -2.56e-10"
+  },
+  {
+   "area": "directional couplers",
+   "check": "coupler_te_gap300: splitting 0.014244846 1e-4",
+   "status": "PASS",
+   "detail": "0.0142448, expected 0.0142448, relative error -1.49e-08"
+  },
+  {
+   "area": "directional couplers",
+   "check": "coupler_te_gap300: coupling_length 54.405643387 1e-4",
+   "status": "PASS",
+   "detail": "54.4056, expected 54.4056, relative error 4.42e-12"
+  },
+  {
+   "area": "directional couplers",
+   "check": "coupler_te_gap300: guided yes",
+   "status": "PASS",
+   "detail": "index 2.423856, cladding 1.444000, difference 9.80e-01"
+  },
+  {
+   "area": "directional couplers",
+   "check": "coupler_te_gap300: cells 8880",
+   "status": "PASS",
+   "detail": "8880 cells (80 by 111)"
+  },
+  {
+   "area": "independent solution",
+   "check": "coupler_te_gap400: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "13 quantities agree, field within 5.7e-07 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "coupler_te_gap400: the iteration converged",
+   "status": "PASS",
+   "detail": "23 iterations on 8880 cells"
+  },
+  {
+   "area": "directional couplers",
+   "check": "coupler_te_gap400: n_even 2.419663638 2e-8",
+   "status": "PASS",
+   "detail": "2.41966364, expected 2.41966364, off by 3.18e-10"
+  },
+  {
+   "area": "directional couplers",
+   "check": "coupler_te_gap400: n_odd 2.413539734 2e-8",
+   "status": "PASS",
+   "detail": "2.41353973, expected 2.41353973, off by 9.92e-11"
+  },
+  {
+   "area": "directional couplers",
+   "check": "coupler_te_gap400: splitting 0.006123904 1e-4",
+   "status": "PASS",
+   "detail": "0.0061239, expected 0.0061239, relative error 3.57e-08"
+  },
+  {
+   "area": "directional couplers",
+   "check": "coupler_te_gap400: coupling_length 126.553253014 1e-4",
+   "status": "PASS",
+   "detail": "126.553, expected 126.553, relative error -7.20e-13"
+  },
+  {
+   "area": "directional couplers",
+   "check": "coupler_te_gap400: guided yes",
+   "status": "PASS",
+   "detail": "index 2.419664, cladding 1.444000, difference 9.76e-01"
+  },
+  {
+   "area": "directional couplers",
+   "check": "coupler_te_gap400: cells 8880",
+   "status": "PASS",
+   "detail": "8880 cells (80 by 111)"
+  },
+  {
+   "area": "independent solution",
+   "check": "coupler_tm_gap200: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "13 quantities agree, field within 7.1e-07 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "coupler_tm_gap200: the iteration converged",
+   "status": "PASS",
+   "detail": "38 iterations on 8880 cells"
+  },
+  {
+   "area": "directional couplers",
+   "check": "coupler_tm_gap200: n_even 1.880353781 2e-8",
+   "status": "PASS",
+   "detail": "1.88035378, expected 1.88035378, off by -2.18e-10"
+  },
+  {
+   "area": "directional couplers",
+   "check": "coupler_tm_gap200: n_odd 1.762880032 2e-8",
+   "status": "PASS",
+   "detail": "1.76288003, expected 1.76288003, off by 3.01e-10"
+  },
+  {
+   "area": "directional couplers",
+   "check": "coupler_tm_gap200: splitting 0.117473748 1e-4",
+   "status": "PASS",
+   "detail": "0.117474, expected 0.117474, relative error 4.10e-09"
+  },
+  {
+   "area": "directional couplers",
+   "check": "coupler_tm_gap200: coupling_length 6.597218613 1e-4",
+   "status": "PASS",
+   "detail": "6.59722, expected 6.59722, relative error -2.37e-11"
+  },
+  {
+   "area": "directional couplers",
+   "check": "coupler_tm_gap200: guided yes",
+   "status": "PASS",
+   "detail": "index 1.880354, cladding 1.444000, difference 4.36e-01"
+  },
+  {
+   "area": "directional couplers",
+   "check": "coupler_tm_gap200: cells 8880",
+   "status": "PASS",
+   "detail": "8880 cells (80 by 111)"
+  },
+  {
+   "area": "independent solution",
+   "check": "coupler_tm_gap300: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "13 quantities agree, field within 7.2e-07 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "coupler_tm_gap300: the iteration converged",
+   "status": "PASS",
+   "detail": "39 iterations on 8880 cells"
+  },
+  {
+   "area": "directional couplers",
+   "check": "coupler_tm_gap300: n_even 1.858580968 2e-8",
+   "status": "PASS",
+   "detail": "1.85858097, expected 1.85858097, off by -4.64e-10"
+  },
+  {
+   "area": "directional couplers",
+   "check": "coupler_tm_gap300: n_odd 1.788149442 2e-8",
+   "status": "PASS",
+   "detail": "1.78814944, expected 1.78814944, off by 2.68e-10"
+  },
+  {
+   "area": "directional couplers",
+   "check": "coupler_tm_gap300: splitting 0.070431525 1e-4",
+   "status": "PASS",
+   "detail": "0.0704315, expected 0.0704315, relative error 3.80e-09"
+  },
+  {
+   "area": "directional couplers",
+   "check": "coupler_tm_gap300: coupling_length 11.003595294 1e-4",
+   "status": "PASS",
+   "detail": "11.0036, expected 11.0036, relative error 2.11e-11"
+  },
+  {
+   "area": "directional couplers",
+   "check": "coupler_tm_gap300: guided yes",
+   "status": "PASS",
+   "detail": "index 1.858581, cladding 1.444000, difference 4.15e-01"
+  },
+  {
+   "area": "directional couplers",
+   "check": "coupler_tm_gap300: cells 8880",
+   "status": "PASS",
+   "detail": "8880 cells (80 by 111)"
+  },
+  {
+   "area": "independent solution",
+   "check": "cut_te_d125: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 7.2e-07 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "cut_te_d125: the iteration converged",
+   "status": "PASS",
+   "detail": "23 iterations on 13824 cells"
+  },
+  {
+   "area": "grid convergence",
+   "check": "cut_te_d125: neff 2.410513617 2e-8",
+   "status": "PASS",
+   "detail": "2.41051362, expected 2.41051362, off by 1.19e-11"
+  },
+  {
+   "area": "grid convergence",
+   "check": "cut_te_d125: group_index 4.098639263 2e-6",
+   "status": "PASS",
+   "detail": "4.09863926, expected 4.09863926, off by -9.69e-11"
+  },
+  {
+   "area": "grid convergence",
+   "check": "cut_te_d125: guided yes",
+   "status": "PASS",
+   "detail": "index 2.410514, cladding 1.444000, difference 9.67e-01"
+  },
+  {
+   "area": "grid convergence",
+   "check": "cut_te_d125: cells 13824",
+   "status": "PASS",
+   "detail": "13824 cells (96 by 144)"
+  },
+  {
+   "area": "independent solution",
+   "check": "cut_te_d250: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 3.6e-06 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "cut_te_d250: the iteration converged",
+   "status": "PASS",
+   "detail": "23 iterations on 3456 cells"
+  },
+  {
+   "area": "grid convergence",
+   "check": "cut_te_d250: neff 2.414021680 2e-8",
+   "status": "PASS",
+   "detail": "2.41402168, expected 2.41402168, off by -4.78e-10"
+  },
+  {
+   "area": "grid convergence",
+   "check": "cut_te_d250: group_index 4.103610348 2e-6",
+   "status": "PASS",
+   "detail": "4.10361035, expected 4.10361035, off by 4.72e-10"
+  },
+  {
+   "area": "grid convergence",
+   "check": "cut_te_d250: guided yes",
+   "status": "PASS",
+   "detail": "index 2.414022, cladding 1.444000, difference 9.70e-01"
+  },
+  {
+   "area": "grid convergence",
+   "check": "cut_te_d250: cells 3456",
+   "status": "PASS",
+   "detail": "3456 cells (48 by 72)"
+  },
+  {
+   "area": "independent solution",
+   "check": "cut_te_d400: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 2.2e-06 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "cut_te_d400: the iteration converged",
+   "status": "PASS",
+   "detail": "23 iterations on 1350 cells"
+  },
+  {
+   "area": "grid convergence",
+   "check": "cut_te_d400: neff 2.417578325 2e-8",
+   "status": "PASS",
+   "detail": "2.41757833, expected 2.41757833, off by 1.29e-10"
+  },
+  {
+   "area": "grid convergence",
+   "check": "cut_te_d400: group_index 4.098712889 2e-6",
+   "status": "PASS",
+   "detail": "4.09871289, expected 4.09871289, off by -3.82e-10"
+  },
+  {
+   "area": "grid convergence",
+   "check": "cut_te_d400: guided yes",
+   "status": "PASS",
+   "detail": "index 2.417578, cladding 1.444000, difference 9.74e-01"
+  },
+  {
+   "area": "grid convergence",
+   "check": "cut_te_d400: cells 1350",
+   "status": "PASS",
+   "detail": "1350 cells (30 by 45)"
+  },
+  {
+   "area": "independent solution",
+   "check": "cut_tm_d125: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 8.7e-07 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "cut_tm_d125: the iteration converged",
+   "status": "PASS",
+   "detail": "35 iterations on 13824 cells"
+  },
+  {
+   "area": "grid convergence",
+   "check": "cut_tm_d125: neff 1.827296766 2e-8",
+   "status": "PASS",
+   "detail": "1.82729677, expected 1.82729677, off by -1.80e-10"
+  },
+  {
+   "area": "grid convergence",
+   "check": "cut_tm_d125: group_index 3.741812361 2e-6",
+   "status": "PASS",
+   "detail": "3.74181236, expected 3.74181236, off by -1.68e-10"
+  },
+  {
+   "area": "grid convergence",
+   "check": "cut_tm_d125: guided yes",
+   "status": "PASS",
+   "detail": "index 1.827297, cladding 1.444000, difference 3.83e-01"
+  },
+  {
+   "area": "grid convergence",
+   "check": "cut_tm_d125: cells 13824",
+   "status": "PASS",
+   "detail": "13824 cells (96 by 144)"
+  },
+  {
+   "area": "independent solution",
+   "check": "cut_tm_d250: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 4.4e-06 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "cut_tm_d250: the iteration converged",
+   "status": "PASS",
+   "detail": "35 iterations on 3456 cells"
+  },
+  {
+   "area": "grid convergence",
+   "check": "cut_tm_d250: neff 1.836689325 2e-8",
+   "status": "PASS",
+   "detail": "1.83668932, expected 1.83668933, off by -2.14e-10"
+  },
+  {
+   "area": "grid convergence",
+   "check": "cut_tm_d250: group_index 3.775135634 2e-6",
+   "status": "PASS",
+   "detail": "3.77513563, expected 3.77513563, off by -1.85e-10"
+  },
+  {
+   "area": "grid convergence",
+   "check": "cut_tm_d250: guided yes",
+   "status": "PASS",
+   "detail": "index 1.836689, cladding 1.444000, difference 3.93e-01"
+  },
+  {
+   "area": "grid convergence",
+   "check": "cut_tm_d250: cells 3456",
+   "status": "PASS",
+   "detail": "3456 cells (48 by 72)"
+  },
+  {
+   "area": "independent solution",
+   "check": "cut_tm_d400: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 2.9e-06 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "cut_tm_d400: the iteration converged",
+   "status": "PASS",
+   "detail": "35 iterations on 1350 cells"
+  },
+  {
+   "area": "grid convergence",
+   "check": "cut_tm_d400: neff 1.856271259 2e-8",
+   "status": "PASS",
+   "detail": "1.85627126, expected 1.85627126, off by -3.05e-10"
+  },
+  {
+   "area": "grid convergence",
+   "check": "cut_tm_d400: group_index 3.834664722 2e-6",
+   "status": "PASS",
+   "detail": "3.83466472, expected 3.83466472, off by -3.58e-10"
+  },
+  {
+   "area": "grid convergence",
+   "check": "cut_tm_d400: guided yes",
+   "status": "PASS",
+   "detail": "index 1.856271, cladding 1.444000, difference 4.12e-01"
+  },
+  {
+   "area": "grid convergence",
+   "check": "cut_tm_d400: cells 1350",
+   "status": "PASS",
+   "detail": "1350 cells (30 by 45)"
+  },
+  {
+   "area": "independent solution",
+   "check": "mirror_full: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 5.6e-07 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "mirror_full: the iteration converged",
+   "status": "PASS",
+   "detail": "23 iterations on 8736 cells"
+  },
+  {
+   "area": "window and mirror",
+   "check": "mirror_full: neff 2.416579018 2e-8",
+   "status": "PASS",
+   "detail": "2.41657902, expected 2.41657902, off by -3.09e-10"
+  },
+  {
+   "area": "window and mirror",
+   "check": "mirror_full: confinement 0.670144512 1e-6",
+   "status": "PASS",
+   "detail": "0.67014451, expected 0.67014451, off by 4.46e-10"
+  },
+  {
+   "area": "window and mirror",
+   "check": "mirror_full: area 0.138934825 1e-5",
+   "status": "PASS",
+   "detail": "0.138935, expected 0.138935, relative error 1.60e-09"
+  },
+  {
+   "area": "window and mirror",
+   "check": "mirror_full: rms_x 0.137806657 1e-6",
+   "status": "PASS",
+   "detail": "0.13780666, expected 0.13780666, off by 1.58e-11"
+  },
+  {
+   "area": "window and mirror",
+   "check": "mirror_full: guided yes",
+   "status": "PASS",
+   "detail": "index 2.416579, cladding 1.444000, difference 9.73e-01"
+  },
+  {
+   "area": "window and mirror",
+   "check": "mirror_full: cells 8736",
+   "status": "PASS",
+   "detail": "8736 cells (96 by 91)"
+  },
+  {
+   "area": "independent solution",
+   "check": "mirror_half: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 4.0e-06 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "mirror_half: the iteration converged",
+   "status": "PASS",
+   "detail": "23 iterations on 4368 cells"
+  },
+  {
+   "area": "window and mirror",
+   "check": "mirror_half: neff 2.416579018 2e-8",
+   "status": "PASS",
+   "detail": "2.41657902, expected 2.41657902, off by -3.09e-10"
+  },
+  {
+   "area": "window and mirror",
+   "check": "mirror_half: confinement 0.670144512 1e-6",
+   "status": "PASS",
+   "detail": "0.67014451, expected 0.67014451, off by 4.46e-10"
+  },
+  {
+   "area": "window and mirror",
+   "check": "mirror_half: area 0.138934825 1e-5",
+   "status": "PASS",
+   "detail": "0.138935, expected 0.138935, relative error 1.60e-09"
+  },
+  {
+   "area": "window and mirror",
+   "check": "mirror_half: rms_x 0.137806657 1e-6",
+   "status": "PASS",
+   "detail": "0.13780666, expected 0.13780666, off by 1.58e-11"
+  },
+  {
+   "area": "window and mirror",
+   "check": "mirror_half: guided yes",
+   "status": "PASS",
+   "detail": "index 2.416579, cladding 1.444000, difference 9.73e-01"
+  },
+  {
+   "area": "window and mirror",
+   "check": "mirror_half: cells 4368",
+   "status": "PASS",
+   "detail": "4368 cells (48 by 91)"
+  },
+  {
+   "area": "independent solution",
+   "check": "odd_te_w1000: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 5.5e-07 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "odd_te_w1000: the iteration converged",
+   "status": "PASS",
+   "detail": "22 iterations on 6660 cells"
+  },
+  {
+   "area": "antisymmetric mode",
+   "check": "odd_te_w1000: neff 2.449454091 2e-8",
+   "status": "PASS",
+   "detail": "2.44945409, expected 2.44945409, off by 1.12e-10"
+  },
+  {
+   "area": "antisymmetric mode",
+   "check": "odd_te_w1000: confinement 0.746433251 1e-6",
+   "status": "PASS",
+   "detail": "0.74643325, expected 0.74643325, off by 8.91e-11"
+  },
+  {
+   "area": "antisymmetric mode",
+   "check": "odd_te_w1000: guided yes",
+   "status": "PASS",
+   "detail": "index 2.449454, cladding 1.444000, difference 1.01e+00"
+  },
+  {
+   "area": "antisymmetric mode",
+   "check": "odd_te_w1000: cells 6660",
+   "status": "PASS",
+   "detail": "6660 cells (60 by 111)"
+  },
+  {
+   "area": "independent solution",
+   "check": "odd_te_w400: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 1.3e-06 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "odd_te_w400: the iteration converged",
+   "status": "PASS",
+   "detail": "49 iterations on 6660 cells"
+  },
+  {
+   "area": "antisymmetric mode",
+   "check": "odd_te_w400: neff 1.335863934 2e-8",
+   "status": "PASS",
+   "detail": "1.33586393, expected 1.33586393, off by -4.95e-10"
+  },
+  {
+   "area": "antisymmetric mode",
+   "check": "odd_te_w400: confinement 0.007851557 1e-6",
+   "status": "PASS",
+   "detail": "0.00785156, expected 0.00785156, off by 4.45e-10"
+  },
+  {
+   "area": "antisymmetric mode",
+   "check": "odd_te_w400: guided no",
+   "status": "PASS",
+   "detail": "index 1.335864, cladding 1.444000, difference -1.08e-01"
+  },
+  {
+   "area": "antisymmetric mode",
+   "check": "odd_te_w400: cells 6660",
+   "status": "PASS",
+   "detail": "6660 cells (60 by 111)"
+  },
+  {
+   "area": "independent solution",
+   "check": "odd_te_w500: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 5.9e-07 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "odd_te_w500: the iteration converged",
+   "status": "PASS",
+   "detail": "66 iterations on 6660 cells"
+  },
+  {
+   "area": "antisymmetric mode",
+   "check": "odd_te_w500: neff 1.454724316 2e-8",
+   "status": "PASS",
+   "detail": "1.45472432, expected 1.45472432, off by -2.04e-10"
+  },
+  {
+   "area": "antisymmetric mode",
+   "check": "odd_te_w500: confinement 0.110827779 1e-6",
+   "status": "PASS",
+   "detail": "0.11082778, expected 0.11082778, off by -9.42e-11"
+  },
+  {
+   "area": "antisymmetric mode",
+   "check": "odd_te_w500: guided yes",
+   "status": "PASS",
+   "detail": "index 1.454724, cladding 1.444000, difference 1.07e-02"
+  },
+  {
+   "area": "antisymmetric mode",
+   "check": "odd_te_w500: cells 6660",
+   "status": "PASS",
+   "detail": "6660 cells (60 by 111)"
+  },
+  {
+   "area": "independent solution",
+   "check": "odd_te_w600: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 5.1e-07 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "odd_te_w600: the iteration converged",
+   "status": "PASS",
+   "detail": "46 iterations on 6660 cells"
+  },
+  {
+   "area": "antisymmetric mode",
+   "check": "odd_te_w600: neff 1.765400561 2e-8",
+   "status": "PASS",
+   "detail": "1.76540056, expected 1.76540056, off by 6.14e-11"
+  },
+  {
+   "area": "antisymmetric mode",
+   "check": "odd_te_w600: confinement 0.385692804 1e-6",
+   "status": "PASS",
+   "detail": "0.38569280, expected 0.38569280, off by 1.50e-10"
+  },
+  {
+   "area": "antisymmetric mode",
+   "check": "odd_te_w600: guided yes",
+   "status": "PASS",
+   "detail": "index 1.765401, cladding 1.444000, difference 3.21e-01"
+  },
+  {
+   "area": "antisymmetric mode",
+   "check": "odd_te_w600: cells 6660",
+   "status": "PASS",
+   "detail": "6660 cells (60 by 111)"
+  },
+  {
+   "area": "independent solution",
+   "check": "odd_te_w700: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 5.4e-07 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "odd_te_w700: the iteration converged",
+   "status": "PASS",
+   "detail": "34 iterations on 6660 cells"
+  },
+  {
+   "area": "antisymmetric mode",
+   "check": "odd_te_w700: neff 2.036184502 2e-8",
+   "status": "PASS",
+   "detail": "2.03618450, expected 2.03618450, off by -6.19e-11"
+  },
+  {
+   "area": "antisymmetric mode",
+   "check": "odd_te_w700: confinement 0.568659182 1e-6",
+   "status": "PASS",
+   "detail": "0.56865918, expected 0.56865918, off by -1.62e-10"
+  },
+  {
+   "area": "antisymmetric mode",
+   "check": "odd_te_w700: guided yes",
+   "status": "PASS",
+   "detail": "index 2.036185, cladding 1.444000, difference 5.92e-01"
+  },
+  {
+   "area": "antisymmetric mode",
+   "check": "odd_te_w700: cells 6660",
+   "status": "PASS",
+   "detail": "6660 cells (60 by 111)"
+  },
+  {
+   "area": "independent solution",
+   "check": "odd_te_w800: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 5.2e-07 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "odd_te_w800: the iteration converged",
+   "status": "PASS",
+   "detail": "28 iterations on 6660 cells"
+  },
+  {
+   "area": "antisymmetric mode",
+   "check": "odd_te_w800: neff 2.224450006 2e-8",
+   "status": "PASS",
+   "detail": "2.22445001, expected 2.22445001, off by -2.17e-11"
+  },
+  {
+   "area": "antisymmetric mode",
+   "check": "odd_te_w800: confinement 0.664422235 1e-6",
+   "status": "PASS",
+   "detail": "0.66442224, expected 0.66442223, off by 1.37e-10"
+  },
+  {
+   "area": "antisymmetric mode",
+   "check": "odd_te_w800: guided yes",
+   "status": "PASS",
+   "detail": "index 2.224450, cladding 1.444000, difference 7.80e-01"
+  },
+  {
+   "area": "antisymmetric mode",
+   "check": "odd_te_w800: cells 6660",
+   "status": "PASS",
+   "detail": "6660 cells (60 by 111)"
+  },
+  {
+   "area": "independent solution",
+   "check": "rib_slab130: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 7.0e-07 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "rib_slab130: the iteration converged",
+   "status": "PASS",
+   "detail": "33 iterations on 17760 cells"
+  },
+  {
+   "area": "rib waveguides",
+   "check": "rib_slab130: neff 2.647155839 2e-8",
+   "status": "PASS",
+   "detail": "2.64715584, expected 2.64715584, off by -4.91e-10"
+  },
+  {
+   "area": "rib waveguides",
+   "check": "rib_slab130: group_index 3.793956871 2e-6",
+   "status": "PASS",
+   "detail": "3.79395687, expected 3.79395687, off by -4.71e-10"
+  },
+  {
+   "area": "rib waveguides",
+   "check": "rib_slab130: confinement 0.737868472 1e-6",
+   "status": "PASS",
+   "detail": "0.73786847, expected 0.73786847, off by 1.96e-10"
+  },
+  {
+   "area": "rib waveguides",
+   "check": "rib_slab130: area 0.210074696 1e-5",
+   "status": "PASS",
+   "detail": "0.210075, expected 0.210075, relative error -2.19e-09"
+  },
+  {
+   "area": "rib waveguides",
+   "check": "rib_slab130: rms_x 0.211136750 1e-6",
+   "status": "PASS",
+   "detail": "0.21113675, expected 0.21113675, off by 2.71e-10"
+  },
+  {
+   "area": "rib waveguides",
+   "check": "rib_slab130: guided yes",
+   "status": "PASS",
+   "detail": "index 2.647156, cladding 2.416538, difference 2.31e-01"
+  },
+  {
+   "area": "rib waveguides",
+   "check": "rib_slab130: cells 17760",
+   "status": "PASS",
+   "detail": "17760 cells (80 by 222)"
+  },
+  {
+   "area": "rib waveguides",
+   "check": "rib_slab130: neff_between 2.414845 2.847782",
+   "status": "PASS",
+   "detail": "2.647156, expected between 2.414845 and 2.847782"
+  },
+  {
+   "area": "independent solution",
+   "check": "rib_slab150: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 7.4e-07 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "rib_slab150: the iteration converged",
+   "status": "PASS",
+   "detail": "36 iterations on 17760 cells"
+  },
+  {
+   "area": "rib waveguides",
+   "check": "rib_slab150: neff 2.686242712 2e-8",
+   "status": "PASS",
+   "detail": "2.68624271, expected 2.68624271, off by -2.16e-10"
+  },
+  {
+   "area": "rib waveguides",
+   "check": "rib_slab150: group_index 3.762035656 2e-6",
+   "status": "PASS",
+   "detail": "3.76203566, expected 3.76203566, off by 2.87e-10"
+  },
+  {
+   "area": "rib waveguides",
+   "check": "rib_slab150: confinement 0.751414003 1e-6",
+   "status": "PASS",
+   "detail": "0.75141400, expected 0.75141400, off by -3.77e-10"
+  },
+  {
+   "area": "rib waveguides",
+   "check": "rib_slab150: area 0.241415360 1e-5",
+   "status": "PASS",
+   "detail": "0.241415, expected 0.241415, relative error -1.58e-09"
+  },
+  {
+   "area": "rib waveguides",
+   "check": "rib_slab150: rms_x 0.246388359 1e-6",
+   "status": "PASS",
+   "detail": "0.24638836, expected 0.24638836, off by 4.80e-11"
+  },
+  {
+   "area": "rib waveguides",
+   "check": "rib_slab150: guided yes",
+   "status": "PASS",
+   "detail": "index 2.686243, cladding 2.540898, difference 1.45e-01"
+  },
+  {
+   "area": "rib waveguides",
+   "check": "rib_slab150: cells 17760",
+   "status": "PASS",
+   "detail": "17760 cells (80 by 222)"
+  },
+  {
+   "area": "rib waveguides",
+   "check": "rib_slab150: neff_between 2.539350 2.847782",
+   "status": "PASS",
+   "detail": "2.686243, expected between 2.539350 and 2.847782"
+  },
+  {
+   "area": "independent solution",
+   "check": "rib_slab50: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 6.0e-07 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "rib_slab50: the iteration converged",
+   "status": "PASS",
+   "detail": "23 iterations on 17760 cells"
+  },
+  {
+   "area": "rib waveguides",
+   "check": "rib_slab50: neff 2.526468102 2e-8",
+   "status": "PASS",
+   "detail": "2.52646810, expected 2.52646810, off by 3.40e-10"
+  },
+  {
+   "area": "rib waveguides",
+   "check": "rib_slab50: group_index 3.960221168 2e-6",
+   "status": "PASS",
+   "detail": "3.96022117, expected 3.96022117, off by 9.75e-11"
+  },
+  {
+   "area": "rib waveguides",
+   "check": "rib_slab50: confinement 0.706778937 1e-6",
+   "status": "PASS",
+   "detail": "0.70677894, expected 0.70677894, off by -2.75e-12"
+  },
+  {
+   "area": "rib waveguides",
+   "check": "rib_slab50: area 0.152540683 1e-5",
+   "status": "PASS",
+   "detail": "0.152541, expected 0.152541, relative error -2.25e-10"
+  },
+  {
+   "area": "rib waveguides",
+   "check": "rib_slab50: rms_x 0.149736013 1e-6",
+   "status": "PASS",
+   "detail": "0.14973601, expected 0.14973601, off by -9.67e-11"
+  },
+  {
+   "area": "rib waveguides",
+   "check": "rib_slab50: guided yes",
+   "status": "PASS",
+   "detail": "index 2.526468, cladding 1.730105, difference 7.96e-01"
+  },
+  {
+   "area": "rib waveguides",
+   "check": "rib_slab50: cells 17760",
+   "status": "PASS",
+   "detail": "17760 cells (80 by 222)"
+  },
+  {
+   "area": "rib waveguides",
+   "check": "rib_slab50: neff_between 1.729166 2.847782",
+   "status": "PASS",
+   "detail": "2.526468, expected between 1.729166 and 2.847782"
+  },
+  {
+   "area": "independent solution",
+   "check": "rib_slab90: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 6.3e-07 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "rib_slab90: the iteration converged",
+   "status": "PASS",
+   "detail": "26 iterations on 17760 cells"
+  },
+  {
+   "area": "rib waveguides",
+   "check": "rib_slab90: neff 2.578109901 2e-8",
+   "status": "PASS",
+   "detail": "2.57810990, expected 2.57810990, off by -4.85e-10"
+  },
+  {
+   "area": "rib waveguides",
+   "check": "rib_slab90: group_index 3.873184124 2e-6",
+   "status": "PASS",
+   "detail": "3.87318412, expected 3.87318412, off by 1.16e-10"
+  },
+  {
+   "area": "rib waveguides",
+   "check": "rib_slab90: confinement 0.717004940 1e-6",
+   "status": "PASS",
+   "detail": "0.71700494, expected 0.71700494, off by 2.42e-10"
+  },
+  {
+   "area": "rib waveguides",
+   "check": "rib_slab90: area 0.172916942 1e-5",
+   "status": "PASS",
+   "detail": "0.172917, expected 0.172917, relative error -2.05e-09"
+  },
+  {
+   "area": "rib waveguides",
+   "check": "rib_slab90: rms_x 0.170715316 1e-6",
+   "status": "PASS",
+   "detail": "0.17071532, expected 0.17071532, off by 4.65e-10"
+  },
+  {
+   "area": "rib waveguides",
+   "check": "rib_slab90: guided yes",
+   "status": "PASS",
+   "detail": "index 2.578110, cladding 2.105056, difference 4.73e-01"
+  },
+  {
+   "area": "rib waveguides",
+   "check": "rib_slab90: cells 17760",
+   "status": "PASS",
+   "detail": "17760 cells (80 by 222)"
+  },
+  {
+   "area": "rib waveguides",
+   "check": "rib_slab90: neff_between 2.103273 2.847782",
+   "status": "PASS",
+   "detail": "2.578110, expected between 2.103273 and 2.847782"
+  },
+  {
+   "area": "independent solution",
+   "check": "rib_w1000: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 7.8e-07 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "rib_w1000: the iteration converged",
+   "status": "PASS",
+   "detail": "21 iterations on 17760 cells"
+  },
+  {
+   "area": "rib waveguides",
+   "check": "rib_w1000: neff 2.763878708 2e-8",
+   "status": "PASS",
+   "detail": "2.76387871, expected 2.76387871, off by 4.62e-10"
+  },
+  {
+   "area": "rib waveguides",
+   "check": "rib_w1000: group_index 3.796101067 2e-6",
+   "status": "PASS",
+   "detail": "3.79610107, expected 3.79610107, off by 2.53e-10"
+  },
+  {
+   "area": "rib waveguides",
+   "check": "rib_w1000: confinement 0.796574410 1e-6",
+   "status": "PASS",
+   "detail": "0.79657441, expected 0.79657441, off by -3.96e-10"
+  },
+  {
+   "area": "rib waveguides",
+   "check": "rib_w1000: area 0.234331407 1e-5",
+   "status": "PASS",
+   "detail": "0.234331, expected 0.234331, relative error -1.12e-09"
+  },
+  {
+   "area": "rib waveguides",
+   "check": "rib_w1000: rms_x 0.217909995 1e-6",
+   "status": "PASS",
+   "detail": "0.21791000, expected 0.21790999, off by 1.63e-10"
+  },
+  {
+   "area": "rib waveguides",
+   "check": "rib_w1000: guided yes",
+   "status": "PASS",
+   "detail": "index 2.763879, cladding 2.105056, difference 6.59e-01"
+  },
+  {
+   "area": "rib waveguides",
+   "check": "rib_w1000: cells 17760",
+   "status": "PASS",
+   "detail": "17760 cells (80 by 222)"
+  },
+  {
+   "area": "rib waveguides",
+   "check": "rib_w1000: neff_between 2.103273 2.847782",
+   "status": "PASS",
+   "detail": "2.763879, expected between 2.103273 and 2.847782"
+  },
+  {
+   "area": "independent solution",
+   "check": "rib_w400: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 6.4e-07 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "rib_w400: the iteration converged",
+   "status": "PASS",
+   "detail": "31 iterations on 17760 cells"
+  },
+  {
+   "area": "rib waveguides",
+   "check": "rib_w400: neff 2.478304080 2e-8",
+   "status": "PASS",
+   "detail": "2.47830408, expected 2.47830408, off by 3.71e-10"
+  },
+  {
+   "area": "rib waveguides",
+   "check": "rib_w400: group_index 3.841082635 2e-6",
+   "status": "PASS",
+   "detail": "3.84108264, expected 3.84108263, off by 2.32e-10"
+  },
+  {
+   "area": "rib waveguides",
+   "check": "rib_w400: confinement 0.653428966 1e-6",
+   "status": "PASS",
+   "detail": "0.65342897, expected 0.65342897, off by -6.71e-11"
+  },
+  {
+   "area": "rib waveguides",
+   "check": "rib_w400: area 0.184021898 1e-5",
+   "status": "PASS",
+   "detail": "0.184022, expected 0.184022, relative error -2.03e-10"
+  },
+  {
+   "area": "rib waveguides",
+   "check": "rib_w400: rms_x 0.180419049 1e-6",
+   "status": "PASS",
+   "detail": "0.18041905, expected 0.18041905, off by 1.71e-10"
+  },
+  {
+   "area": "rib waveguides",
+   "check": "rib_w400: guided yes",
+   "status": "PASS",
+   "detail": "index 2.478304, cladding 2.105056, difference 3.73e-01"
+  },
+  {
+   "area": "rib waveguides",
+   "check": "rib_w400: cells 17760",
+   "status": "PASS",
+   "detail": "17760 cells (80 by 222)"
+  },
+  {
+   "area": "rib waveguides",
+   "check": "rib_w400: neff_between 2.103273 2.847782",
+   "status": "PASS",
+   "detail": "2.478304, expected between 2.103273 and 2.847782"
+  },
+  {
+   "area": "independent solution",
+   "check": "rib_w700: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 6.8e-07 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "rib_w700: the iteration converged",
+   "status": "PASS",
+   "detail": "22 iterations on 17760 cells"
+  },
+  {
+   "area": "rib waveguides",
+   "check": "rib_w700: neff 2.690847792 2e-8",
+   "status": "PASS",
+   "detail": "2.69084779, expected 2.69084779, off by -1.28e-10"
+  },
+  {
+   "area": "rib waveguides",
+   "check": "rib_w700: group_index 3.844005626 2e-6",
+   "status": "PASS",
+   "detail": "3.84400563, expected 3.84400563, off by 9.41e-11"
+  },
+  {
+   "area": "rib waveguides",
+   "check": "rib_w700: confinement 0.772074362 1e-6",
+   "status": "PASS",
+   "detail": "0.77207436, expected 0.77207436, off by 3.65e-10"
+  },
+  {
+   "area": "rib waveguides",
+   "check": "rib_w700: area 0.187060171 1e-5",
+   "status": "PASS",
+   "detail": "0.18706, expected 0.18706, relative error 1.28e-09"
+  },
+  {
+   "area": "rib waveguides",
+   "check": "rib_w700: rms_x 0.179534699 1e-6",
+   "status": "PASS",
+   "detail": "0.17953470, expected 0.17953470, off by -2.19e-10"
+  },
+  {
+   "area": "rib waveguides",
+   "check": "rib_w700: guided yes",
+   "status": "PASS",
+   "detail": "index 2.690848, cladding 2.105056, difference 5.86e-01"
+  },
+  {
+   "area": "rib waveguides",
+   "check": "rib_w700: cells 17760",
+   "status": "PASS",
+   "detail": "17760 cells (80 by 222)"
+  },
+  {
+   "area": "rib waveguides",
+   "check": "rib_w700: neff_between 2.103273 2.847782",
+   "status": "PASS",
+   "detail": "2.690848, expected between 2.103273 and 2.847782"
+  },
+  {
+   "area": "independent solution",
+   "check": "scalar_sin: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 3.6e-06 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "scalar_sin: the iteration converged",
+   "status": "PASS",
+   "detail": "18 iterations on 6600 cells"
+  },
+  {
+   "area": "scalar field",
+   "check": "scalar_sin: neff 1.662096332 2e-8",
+   "status": "PASS",
+   "detail": "1.66209633, expected 1.66209633, off by 9.68e-11"
+  },
+  {
+   "area": "scalar field",
+   "check": "scalar_sin: group_index 2.042061284 2e-6",
+   "status": "PASS",
+   "detail": "2.04206128, expected 2.04206128, off by 3.29e-10"
+  },
+  {
+   "area": "scalar field",
+   "check": "scalar_sin: confinement 0.658751049 1e-6",
+   "status": "PASS",
+   "detail": "0.65875105, expected 0.65875105, off by -1.99e-09"
+  },
+  {
+   "area": "scalar field",
+   "check": "scalar_sin: area 0.700728847 1e-5",
+   "status": "PASS",
+   "detail": "0.700729, expected 0.700729, relative error 5.87e-09"
+  },
+  {
+   "area": "scalar field",
+   "check": "scalar_sin: guided yes",
+   "status": "PASS",
+   "detail": "index 1.662096, cladding 1.444000, difference 2.18e-01"
+  },
+  {
+   "area": "scalar field",
+   "check": "scalar_sin: cells 6600",
+   "status": "PASS",
+   "detail": "6600 cells (60 by 110)"
+  },
+  {
+   "area": "independent solution",
+   "check": "scalar_w1000: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 5.6e-07 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "scalar_w1000: the iteration converged",
+   "status": "PASS",
+   "detail": "14 iterations on 6660 cells"
+  },
+  {
+   "area": "scalar field",
+   "check": "scalar_w1000: neff 2.775420060 2e-8",
+   "status": "PASS",
+   "detail": "2.77542006, expected 2.77542006, off by 2.38e-10"
+  },
+  {
+   "area": "scalar field",
+   "check": "scalar_w1000: group_index 3.789256819 2e-6",
+   "status": "PASS",
+   "detail": "3.78925682, expected 3.78925682, off by 4.43e-10"
+  },
+  {
+   "area": "scalar field",
+   "check": "scalar_w1000: confinement 0.805316599 1e-6",
+   "status": "PASS",
+   "detail": "0.80531660, expected 0.80531660, off by -3.44e-10"
+  },
+  {
+   "area": "scalar field",
+   "check": "scalar_w1000: area 0.236896129 1e-5",
+   "status": "PASS",
+   "detail": "0.236896, expected 0.236896, relative error 4.00e-09"
+  },
+  {
+   "area": "scalar field",
+   "check": "scalar_w1000: guided yes",
+   "status": "PASS",
+   "detail": "index 2.775420, cladding 1.444000, difference 1.33e+00"
+  },
+  {
+   "area": "scalar field",
+   "check": "scalar_w1000: cells 6660",
+   "status": "PASS",
+   "detail": "6660 cells (60 by 111)"
+  },
+  {
+   "area": "independent solution",
+   "check": "scalar_w450: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 3.7e-06 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "scalar_w450: the iteration converged",
+   "status": "PASS",
+   "detail": "16 iterations on 6660 cells"
+  },
+  {
+   "area": "scalar field",
+   "check": "scalar_w450: neff 2.579199970 2e-8",
+   "status": "PASS",
+   "detail": "2.57919997, expected 2.57919997, off by 4.58e-10"
+  },
+  {
+   "area": "scalar field",
+   "check": "scalar_w450: group_index 3.881237180 2e-6",
+   "status": "PASS",
+   "detail": "3.88123718, expected 3.88123718, off by -1.94e-10"
+  },
+  {
+   "area": "scalar field",
+   "check": "scalar_w450: confinement 0.756805820 1e-6",
+   "status": "PASS",
+   "detail": "0.75680582, expected 0.75680582, off by -8.46e-11"
+  },
+  {
+   "area": "scalar field",
+   "check": "scalar_w450: area 0.134402781 1e-5",
+   "status": "PASS",
+   "detail": "0.134403, expected 0.134403, relative error 2.30e-09"
+  },
+  {
+   "area": "scalar field",
+   "check": "scalar_w450: guided yes",
+   "status": "PASS",
+   "detail": "index 2.579200, cladding 1.444000, difference 1.14e+00"
+  },
+  {
+   "area": "scalar field",
+   "check": "scalar_w450: cells 6660",
+   "status": "PASS",
+   "detail": "6660 cells (60 by 111)"
+  },
+  {
+   "area": "independent solution",
+   "check": "sin_te_1000x400: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 4.2e-06 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "sin_te_1000x400: the iteration converged",
+   "status": "PASS",
+   "detail": "23 iterations on 6600 cells"
+  },
+  {
+   "area": "silicon nitride",
+   "check": "sin_te_1000x400: neff 1.642009262 2e-8",
+   "status": "PASS",
+   "detail": "1.64200926, expected 1.64200926, off by -8.67e-11"
+  },
+  {
+   "area": "silicon nitride",
+   "check": "sin_te_1000x400: group_index 2.050573714 2e-6",
+   "status": "PASS",
+   "detail": "2.05057371, expected 2.05057371, off by 1.44e-10"
+  },
+  {
+   "area": "silicon nitride",
+   "check": "sin_te_1000x400: confinement 0.616360701 1e-6",
+   "status": "PASS",
+   "detail": "0.61636070, expected 0.61636070, off by -4.45e-10"
+  },
+  {
+   "area": "silicon nitride",
+   "check": "sin_te_1000x400: area 0.729764667 1e-5",
+   "status": "PASS",
+   "detail": "0.729765, expected 0.729765, relative error -6.25e-10"
+  },
+  {
+   "area": "silicon nitride",
+   "check": "sin_te_1000x400: guided yes",
+   "status": "PASS",
+   "detail": "index 1.642009, cladding 1.444000, difference 1.98e-01"
+  },
+  {
+   "area": "silicon nitride",
+   "check": "sin_te_1000x400: cells 6600",
+   "status": "PASS",
+   "detail": "6600 cells (60 by 110)"
+  },
+  {
+   "area": "silicon nitride",
+   "check": "sin_te_1000x400: neff_between 1.444 1.743395",
+   "status": "PASS",
+   "detail": "1.642009, expected between 1.444000 and 1.743395"
+  },
+  {
+   "area": "independent solution",
+   "check": "sin_te_1000x800: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 5.1e-07 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "sin_te_1000x800: the iteration converged",
+   "status": "PASS",
+   "detail": "16 iterations on 6600 cells"
+  },
+  {
+   "area": "silicon nitride",
+   "check": "sin_te_1000x800: neff 1.776278173 2e-8",
+   "status": "PASS",
+   "detail": "1.77627817, expected 1.77627817, off by -9.68e-11"
+  },
+  {
+   "area": "silicon nitride",
+   "check": "sin_te_1000x800: group_index 2.139823638 2e-6",
+   "status": "PASS",
+   "detail": "2.13982364, expected 2.13982364, off by 4.69e-10"
+  },
+  {
+   "area": "silicon nitride",
+   "check": "sin_te_1000x800: confinement 0.833783079 1e-6",
+   "status": "PASS",
+   "detail": "0.83378308, expected 0.83378308, off by -1.82e-10"
+  },
+  {
+   "area": "silicon nitride",
+   "check": "sin_te_1000x800: area 0.801775825 1e-5",
+   "status": "PASS",
+   "detail": "0.801776, expected 0.801776, relative error -5.04e-10"
+  },
+  {
+   "area": "silicon nitride",
+   "check": "sin_te_1000x800: guided yes",
+   "status": "PASS",
+   "detail": "index 1.776278, cladding 1.444000, difference 3.32e-01"
+  },
+  {
+   "area": "silicon nitride",
+   "check": "sin_te_1000x800: cells 6600",
+   "status": "PASS",
+   "detail": "6600 cells (60 by 110)"
+  },
+  {
+   "area": "silicon nitride",
+   "check": "sin_te_1000x800: neff_between 1.444 1.883557",
+   "status": "PASS",
+   "detail": "1.776278, expected between 1.444000 and 1.883557"
+  },
+  {
+   "area": "independent solution",
+   "check": "sin_te_1200x400: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 2.9e-06 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "sin_te_1200x400: the iteration converged",
+   "status": "PASS",
+   "detail": "22 iterations on 6600 cells"
+  },
+  {
+   "area": "silicon nitride",
+   "check": "sin_te_1200x400: neff 1.666834396 2e-8",
+   "status": "PASS",
+   "detail": "1.66683440, expected 1.66683440, off by 3.32e-10"
+  },
+  {
+   "area": "silicon nitride",
+   "check": "sin_te_1200x400: group_index 2.055518722 2e-6",
+   "status": "PASS",
+   "detail": "2.05551872, expected 2.05551872, off by 4.81e-10"
+  },
+  {
+   "area": "silicon nitride",
+   "check": "sin_te_1200x400: confinement 0.656463251 1e-6",
+   "status": "PASS",
+   "detail": "0.65646325, expected 0.65646325, off by 4.75e-11"
+  },
+  {
+   "area": "silicon nitride",
+   "check": "sin_te_1200x400: area 0.765158150 1e-5",
+   "status": "PASS",
+   "detail": "0.765158, expected 0.765158, relative error 5.80e-10"
+  },
+  {
+   "area": "silicon nitride",
+   "check": "sin_te_1200x400: guided yes",
+   "status": "PASS",
+   "detail": "index 1.666834, cladding 1.444000, difference 2.23e-01"
+  },
+  {
+   "area": "silicon nitride",
+   "check": "sin_te_1200x400: cells 6600",
+   "status": "PASS",
+   "detail": "6600 cells (60 by 110)"
+  },
+  {
+   "area": "silicon nitride",
+   "check": "sin_te_1200x400: neff_between 1.444 1.743395",
+   "status": "PASS",
+   "detail": "1.666834, expected between 1.444000 and 1.743395"
+  },
+  {
+   "area": "independent solution",
+   "check": "sin_te_1600x400: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 5.3e-07 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "sin_te_1600x400: the iteration converged",
+   "status": "PASS",
+   "detail": "20 iterations on 6600 cells"
+  },
+  {
+   "area": "silicon nitride",
+   "check": "sin_te_1600x400: neff 1.695928329 2e-8",
+   "status": "PASS",
+   "detail": "1.69592833, expected 1.69592833, off by 3.07e-10"
+  },
+  {
+   "area": "silicon nitride",
+   "check": "sin_te_1600x400: group_index 2.051384812 2e-6",
+   "status": "PASS",
+   "detail": "2.05138481, expected 2.05138481, off by 2.73e-10"
+  },
+  {
+   "area": "silicon nitride",
+   "check": "sin_te_1600x400: confinement 0.693245459 1e-6",
+   "status": "PASS",
+   "detail": "0.69324546, expected 0.69324546, off by -4.20e-11"
+  },
+  {
+   "area": "silicon nitride",
+   "check": "sin_te_1600x400: area 0.891345475 1e-5",
+   "status": "PASS",
+   "detail": "0.891345, expected 0.891345, relative error -3.42e-10"
+  },
+  {
+   "area": "silicon nitride",
+   "check": "sin_te_1600x400: guided yes",
+   "status": "PASS",
+   "detail": "index 1.695928, cladding 1.444000, difference 2.52e-01"
+  },
+  {
+   "area": "silicon nitride",
+   "check": "sin_te_1600x400: cells 6600",
+   "status": "PASS",
+   "detail": "6600 cells (60 by 110)"
+  },
+  {
+   "area": "silicon nitride",
+   "check": "sin_te_1600x400: neff_between 1.444 1.743395",
+   "status": "PASS",
+   "detail": "1.695928, expected between 1.444000 and 1.743395"
+  },
+  {
+   "area": "independent solution",
+   "check": "sin_te_1600x800: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 5.9e-07 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "sin_te_1600x800: the iteration converged",
+   "status": "PASS",
+   "detail": "14 iterations on 6600 cells"
+  },
+  {
+   "area": "silicon nitride",
+   "check": "sin_te_1600x800: neff 1.835281890 2e-8",
+   "status": "PASS",
+   "detail": "1.83528189, expected 1.83528189, off by 2.90e-10"
+  },
+  {
+   "area": "silicon nitride",
+   "check": "sin_te_1600x800: group_index 2.113997784 2e-6",
+   "status": "PASS",
+   "detail": "2.11399778, expected 2.11399778, off by 6.76e-11"
+  },
+  {
+   "area": "silicon nitride",
+   "check": "sin_te_1600x800: confinement 0.898450042 1e-6",
+   "status": "PASS",
+   "detail": "0.89845004, expected 0.89845004, off by -4.96e-10"
+  },
+  {
+   "area": "silicon nitride",
+   "check": "sin_te_1600x800: area 1.049371760 1e-5",
+   "status": "PASS",
+   "detail": "1.04937, expected 1.04937, relative error -1.55e-10"
+  },
+  {
+   "area": "silicon nitride",
+   "check": "sin_te_1600x800: guided yes",
+   "status": "PASS",
+   "detail": "index 1.835282, cladding 1.444000, difference 3.91e-01"
+  },
+  {
+   "area": "silicon nitride",
+   "check": "sin_te_1600x800: cells 6600",
+   "status": "PASS",
+   "detail": "6600 cells (60 by 110)"
+  },
+  {
+   "area": "silicon nitride",
+   "check": "sin_te_1600x800: neff_between 1.444 1.883557",
+   "status": "PASS",
+   "detail": "1.835282, expected between 1.444000 and 1.883557"
+  },
+  {
+   "area": "independent solution",
+   "check": "sin_te_800x400: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 4.0e-06 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "sin_te_800x400: the iteration converged",
+   "status": "PASS",
+   "detail": "27 iterations on 6600 cells"
+  },
+  {
+   "area": "silicon nitride",
+   "check": "sin_te_800x400: neff 1.604740159 2e-8",
+   "status": "PASS",
+   "detail": "1.60474016, expected 1.60474016, off by -7.58e-11"
+  },
+  {
+   "area": "silicon nitride",
+   "check": "sin_te_800x400: group_index 2.026321601 2e-6",
+   "status": "PASS",
+   "detail": "2.02632160, expected 2.02632160, off by 6.87e-11"
+  },
+  {
+   "area": "silicon nitride",
+   "check": "sin_te_800x400: confinement 0.541541421 1e-6",
+   "status": "PASS",
+   "detail": "0.54154142, expected 0.54154142, off by 4.25e-10"
+  },
+  {
+   "area": "silicon nitride",
+   "check": "sin_te_800x400: area 0.745068701 1e-5",
+   "status": "PASS",
+   "detail": "0.745069, expected 0.745069, relative error -2.57e-10"
+  },
+  {
+   "area": "silicon nitride",
+   "check": "sin_te_800x400: guided yes",
+   "status": "PASS",
+   "detail": "index 1.604740, cladding 1.444000, difference 1.61e-01"
+  },
+  {
+   "area": "silicon nitride",
+   "check": "sin_te_800x400: cells 6600",
+   "status": "PASS",
+   "detail": "6600 cells (60 by 110)"
+  },
+  {
+   "area": "silicon nitride",
+   "check": "sin_te_800x400: neff_between 1.444 1.743395",
+   "status": "PASS",
+   "detail": "1.604740, expected between 1.444000 and 1.743395"
+  },
+  {
+   "area": "independent solution",
+   "check": "sin_tm_1000x400: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 5.7e-07 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "sin_tm_1000x400: the iteration converged",
+   "status": "PASS",
+   "detail": "30 iterations on 6600 cells"
+  },
+  {
+   "area": "silicon nitride",
+   "check": "sin_tm_1000x400: neff 1.570205664 2e-8",
+   "status": "PASS",
+   "detail": "1.57020566, expected 1.57020566, off by 4.83e-10"
+  },
+  {
+   "area": "silicon nitride",
+   "check": "sin_tm_1000x400: group_index 1.955993741 2e-6",
+   "status": "PASS",
+   "detail": "1.95599374, expected 1.95599374, off by -1.83e-10"
+  },
+  {
+   "area": "silicon nitride",
+   "check": "sin_tm_1000x400: confinement 0.361297794 1e-6",
+   "status": "PASS",
+   "detail": "0.36129779, expected 0.36129779, off by -3.98e-10"
+  },
+  {
+   "area": "silicon nitride",
+   "check": "sin_tm_1000x400: area 1.218400028 1e-5",
+   "status": "PASS",
+   "detail": "1.2184, expected 1.2184, relative error 2.85e-10"
+  },
+  {
+   "area": "silicon nitride",
+   "check": "sin_tm_1000x400: guided yes",
+   "status": "PASS",
+   "detail": "index 1.570206, cladding 1.444000, difference 1.26e-01"
+  },
+  {
+   "area": "silicon nitride",
+   "check": "sin_tm_1000x400: cells 6600",
+   "status": "PASS",
+   "detail": "6600 cells (60 by 110)"
+  },
+  {
+   "area": "silicon nitride",
+   "check": "sin_tm_1000x400: neff_between 1.444 1.641680",
+   "status": "PASS",
+   "detail": "1.570206, expected between 1.444000 and 1.641680"
+  },
+  {
+   "area": "independent solution",
+   "check": "sin_tm_1600x800: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 6.1e-07 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "sin_tm_1600x800: the iteration converged",
+   "status": "PASS",
+   "detail": "16 iterations on 6600 cells"
+  },
+  {
+   "area": "silicon nitride",
+   "check": "sin_tm_1600x800: neff 1.804214515 2e-8",
+   "status": "PASS",
+   "detail": "1.80421452, expected 1.80421451, off by 1.48e-10"
+  },
+  {
+   "area": "silicon nitride",
+   "check": "sin_tm_1600x800: group_index 2.140247306 2e-6",
+   "status": "PASS",
+   "detail": "2.14024731, expected 2.14024731, off by -9.59e-11"
+  },
+  {
+   "area": "silicon nitride",
+   "check": "sin_tm_1600x800: confinement 0.837686168 1e-6",
+   "status": "PASS",
+   "detail": "0.83768617, expected 0.83768617, off by -4.62e-10"
+  },
+  {
+   "area": "silicon nitride",
+   "check": "sin_tm_1600x800: area 1.171225594 1e-5",
+   "status": "PASS",
+   "detail": "1.17123, expected 1.17123, relative error 3.32e-10"
+  },
+  {
+   "area": "silicon nitride",
+   "check": "sin_tm_1600x800: guided yes",
+   "status": "PASS",
+   "detail": "index 1.804215, cladding 1.444000, difference 3.60e-01"
+  },
+  {
+   "area": "silicon nitride",
+   "check": "sin_tm_1600x800: cells 6600",
+   "status": "PASS",
+   "detail": "6600 cells (60 by 110)"
+  },
+  {
+   "area": "silicon nitride",
+   "check": "sin_tm_1600x800: neff_between 1.444 1.844650",
+   "status": "PASS",
+   "detail": "1.804215, expected between 1.444000 and 1.844650"
+  },
+  {
+   "area": "independent solution",
+   "check": "slablimit_si220_te: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 3.4e-06 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "slablimit_si220_te: the iteration converged",
+   "status": "PASS",
+   "detail": "52 iterations on 10480 cells"
+  },
+  {
+   "area": "slab limit",
+   "check": "slablimit_si220_te: neff 2.847156237 2e-8",
+   "status": "PASS",
+   "detail": "2.84715624, expected 2.84715624, off by 1.04e-10"
+  },
+  {
+   "area": "slab limit",
+   "check": "slablimit_si220_te: confinement 0.811109429 1e-6",
+   "status": "PASS",
+   "detail": "0.81110943, expected 0.81110943, off by 4.55e-10"
+  },
+  {
+   "area": "slab limit",
+   "check": "slablimit_si220_te: guided no",
+   "status": "PASS",
+   "detail": "index 2.847156, cladding 2.848804, difference -1.65e-03"
+  },
+  {
+   "area": "slab limit",
+   "check": "slablimit_si220_te: cells 10480",
+   "status": "PASS",
+   "detail": "10480 cells (40 by 262)"
+  },
+  {
+   "area": "slab limit",
+   "check": "slablimit_si220_te: neff 2.846134 1.5e-3",
+   "status": "PASS",
+   "detail": "2.84715624, expected 2.84613400, off by 1.02e-03"
+  },
+  {
+   "area": "independent solution",
+   "check": "slablimit_si220_tm: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 3.7e-06 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "slablimit_si220_tm: the iteration converged",
+   "status": "PASS",
+   "detail": "85 iterations on 10480 cells"
+  },
+  {
+   "area": "slab limit",
+   "check": "slablimit_si220_tm: neff 2.052895378 2e-8",
+   "status": "PASS",
+   "detail": "2.05289538, expected 2.05289538, off by -3.96e-10"
+  },
+  {
+   "area": "slab limit",
+   "check": "slablimit_si220_tm: confinement 0.196272117 1e-6",
+   "status": "PASS",
+   "detail": "0.19627212, expected 0.19627212, off by -3.56e-11"
+  },
+  {
+   "area": "slab limit",
+   "check": "slablimit_si220_tm: guided no",
+   "status": "PASS",
+   "detail": "index 2.052895, cladding 2.055180, difference -2.28e-03"
+  },
+  {
+   "area": "slab limit",
+   "check": "slablimit_si220_tm: cells 10480",
+   "status": "PASS",
+   "detail": "10480 cells (40 by 262)"
+  },
+  {
+   "area": "slab limit",
+   "check": "slablimit_si220_tm: neff 2.051033 3e-3",
+   "status": "PASS",
+   "detail": "2.05289538, expected 2.05103300, off by 1.86e-03"
+  },
+  {
+   "area": "independent solution",
+   "check": "slablimit_si340_te: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 3.1e-06 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "slablimit_si340_te: the iteration converged",
+   "status": "PASS",
+   "detail": "42 iterations on 10960 cells"
+  },
+  {
+   "area": "slab limit",
+   "check": "slablimit_si340_te: neff 3.114837477 2e-8",
+   "status": "PASS",
+   "detail": "3.11483748, expected 3.11483748, off by -2.86e-10"
+  },
+  {
+   "area": "slab limit",
+   "check": "slablimit_si340_te: confinement 0.918531839 1e-6",
+   "status": "PASS",
+   "detail": "0.91853184, expected 0.91853184, off by -9.28e-11"
+  },
+  {
+   "area": "slab limit",
+   "check": "slablimit_si340_te: guided no",
+   "status": "PASS",
+   "detail": "index 3.114837, cladding 3.116343, difference -1.51e-03"
+  },
+  {
+   "area": "slab limit",
+   "check": "slablimit_si340_te: cells 10960",
+   "status": "PASS",
+   "detail": "10960 cells (40 by 274)"
+  },
+  {
+   "area": "slab limit",
+   "check": "slablimit_si340_te: neff 3.114346 1.5e-3",
+   "status": "PASS",
+   "detail": "3.11483748, expected 3.11434600, off by 4.91e-04"
+  },
+  {
+   "area": "independent solution",
+   "check": "slablimit_si340_tm: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 3.8e-06 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "slablimit_si340_tm: the iteration converged",
+   "status": "PASS",
+   "detail": "54 iterations on 10960 cells"
+  },
+  {
+   "area": "slab limit",
+   "check": "slablimit_si340_tm: neff 2.795094659 2e-8",
+   "status": "PASS",
+   "detail": "2.79509466, expected 2.79509466, off by 4.77e-10"
+  },
+  {
+   "area": "slab limit",
+   "check": "slablimit_si340_tm: confinement 0.714919426 1e-6",
+   "status": "PASS",
+   "detail": "0.71491943, expected 0.71491943, off by -3.15e-10"
+  },
+  {
+   "area": "slab limit",
+   "check": "slablimit_si340_tm: guided no",
+   "status": "PASS",
+   "detail": "index 2.795095, cladding 2.796773, difference -1.68e-03"
+  },
+  {
+   "area": "slab limit",
+   "check": "slablimit_si340_tm: cells 10960",
+   "status": "PASS",
+   "detail": "10960 cells (40 by 274)"
+  },
+  {
+   "area": "slab limit",
+   "check": "slablimit_si340_tm: neff 2.794445 3e-3",
+   "status": "PASS",
+   "detail": "2.79509466, expected 2.79444500, off by 6.50e-04"
+  },
+  {
+   "area": "independent solution",
+   "check": "slablimit_sin400_te: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 1.8e-06 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "slablimit_sin400_te: the iteration converged",
+   "status": "PASS",
+   "detail": "32 iterations on 11200 cells"
+  },
+  {
+   "area": "slab limit",
+   "check": "slablimit_sin400_te: neff 1.740753831 2e-8",
+   "status": "PASS",
+   "detail": "1.74075383, expected 1.74075383, off by 2.68e-10"
+  },
+  {
+   "area": "slab limit",
+   "check": "slablimit_sin400_te: confinement 0.722887148 1e-6",
+   "status": "PASS",
+   "detail": "0.72288715, expected 0.72288715, off by -1.86e-10"
+  },
+  {
+   "area": "slab limit",
+   "check": "slablimit_sin400_te: guided no",
+   "status": "PASS",
+   "detail": "index 1.740754, cladding 1.743447, difference -2.69e-03"
+  },
+  {
+   "area": "slab limit",
+   "check": "slablimit_sin400_te: cells 11200",
+   "status": "PASS",
+   "detail": "11200 cells (40 by 280)"
+  },
+  {
+   "area": "slab limit",
+   "check": "slablimit_sin400_te: neff 1.740701 1.5e-3",
+   "status": "PASS",
+   "detail": "1.74075383, expected 1.74070100, off by 5.28e-05"
+  },
+  {
+   "area": "independent solution",
+   "check": "slablimit_sin400_tm: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 2.1e-06 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "slablimit_sin400_tm: the iteration converged",
+   "status": "PASS",
+   "detail": "36 iterations on 11200 cells"
+  },
+  {
+   "area": "slab limit",
+   "check": "slablimit_sin400_tm: neff 1.638750262 2e-8",
+   "status": "PASS",
+   "detail": "1.63875026, expected 1.63875026, off by -4.41e-10"
+  },
+  {
+   "area": "slab limit",
+   "check": "slablimit_sin400_tm: confinement 0.420781197 1e-6",
+   "status": "PASS",
+   "detail": "0.42078120, expected 0.42078120, off by 6.06e-11"
+  },
+  {
+   "area": "slab limit",
+   "check": "slablimit_sin400_tm: guided no",
+   "status": "PASS",
+   "detail": "index 1.638750, cladding 1.641611, difference -2.86e-03"
+  },
+  {
+   "area": "slab limit",
+   "check": "slablimit_sin400_tm: cells 11200",
+   "status": "PASS",
+   "detail": "11200 cells (40 by 280)"
+  },
+  {
+   "area": "slab limit",
+   "check": "slablimit_sin400_tm: neff 1.638820 3e-3",
+   "status": "PASS",
+   "detail": "1.63875026, expected 1.63882000, off by -6.97e-05"
+  },
+  {
+   "area": "independent solution",
+   "check": "slot_gap100: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 5.3e-07 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "slot_gap100: the iteration converged",
+   "status": "PASS",
+   "detail": "37 iterations on 16650 cells"
+  },
+  {
+   "area": "slot waveguides",
+   "check": "slot_gap100: neff 1.836997358 2e-8",
+   "status": "PASS",
+   "detail": "1.83699736, expected 1.83699736, off by -1.79e-10"
+  },
+  {
+   "area": "slot waveguides",
+   "check": "slot_gap100: group_index 3.076635756 2e-6",
+   "status": "PASS",
+   "detail": "3.07663576, expected 3.07663576, off by 3.18e-10"
+  },
+  {
+   "area": "slot waveguides",
+   "check": "slot_gap100: confinement 0.162556559 1e-6",
+   "status": "PASS",
+   "detail": "0.16255656, expected 0.16255656, off by -3.35e-10"
+  },
+  {
+   "area": "slot waveguides",
+   "check": "slot_gap100: area 0.139742517 1e-5",
+   "status": "PASS",
+   "detail": "0.139743, expected 0.139743, relative error -1.73e-09"
+  },
+  {
+   "area": "slot waveguides",
+   "check": "slot_gap100: guided yes",
+   "status": "PASS",
+   "detail": "index 1.836997, cladding 1.444000, difference 3.93e-01"
+  },
+  {
+   "area": "slot waveguides",
+   "check": "slot_gap100: cells 16650",
+   "status": "PASS",
+   "detail": "16650 cells (150 by 111)"
+  },
+  {
+   "area": "independent solution",
+   "check": "slot_gap140: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 6.4e-07 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "slot_gap140: the iteration converged",
+   "status": "PASS",
+   "detail": "40 iterations on 16650 cells"
+  },
+  {
+   "area": "slot waveguides",
+   "check": "slot_gap140: neff 1.788002103 2e-8",
+   "status": "PASS",
+   "detail": "1.78800210, expected 1.78800210, off by 3.67e-12"
+  },
+  {
+   "area": "slot waveguides",
+   "check": "slot_gap140: group_index 2.979180137 2e-6",
+   "status": "PASS",
+   "detail": "2.97918014, expected 2.97918014, off by -1.01e-10"
+  },
+  {
+   "area": "slot waveguides",
+   "check": "slot_gap140: confinement 0.145792063 1e-6",
+   "status": "PASS",
+   "detail": "0.14579206, expected 0.14579206, off by -1.03e-11"
+  },
+  {
+   "area": "slot waveguides",
+   "check": "slot_gap140: area 0.207497277 1e-5",
+   "status": "PASS",
+   "detail": "0.207497, expected 0.207497, relative error -2.40e-09"
+  },
+  {
+   "area": "slot waveguides",
+   "check": "slot_gap140: guided yes",
+   "status": "PASS",
+   "detail": "index 1.788002, cladding 1.444000, difference 3.44e-01"
+  },
+  {
+   "area": "slot waveguides",
+   "check": "slot_gap140: cells 16650",
+   "status": "PASS",
+   "detail": "16650 cells (150 by 111)"
+  },
+  {
+   "area": "independent solution",
+   "check": "slot_gap60: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 4.0e-06 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "slot_gap60: the iteration converged",
+   "status": "PASS",
+   "detail": "34 iterations on 16650 cells"
+  },
+  {
+   "area": "slot waveguides",
+   "check": "slot_gap60: neff 1.919065887 2e-8",
+   "status": "PASS",
+   "detail": "1.91906589, expected 1.91906589, off by 4.24e-10"
+  },
+  {
+   "area": "slot waveguides",
+   "check": "slot_gap60: group_index 3.233417250 2e-6",
+   "status": "PASS",
+   "detail": "3.23341725, expected 3.23341725, off by -1.57e-10"
+  },
+  {
+   "area": "slot waveguides",
+   "check": "slot_gap60: confinement 0.192841813 1e-6",
+   "status": "PASS",
+   "detail": "0.19284181, expected 0.19284181, off by -2.67e-10"
+  },
+  {
+   "area": "slot waveguides",
+   "check": "slot_gap60: area 0.076758041 1e-5",
+   "status": "PASS",
+   "detail": "0.076758, expected 0.076758, relative error 1.65e-09"
+  },
+  {
+   "area": "slot waveguides",
+   "check": "slot_gap60: guided yes",
+   "status": "PASS",
+   "detail": "index 1.919066, cladding 1.444000, difference 4.75e-01"
+  },
+  {
+   "area": "slot waveguides",
+   "check": "slot_gap60: cells 16650",
+   "status": "PASS",
+   "detail": "16650 cells (150 by 111)"
+  },
+  {
+   "area": "independent solution",
+   "check": "strip_air_w400: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 3.7e-06 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "strip_air_w400: the iteration converged",
+   "status": "PASS",
+   "detail": "26 iterations on 6660 cells"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_air_w400: neff 2.233790725 2e-8",
+   "status": "PASS",
+   "detail": "2.23379072, expected 2.23379072, off by -4.31e-10"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_air_w400: group_index 4.331011944 2e-6",
+   "status": "PASS",
+   "detail": "4.33101194, expected 4.33101194, off by -2.50e-10"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_air_w400: confinement 0.619095546 1e-6",
+   "status": "PASS",
+   "detail": "0.61909555, expected 0.61909555, off by -2.08e-10"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_air_w400: area 0.134865082 1e-5",
+   "status": "PASS",
+   "detail": "0.134865, expected 0.134865, relative error -2.80e-10"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_air_w400: guided yes",
+   "status": "PASS",
+   "detail": "index 2.233791, cladding 1.444000, difference 7.90e-01"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_air_w400: cells 6660",
+   "status": "PASS",
+   "detail": "6660 cells (60 by 111)"
+  },
+  {
+   "area": "independent solution",
+   "check": "strip_air_w500: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 4.0e-06 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "strip_air_w500: the iteration converged",
+   "status": "PASS",
+   "detail": "22 iterations on 6660 cells"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_air_w500: neff 2.444661146 2e-8",
+   "status": "PASS",
+   "detail": "2.44466115, expected 2.44466115, off by -3.50e-10"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_air_w500: group_index 4.160793001 2e-6",
+   "status": "PASS",
+   "detail": "4.16079300, expected 4.16079300, off by 3.25e-10"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_air_w500: confinement 0.721304741 1e-6",
+   "status": "PASS",
+   "detail": "0.72130474, expected 0.72130474, off by 3.81e-10"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_air_w500: area 0.130680718 1e-5",
+   "status": "PASS",
+   "detail": "0.130681, expected 0.130681, relative error 1.04e-09"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_air_w500: guided yes",
+   "status": "PASS",
+   "detail": "index 2.444661, cladding 1.444000, difference 1.00e+00"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_air_w500: cells 6660",
+   "status": "PASS",
+   "detail": "6660 cells (60 by 111)"
+  },
+  {
+   "area": "independent solution",
+   "check": "strip_te_h180: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 3.9e-06 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "strip_te_h180: the iteration converged",
+   "status": "PASS",
+   "detail": "26 iterations on 6660 cells"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_h180: neff 2.260916499 2e-8",
+   "status": "PASS",
+   "detail": "2.26091650, expected 2.26091650, off by 3.45e-10"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_h180: group_index 3.979560621 2e-6",
+   "status": "PASS",
+   "detail": "3.97956062, expected 3.97956062, off by 9.44e-11"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_h180: confinement 0.588777507 1e-6",
+   "status": "PASS",
+   "detail": "0.58877751, expected 0.58877751, off by -3.62e-10"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_h180: area 0.143711574 1e-5",
+   "status": "PASS",
+   "detail": "0.143712, expected 0.143712, relative error 2.86e-09"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_h180: guided yes",
+   "status": "PASS",
+   "detail": "index 2.260916, cladding 1.444000, difference 8.17e-01"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_h180: cells 6660",
+   "status": "PASS",
+   "detail": "6660 cells (60 by 111)"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_h180: neff_between 1.444 2.692573",
+   "status": "PASS",
+   "detail": "2.260916, expected between 1.444000 and 2.692573"
+  },
+  {
+   "area": "independent solution",
+   "check": "strip_te_h260: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 3.7e-06 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "strip_te_h260: the iteration converged",
+   "status": "PASS",
+   "detail": "22 iterations on 6660 cells"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_h260: neff 2.534153258 2e-8",
+   "status": "PASS",
+   "detail": "2.53415326, expected 2.53415326, off by 1.73e-10"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_h260: group_index 4.157002848 2e-6",
+   "status": "PASS",
+   "detail": "4.15700285, expected 4.15700285, off by -2.23e-10"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_h260: confinement 0.725404244 1e-6",
+   "status": "PASS",
+   "detail": "0.72540424, expected 0.72540424, off by 3.46e-10"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_h260: area 0.140483837 1e-5",
+   "status": "PASS",
+   "detail": "0.140484, expected 0.140484, relative error -3.16e-10"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_h260: guided yes",
+   "status": "PASS",
+   "detail": "index 2.534153, cladding 1.444000, difference 1.09e+00"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_h260: cells 6660",
+   "status": "PASS",
+   "detail": "6660 cells (60 by 111)"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_h260: neff_between 1.444 2.962557",
+   "status": "PASS",
+   "detail": "2.534153, expected between 1.444000 and 2.962557"
+  },
+  {
+   "area": "independent solution",
+   "check": "strip_te_h300: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 4.0e-06 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "strip_te_h300: the iteration converged",
+   "status": "PASS",
+   "detail": "20 iterations on 6660 cells"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_h300: neff 2.624055651 2e-8",
+   "status": "PASS",
+   "detail": "2.62405565, expected 2.62405565, off by -3.23e-11"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_h300: group_index 4.177303071 2e-6",
+   "status": "PASS",
+   "detail": "4.17730307, expected 4.17730307, off by -4.12e-10"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_h300: confinement 0.763713856 1e-6",
+   "status": "PASS",
+   "detail": "0.76371386, expected 0.76371386, off by 3.91e-10"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_h300: area 0.145216054 1e-5",
+   "status": "PASS",
+   "detail": "0.145216, expected 0.145216, relative error -1.54e-09"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_h300: guided yes",
+   "status": "PASS",
+   "detail": "index 2.624056, cladding 1.444000, difference 1.18e+00"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_h300: cells 6660",
+   "status": "PASS",
+   "detail": "6660 cells (60 by 111)"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_h300: neff_between 1.444 3.049161",
+   "status": "PASS",
+   "detail": "2.624056, expected between 1.444000 and 3.049161"
+  },
+  {
+   "area": "independent solution",
+   "check": "strip_te_h340: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 4.2e-06 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "strip_te_h340: the iteration converged",
+   "status": "PASS",
+   "detail": "19 iterations on 6660 cells"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_h340: neff 2.693927697 2e-8",
+   "status": "PASS",
+   "detail": "2.69392770, expected 2.69392770, off by -3.99e-10"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_h340: group_index 4.181098447 2e-6",
+   "status": "PASS",
+   "detail": "4.18109845, expected 4.18109845, off by 4.91e-10"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_h340: confinement 0.790910476 1e-6",
+   "status": "PASS",
+   "detail": "0.79091048, expected 0.79091048, off by -1.37e-10"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_h340: area 0.151755646 1e-5",
+   "status": "PASS",
+   "detail": "0.151756, expected 0.151756, relative error 9.83e-10"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_h340: guided yes",
+   "status": "PASS",
+   "detail": "index 2.693928, cladding 1.444000, difference 1.25e+00"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_h340: cells 6660",
+   "status": "PASS",
+   "detail": "6660 cells (60 by 111)"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_h340: neff_between 1.444 3.115852",
+   "status": "PASS",
+   "detail": "2.693928, expected between 1.444000 and 3.115852"
+  },
+  {
+   "area": "independent solution",
+   "check": "strip_te_h400: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 4.4e-06 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "strip_te_h400: the iteration converged",
+   "status": "PASS",
+   "detail": "17 iterations on 6660 cells"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_h400: neff 2.772461905 2e-8",
+   "status": "PASS",
+   "detail": "2.77246191, expected 2.77246191, off by 2.44e-10"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_h400: group_index 4.173045391 2e-6",
+   "status": "PASS",
+   "detail": "4.17304539, expected 4.17304539, off by 1.12e-10"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_h400: confinement 0.818539073 1e-6",
+   "status": "PASS",
+   "detail": "0.81853907, expected 0.81853907, off by -5.18e-11"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_h400: area 0.163526668 1e-5",
+   "status": "PASS",
+   "detail": "0.163527, expected 0.163527, relative error 2.14e-09"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_h400: guided yes",
+   "status": "PASS",
+   "detail": "index 2.772462, cladding 1.444000, difference 1.33e+00"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_h400: cells 6660",
+   "status": "PASS",
+   "detail": "6660 cells (60 by 111)"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_h400: neff_between 1.444 3.190201",
+   "status": "PASS",
+   "detail": "2.772462, expected between 1.444000 and 3.190201"
+  },
+  {
+   "area": "independent solution",
+   "check": "strip_te_w1000: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 5.3e-07 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "strip_te_w1000: the iteration converged",
+   "status": "PASS",
+   "detail": "18 iterations on 6660 cells"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w1000: neff 2.755271702 2e-8",
+   "status": "PASS",
+   "detail": "2.75527170, expected 2.75527170, off by 3.29e-10"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w1000: group_index 3.827104620 2e-6",
+   "status": "PASS",
+   "detail": "3.82710462, expected 3.82710462, off by -3.50e-11"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w1000: confinement 0.800603526 1e-6",
+   "status": "PASS",
+   "detail": "0.80060353, expected 0.80060353, off by 1.69e-10"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w1000: area 0.215201323 1e-5",
+   "status": "PASS",
+   "detail": "0.215201, expected 0.215201, relative error 1.12e-09"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w1000: guided yes",
+   "status": "PASS",
+   "detail": "index 2.755272, cladding 1.444000, difference 1.31e+00"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w1000: cells 6660",
+   "status": "PASS",
+   "detail": "6660 cells (60 by 111)"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w1000: neff_between 1.444 2.847782",
+   "status": "PASS",
+   "detail": "2.755272, expected between 1.444000 and 2.847782"
+  },
+  {
+   "area": "independent solution",
+   "check": "strip_te_w300: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 4.4e-06 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "strip_te_w300: the iteration converged",
+   "status": "PASS",
+   "detail": "35 iterations on 6660 cells"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w300: neff 1.987710276 2e-8",
+   "status": "PASS",
+   "detail": "1.98771028, expected 1.98771028, off by -1.29e-10"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w300: group_index 4.013792135 2e-6",
+   "status": "PASS",
+   "detail": "4.01379214, expected 4.01379214, off by 3.83e-10"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w300: confinement 0.382505713 1e-6",
+   "status": "PASS",
+   "detail": "0.38250571, expected 0.38250571, off by 3.42e-10"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w300: area 0.193313792 1e-5",
+   "status": "PASS",
+   "detail": "0.193314, expected 0.193314, relative error 1.78e-09"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w300: guided yes",
+   "status": "PASS",
+   "detail": "index 1.987710, cladding 1.444000, difference 5.44e-01"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w300: cells 6660",
+   "status": "PASS",
+   "detail": "6660 cells (60 by 111)"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w300: neff_between 1.444 2.847782",
+   "status": "PASS",
+   "detail": "1.987710, expected between 1.444000 and 2.847782"
+  },
+  {
+   "area": "independent solution",
+   "check": "strip_te_w350: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 4.0e-06 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "strip_te_w350: the iteration converged",
+   "status": "PASS",
+   "detail": "29 iterations on 6660 cells"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w350: neff 2.175094093 2e-8",
+   "status": "PASS",
+   "detail": "2.17509409, expected 2.17509409, off by 2.55e-10"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w350: group_index 4.148845370 2e-6",
+   "status": "PASS",
+   "detail": "4.14884537, expected 4.14884537, off by -3.25e-10"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w350: confinement 0.519197947 1e-6",
+   "status": "PASS",
+   "detail": "0.51919795, expected 0.51919795, off by -1.67e-10"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w350: area 0.159361615 1e-5",
+   "status": "PASS",
+   "detail": "0.159362, expected 0.159362, relative error 9.40e-11"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w350: guided yes",
+   "status": "PASS",
+   "detail": "index 2.175094, cladding 1.444000, difference 7.31e-01"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w350: cells 6660",
+   "status": "PASS",
+   "detail": "6660 cells (60 by 111)"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w350: neff_between 1.444 2.847782",
+   "status": "PASS",
+   "detail": "2.175094, expected between 1.444000 and 2.847782"
+  },
+  {
+   "area": "independent solution",
+   "check": "strip_te_w400: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 3.9e-06 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "strip_te_w400: the iteration converged",
+   "status": "PASS",
+   "detail": "26 iterations on 6660 cells"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w400: neff 2.314232739 2e-8",
+   "status": "PASS",
+   "detail": "2.31423274, expected 2.31423274, off by 4.19e-10"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w400: group_index 4.144405345 2e-6",
+   "status": "PASS",
+   "detail": "4.14440534, expected 4.14440535, off by -6.84e-11"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w400: confinement 0.610867753 1e-6",
+   "status": "PASS",
+   "detail": "0.61086775, expected 0.61086775, off by -3.54e-10"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w400: area 0.144012613 1e-5",
+   "status": "PASS",
+   "detail": "0.144013, expected 0.144013, relative error -2.29e-09"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w400: guided yes",
+   "status": "PASS",
+   "detail": "index 2.314233, cladding 1.444000, difference 8.70e-01"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w400: cells 6660",
+   "status": "PASS",
+   "detail": "6660 cells (60 by 111)"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w400: neff_between 1.444 2.847782",
+   "status": "PASS",
+   "detail": "2.314233, expected between 1.444000 and 2.847782"
+  },
+  {
+   "area": "independent solution",
+   "check": "strip_te_w450: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 4.0e-06 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "strip_te_w450: the iteration converged",
+   "status": "PASS",
+   "detail": "23 iterations on 6660 cells"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w450: neff 2.416580343 2e-8",
+   "status": "PASS",
+   "detail": "2.41658034, expected 2.41658034, off by -1.02e-10"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w450: group_index 4.103090925 2e-6",
+   "status": "PASS",
+   "detail": "4.10309092, expected 4.10309093, off by -2.04e-10"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w450: confinement 0.670137012 1e-6",
+   "status": "PASS",
+   "detail": "0.67013701, expected 0.67013701, off by -2.14e-10"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w450: area 0.138937890 1e-5",
+   "status": "PASS",
+   "detail": "0.138938, expected 0.138938, relative error -1.18e-09"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w450: guided yes",
+   "status": "PASS",
+   "detail": "index 2.416580, cladding 1.444000, difference 9.73e-01"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w450: cells 6660",
+   "status": "PASS",
+   "detail": "6660 cells (60 by 111)"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w450: neff_between 1.444 2.847782",
+   "status": "PASS",
+   "detail": "2.416580, expected between 1.444000 and 2.847782"
+  },
+  {
+   "area": "independent solution",
+   "check": "strip_te_w500: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 3.9e-06 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "strip_te_w500: the iteration converged",
+   "status": "PASS",
+   "detail": "22 iterations on 6660 cells"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w500: neff 2.492973417 2e-8",
+   "status": "PASS",
+   "detail": "2.49297342, expected 2.49297342, off by -4.29e-10"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w500: group_index 4.056723147 2e-6",
+   "status": "PASS",
+   "detail": "4.05672315, expected 4.05672315, off by -4.24e-10"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w500: confinement 0.708965381 1e-6",
+   "status": "PASS",
+   "detail": "0.70896538, expected 0.70896538, off by 2.52e-10"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w500: area 0.139409468 1e-5",
+   "status": "PASS",
+   "detail": "0.139409, expected 0.139409, relative error 3.51e-09"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w500: guided yes",
+   "status": "PASS",
+   "detail": "index 2.492973, cladding 1.444000, difference 1.05e+00"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w500: cells 6660",
+   "status": "PASS",
+   "detail": "6660 cells (60 by 111)"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w500: neff_between 1.444 2.847782",
+   "status": "PASS",
+   "detail": "2.492973, expected between 1.444000 and 2.847782"
+  },
+  {
+   "area": "independent solution",
+   "check": "strip_te_w550: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 4.1e-06 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "strip_te_w550: the iteration converged",
+   "status": "PASS",
+   "detail": "21 iterations on 6660 cells"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w550: neff 2.551149786 2e-8",
+   "status": "PASS",
+   "detail": "2.55114979, expected 2.55114979, off by 2.23e-10"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w550: group_index 4.014257634 2e-6",
+   "status": "PASS",
+   "detail": "4.01425763, expected 4.01425763, off by -4.85e-10"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w550: confinement 0.735119908 1e-6",
+   "status": "PASS",
+   "detail": "0.73511991, expected 0.73511991, off by 3.13e-10"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w550: area 0.143014821 1e-5",
+   "status": "PASS",
+   "detail": "0.143015, expected 0.143015, relative error -9.60e-10"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w550: guided yes",
+   "status": "PASS",
+   "detail": "index 2.551150, cladding 1.444000, difference 1.11e+00"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w550: cells 6660",
+   "status": "PASS",
+   "detail": "6660 cells (60 by 111)"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w550: neff_between 1.444 2.847782",
+   "status": "PASS",
+   "detail": "2.551150, expected between 1.444000 and 2.847782"
+  },
+  {
+   "area": "independent solution",
+   "check": "strip_te_w600: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 3.8e-06 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "strip_te_w600: the iteration converged",
+   "status": "PASS",
+   "detail": "20 iterations on 6660 cells"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w600: neff 2.596346283 2e-8",
+   "status": "PASS",
+   "detail": "2.59634628, expected 2.59634628, off by -3.37e-10"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w600: group_index 3.977605876 2e-6",
+   "status": "PASS",
+   "detail": "3.97760588, expected 3.97760588, off by -2.47e-10"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w600: confinement 0.753274259 1e-6",
+   "status": "PASS",
+   "detail": "0.75327426, expected 0.75327426, off by -4.97e-10"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w600: area 0.148502835 1e-5",
+   "status": "PASS",
+   "detail": "0.148503, expected 0.148503, relative error -1.98e-09"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w600: guided yes",
+   "status": "PASS",
+   "detail": "index 2.596346, cladding 1.444000, difference 1.15e+00"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w600: cells 6660",
+   "status": "PASS",
+   "detail": "6660 cells (60 by 111)"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w600: neff_between 1.444 2.847782",
+   "status": "PASS",
+   "detail": "2.596346, expected between 1.444000 and 2.847782"
+  },
+  {
+   "area": "independent solution",
+   "check": "strip_te_w700: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 3.9e-06 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "strip_te_w700: the iteration converged",
+   "status": "PASS",
+   "detail": "19 iterations on 6660 cells"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w700: neff 2.660864756 2e-8",
+   "status": "PASS",
+   "detail": "2.66086476, expected 2.66086476, off by -1.03e-10"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w700: group_index 3.920375048 2e-6",
+   "status": "PASS",
+   "detail": "3.92037505, expected 3.92037505, off by 6.01e-11"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w700: confinement 0.775725940 1e-6",
+   "status": "PASS",
+   "detail": "0.77572594, expected 0.77572594, off by 3.25e-10"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w700: area 0.162671664 1e-5",
+   "status": "PASS",
+   "detail": "0.162672, expected 0.162672, relative error -2.58e-09"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w700: guided yes",
+   "status": "PASS",
+   "detail": "index 2.660865, cladding 1.444000, difference 1.22e+00"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w700: cells 6660",
+   "status": "PASS",
+   "detail": "6660 cells (60 by 111)"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w700: neff_between 1.444 2.847782",
+   "status": "PASS",
+   "detail": "2.660865, expected between 1.444000 and 2.847782"
+  },
+  {
+   "area": "independent solution",
+   "check": "strip_te_w800: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 3.4e-06 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "strip_te_w800: the iteration converged",
+   "status": "PASS",
+   "detail": "18 iterations on 6660 cells"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w800: neff 2.703717956 2e-8",
+   "status": "PASS",
+   "detail": "2.70371796, expected 2.70371796, off by 7.29e-11"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w800: group_index 3.879416128 2e-6",
+   "status": "PASS",
+   "detail": "3.87941613, expected 3.87941613, off by 4.43e-10"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w800: confinement 0.788256572 1e-6",
+   "status": "PASS",
+   "detail": "0.78825657, expected 0.78825657, off by -3.52e-10"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w800: area 0.179145701 1e-5",
+   "status": "PASS",
+   "detail": "0.179146, expected 0.179146, relative error 1.34e-09"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w800: guided yes",
+   "status": "PASS",
+   "detail": "index 2.703718, cladding 1.444000, difference 1.26e+00"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w800: cells 6660",
+   "status": "PASS",
+   "detail": "6660 cells (60 by 111)"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_te_w800: neff_between 1.444 2.847782",
+   "status": "PASS",
+   "detail": "2.703718, expected between 1.444000 and 2.847782"
+  },
+  {
+   "area": "independent solution",
+   "check": "strip_tm_w1000: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 6.2e-07 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "strip_tm_w1000: the iteration converged",
+   "status": "PASS",
+   "detail": "32 iterations on 6660 cells"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_tm_w1000: neff 1.978620807 2e-8",
+   "status": "PASS",
+   "detail": "1.97862081, expected 1.97862081, off by 3.14e-10"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_tm_w1000: group_index 4.015907350 2e-6",
+   "status": "PASS",
+   "detail": "4.01590735, expected 4.01590735, off by -1.96e-10"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_tm_w1000: confinement 0.195023352 1e-6",
+   "status": "PASS",
+   "detail": "0.19502335, expected 0.19502335, off by 1.45e-10"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_tm_w1000: area 0.427661335 1e-5",
+   "status": "PASS",
+   "detail": "0.427661, expected 0.427661, relative error -2.91e-11"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_tm_w1000: guided yes",
+   "status": "PASS",
+   "detail": "index 1.978621, cladding 1.444000, difference 5.35e-01"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_tm_w1000: cells 6660",
+   "status": "PASS",
+   "detail": "6660 cells (60 by 111)"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_tm_w1000: neff_between 1.444 2.053320",
+   "status": "PASS",
+   "detail": "1.978621, expected between 1.444000 and 2.053320"
+  },
+  {
+   "area": "independent solution",
+   "check": "strip_tm_w350: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 1.9e-06 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "strip_tm_w350: the iteration converged",
+   "status": "PASS",
+   "detail": "43 iterations on 6660 cells"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_tm_w350: neff 1.756205927 2e-8",
+   "status": "PASS",
+   "detail": "1.75620593, expected 1.75620593, off by 2.63e-11"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_tm_w350: group_index 3.511527635 2e-6",
+   "status": "PASS",
+   "detail": "3.51152763, expected 3.51152764, off by -4.71e-10"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_tm_w350: confinement 0.158326963 1e-6",
+   "status": "PASS",
+   "detail": "0.15832696, expected 0.15832696, off by 6.12e-11"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_tm_w350: area 0.285731345 1e-5",
+   "status": "PASS",
+   "detail": "0.285731, expected 0.285731, relative error -9.64e-10"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_tm_w350: guided yes",
+   "status": "PASS",
+   "detail": "index 1.756206, cladding 1.444000, difference 3.12e-01"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_tm_w350: cells 6660",
+   "status": "PASS",
+   "detail": "6660 cells (60 by 111)"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_tm_w350: neff_between 1.444 2.053320",
+   "status": "PASS",
+   "detail": "1.756206, expected between 1.444000 and 2.053320"
+  },
+  {
+   "area": "independent solution",
+   "check": "strip_tm_w450: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 3.0e-06 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "strip_tm_w450: the iteration converged",
+   "status": "PASS",
+   "detail": "40 iterations on 6660 cells"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_tm_w450: neff 1.825590222 2e-8",
+   "status": "PASS",
+   "detail": "1.82559022, expected 1.82559022, off by 2.67e-10"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_tm_w450: group_index 3.740127715 2e-6",
+   "status": "PASS",
+   "detail": "3.74012772, expected 3.74012771, off by 3.21e-10"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_tm_w450: confinement 0.173579354 1e-6",
+   "status": "PASS",
+   "detail": "0.17357935, expected 0.17357935, off by 8.39e-12"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_tm_w450: area 0.289201711 1e-5",
+   "status": "PASS",
+   "detail": "0.289202, expected 0.289202, relative error -1.40e-09"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_tm_w450: guided yes",
+   "status": "PASS",
+   "detail": "index 1.825590, cladding 1.444000, difference 3.82e-01"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_tm_w450: cells 6660",
+   "status": "PASS",
+   "detail": "6660 cells (60 by 111)"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_tm_w450: neff_between 1.444 2.053320",
+   "status": "PASS",
+   "detail": "1.825590, expected between 1.444000 and 2.053320"
+  },
+  {
+   "area": "independent solution",
+   "check": "strip_tm_w550: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 5.2e-07 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "strip_tm_w550: the iteration converged",
+   "status": "PASS",
+   "detail": "37 iterations on 6660 cells"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_tm_w550: neff 1.874590194 2e-8",
+   "status": "PASS",
+   "detail": "1.87459019, expected 1.87459019, off by -1.57e-11"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_tm_w550: group_index 3.864115746 2e-6",
+   "status": "PASS",
+   "detail": "3.86411575, expected 3.86411575, off by -3.70e-10"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_tm_w550: confinement 0.182168452 1e-6",
+   "status": "PASS",
+   "detail": "0.18216845, expected 0.18216845, off by -2.17e-10"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_tm_w550: area 0.306323573 1e-5",
+   "status": "PASS",
+   "detail": "0.306324, expected 0.306324, relative error 2.25e-10"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_tm_w550: guided yes",
+   "status": "PASS",
+   "detail": "index 1.874590, cladding 1.444000, difference 4.31e-01"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_tm_w550: cells 6660",
+   "status": "PASS",
+   "detail": "6660 cells (60 by 111)"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_tm_w550: neff_between 1.444 2.053320",
+   "status": "PASS",
+   "detail": "1.874590, expected between 1.444000 and 2.053320"
+  },
+  {
+   "area": "independent solution",
+   "check": "strip_tm_w700: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 5.6e-07 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "strip_tm_w700: the iteration converged",
+   "status": "PASS",
+   "detail": "35 iterations on 6660 cells"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_tm_w700: neff 1.924178277 2e-8",
+   "status": "PASS",
+   "detail": "1.92417828, expected 1.92417828, off by -2.20e-10"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_tm_w700: group_index 3.956396022 2e-6",
+   "status": "PASS",
+   "detail": "3.95639602, expected 3.95639602, off by -4.84e-10"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_tm_w700: confinement 0.189183733 1e-6",
+   "status": "PASS",
+   "detail": "0.18918373, expected 0.18918373, off by 1.22e-11"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_tm_w700: area 0.342332111 1e-5",
+   "status": "PASS",
+   "detail": "0.342332, expected 0.342332, relative error 6.24e-11"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_tm_w700: guided yes",
+   "status": "PASS",
+   "detail": "index 1.924178, cladding 1.444000, difference 4.80e-01"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_tm_w700: cells 6660",
+   "status": "PASS",
+   "detail": "6660 cells (60 by 111)"
+  },
+  {
+   "area": "silicon strips",
+   "check": "strip_tm_w700: neff_between 1.444 2.053320",
+   "status": "PASS",
+   "detail": "1.924178, expected between 1.444000 and 2.053320"
+  },
+  {
+   "area": "independent solution",
+   "check": "window_20: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 3.4e-06 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "window_20: the iteration converged",
+   "status": "PASS",
+   "detail": "22 iterations on 2840 cells"
+  },
+  {
+   "area": "window and mirror",
+   "check": "window_20: neff 2.416544808 2e-8",
+   "status": "PASS",
+   "detail": "2.41654481, expected 2.41654481, off by -9.71e-11"
+  },
+  {
+   "area": "window and mirror",
+   "check": "window_20: guided yes",
+   "status": "PASS",
+   "detail": "index 2.416545, cladding 1.444000, difference 9.73e-01"
+  },
+  {
+   "area": "window and mirror",
+   "check": "window_20: cells 2840",
+   "status": "PASS",
+   "detail": "2840 cells (40 by 71)"
+  },
+  {
+   "area": "window and mirror",
+   "check": "window_20: neff 2.4165803 5e-5",
+   "status": "PASS",
+   "detail": "2.41654481, expected 2.41658030, off by -3.55e-05"
+  },
+  {
+   "area": "independent solution",
+   "check": "window_30: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 4.0e-06 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "window_30: the iteration converged",
+   "status": "PASS",
+   "detail": "23 iterations on 6660 cells"
+  },
+  {
+   "area": "window and mirror",
+   "check": "window_30: neff 2.416580343 2e-8",
+   "status": "PASS",
+   "detail": "2.41658034, expected 2.41658034, off by -1.02e-10"
+  },
+  {
+   "area": "window and mirror",
+   "check": "window_30: guided yes",
+   "status": "PASS",
+   "detail": "index 2.416580, cladding 1.444000, difference 9.73e-01"
+  },
+  {
+   "area": "window and mirror",
+   "check": "window_30: cells 6660",
+   "status": "PASS",
+   "detail": "6660 cells (60 by 111)"
+  },
+  {
+   "area": "window and mirror",
+   "check": "window_30: neff 2.4165803 5e-5",
+   "status": "PASS",
+   "detail": "2.41658034, expected 2.41658030, off by 4.29e-08"
+  },
+  {
+   "area": "independent solution",
+   "check": "window_40: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 3.9e-06 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "window_40: the iteration converged",
+   "status": "PASS",
+   "detail": "24 iterations on 12080 cells"
+  },
+  {
+   "area": "window and mirror",
+   "check": "window_40: neff 2.416580397 2e-8",
+   "status": "PASS",
+   "detail": "2.41658040, expected 2.41658040, off by -2.58e-10"
+  },
+  {
+   "area": "window and mirror",
+   "check": "window_40: guided yes",
+   "status": "PASS",
+   "detail": "index 2.416580, cladding 1.444000, difference 9.73e-01"
+  },
+  {
+   "area": "window and mirror",
+   "check": "window_40: cells 12080",
+   "status": "PASS",
+   "detail": "12080 cells (80 by 151)"
+  },
+  {
+   "area": "window and mirror",
+   "check": "window_40: neff 2.4165803 5e-5",
+   "status": "PASS",
+   "detail": "2.41658040, expected 2.41658030, off by 9.67e-08"
+  },
+  {
+   "area": "independent solution",
+   "check": "window_50: every reported quantity and the field solved again with SciPy",
+   "status": "PASS",
+   "detail": "9 quantities agree, field within 3.9e-06 of its peak"
+  },
+  {
+   "area": "solver",
+   "check": "window_50: the iteration converged",
+   "status": "PASS",
+   "detail": "24 iterations on 19100 cells"
+  },
+  {
+   "area": "window and mirror",
+   "check": "window_50: neff 2.416580397 2e-8",
+   "status": "PASS",
+   "detail": "2.41658040, expected 2.41658040, off by -1.71e-10"
+  },
+  {
+   "area": "window and mirror",
+   "check": "window_50: guided yes",
+   "status": "PASS",
+   "detail": "index 2.416580, cladding 1.444000, difference 9.73e-01"
+  },
+  {
+   "area": "window and mirror",
+   "check": "window_50: cells 19100",
+   "status": "PASS",
+   "detail": "19100 cells (100 by 191)"
+  },
+  {
+   "area": "window and mirror",
+   "check": "window_50: neff 2.4165803 5e-5",
+   "status": "PASS",
+   "detail": "2.41658040, expected 2.41658030, off by 9.68e-08"
+  },
+  {
+   "area": "grid convergence",
+   "check": "quasi-TE index falls steadily as the grid is refined",
+   "status": "PASS",
+   "detail": "extrapolated 2.52183; a 20 nm grid is +0.0058 above it"
+  },
+  {
+   "area": "grid convergence",
+   "check": "quasi-TM index falls steadily as the grid is refined",
+   "status": "PASS",
+   "detail": "extrapolated 1.97856; a 20 nm grid is +0.0088 above it"
+  },
+  {
+   "area": "physical consistency",
+   "check": "effective index method agrees with the solver for strips of 400 nm and wider",
+   "status": "PASS",
+   "detail": "largest difference 0.0043"
+  },
+  {
+   "area": "physical consistency",
+   "check": "index rises with strip width",
+   "status": "PASS",
+   "detail": "10 widths"
+  },
+  {
+   "area": "physical consistency",
+   "check": "supermode splitting of two strips falls exponentially with the gap",
+   "status": "PASS",
+   "detail": "decay length 116.3 nm, largest deviation from the fit 0.018 in the logarithm"
+  },
+  {
+   "area": "physical consistency",
+   "check": "whole structure and mirrored half give the same index",
+   "status": "PASS",
+   "detail": "difference 0.0e+00"
+  }
+ ]
+}
