@@ -1,0 +1,79 @@
+{
+ "case": "strip_te_w1000",
+ "title": "Silicon strip 1000 x 220 nm, quasi-TE",
+ "notes": [
+  "The fundamental quasi-TE mode of a buried strip; the index rises with width towards the slab value.",
+  "Reference: the same grid solved with a sparse eigen-solver in SciPy. Bounds: cladding index and slab index."
+ ],
+ "metrics": {
+  "wavelength": 1.55,
+  "nx": 60.0,
+  "ny": 111.0,
+  "dx": 0.025,
+  "dy": 0.02,
+  "x0": 0.0,
+  "y0": -1.0,
+  "neff": 2.7552717023,
+  "group_index": 3.82710462,
+  "n_cladding": 1.444,
+  "guided": 1.0,
+  "converged": 1.0,
+  "iterations": 18.0,
+  "confinement": 0.80060353,
+  "area": 0.21520132,
+  "rms_x": 0.19879732,
+  "rms_y": 0.08955646,
+  "centre_y": 0.11
+ },
+ "checks": [
+  {
+   "check": "neff 2.755271702 2e-8",
+   "status": "PASS",
+   "detail": "2.75527170, expected 2.75527170, off by 3.29e-10"
+  },
+  {
+   "check": "group_index 3.827104620 2e-6",
+   "status": "PASS",
+   "detail": "3.82710462, expected 3.82710462, off by -3.50e-11"
+  },
+  {
+   "check": "confinement 0.800603526 1e-6",
+   "status": "PASS",
+   "detail": "0.80060353, expected 0.80060353, off by 1.69e-10"
+  },
+  {
+   "check": "area 0.215201323 1e-5",
+   "status": "PASS",
+   "detail": "0.215201, expected 0.215201, relative error 1.12e-09"
+  },
+  {
+   "check": "guided yes",
+   "status": "PASS",
+   "detail": "index 2.755272, cladding 1.444000, difference 1.31e+00"
+  },
+  {
+   "check": "cells 6660",
+   "status": "PASS",
+   "detail": "6660 cells (60 by 111)"
+  },
+  {
+   "check": "neff_between 1.444 2.847782",
+   "status": "PASS",
+   "detail": "2.755272, expected between 1.444000 and 2.847782"
+  }
+ ],
+ "against_reference": {
+  "largest_differences": {
+   "neff": 2.9388935729457444e-11,
+   "group_index": 3.4784619629135705e-11,
+   "n_cladding": 0.0,
+   "guided": 0.0,
+   "confinement": 3.831001849086135e-09,
+   "area": 1.5056604659373863e-08,
+   "rms_x": 1.858266318599533e-09,
+   "rms_y": 4.122435406928027e-09,
+   "centre_y": 8.326672684688674e-17
+  },
+  "field": 5.273528268237369e-07
+ }
+}
