@@ -1,0 +1,84 @@
+{
+ "case": "rib_w1000",
+ "title": "Silicon rib 1000 nm wide on a 90 nm slab",
+ "notes": [
+  "Rib width against index and lateral size.",
+  "Reference: the same grid solved with a sparse eigen-solver in SciPy. Bounds: index of the thin slab and of the full slab."
+ ],
+ "metrics": {
+  "wavelength": 1.55,
+  "nx": 80.0,
+  "ny": 222.0,
+  "dx": 0.025,
+  "dy": 0.01,
+  "x0": 0.0,
+  "y0": -1.0,
+  "neff": 2.7638787085,
+  "group_index": 3.79610107,
+  "n_cladding": 2.10505636,
+  "guided": 1.0,
+  "converged": 1.0,
+  "iterations": 21.0,
+  "confinement": 0.79657441,
+  "area": 0.23433141,
+  "rms_x": 0.21791,
+  "rms_y": 0.08984772,
+  "centre_y": 0.10850267
+ },
+ "checks": [
+  {
+   "check": "neff 2.763878708 2e-8",
+   "status": "PASS",
+   "detail": "2.76387871, expected 2.76387871, off by 4.62e-10"
+  },
+  {
+   "check": "group_index 3.796101067 2e-6",
+   "status": "PASS",
+   "detail": "3.79610107, expected 3.79610107, off by 2.53e-10"
+  },
+  {
+   "check": "confinement 0.796574410 1e-6",
+   "status": "PASS",
+   "detail": "0.79657441, expected 0.79657441, off by -3.96e-10"
+  },
+  {
+   "check": "area 0.234331407 1e-5",
+   "status": "PASS",
+   "detail": "0.234331, expected 0.234331, relative error -1.12e-09"
+  },
+  {
+   "check": "rms_x 0.217909995 1e-6",
+   "status": "PASS",
+   "detail": "0.21791000, expected 0.21790999, off by 1.63e-10"
+  },
+  {
+   "check": "guided yes",
+   "status": "PASS",
+   "detail": "index 2.763879, cladding 2.105056, difference 6.59e-01"
+  },
+  {
+   "check": "cells 17760",
+   "status": "PASS",
+   "detail": "17760 cells (80 by 222)"
+  },
+  {
+   "check": "neff_between 2.103273 2.847782",
+   "status": "PASS",
+   "detail": "2.763879, expected between 2.103273 and 2.847782"
+  }
+ ],
+ "against_reference": {
+  "largest_differences": {
+   "neff": 3.842126616859787e-11,
+   "group_index": 2.749773297949787e-09,
+   "n_cladding": 1.5087620042208982e-09,
+   "guided": 0.0,
+   "confinement": 3.962933314838324e-10,
+   "area": 1.3926333494179119e-08,
+   "rms_x": 4.837190148432313e-09,
+   "rms_y": 2.521135938904351e-10,
+   "centre_y": 3.748171190087746e-09
+  },
+  "field": 7.779885023164799e-07
+ }
+}
