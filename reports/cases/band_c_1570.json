@@ -1,0 +1,74 @@
+{
+ "case": "band_c_1570",
+ "title": "Silicon strip 450 x 220 nm at 1.57 um",
+ "notes": [
+  "Longer wavelengths are less confined: the index falls.",
+  "Reference: the same grid solved with a sparse eigen-solver in SciPy."
+ ],
+ "metrics": {
+  "wavelength": 1.57,
+  "nx": 60.0,
+  "ny": 111.0,
+  "dx": 0.025,
+  "dy": 0.02,
+  "x0": 0.0,
+  "y0": -1.0,
+  "neff": 2.3948261804,
+  "group_index": 4.10180736,
+  "n_cladding": 1.44376,
+  "guided": 1.0,
+  "converged": 1.0,
+  "iterations": 24.0,
+  "confinement": 0.65927159,
+  "area": 0.14307946,
+  "rms_x": 0.14029129,
+  "rms_y": 0.10041494,
+  "centre_y": 0.11
+ },
+ "checks": [
+  {
+   "check": "neff 2.394826180 2e-8",
+   "status": "PASS",
+   "detail": "2.39482618, expected 2.39482618, off by 4.14e-10"
+  },
+  {
+   "check": "group_index 4.101807356 2e-6",
+   "status": "PASS",
+   "detail": "4.10180736, expected 4.10180736, off by -1.22e-10"
+  },
+  {
+   "check": "confinement 0.659271592 1e-6",
+   "status": "PASS",
+   "detail": "0.65927159, expected 0.65927159, off by -3.97e-10"
+  },
+  {
+   "check": "area 0.143079463 1e-5",
+   "status": "PASS",
+   "detail": "0.143079, expected 0.143079, relative error 1.39e-09"
+  },
+  {
+   "check": "guided yes",
+   "status": "PASS",
+   "detail": "index 2.394826, cladding 1.443760, difference 9.51e-01"
+  },
+  {
+   "check": "cells 6660",
+   "status": "PASS",
+   "detail": "6660 cells (60 by 111)"
+  }
+ ],
+ "against_reference": {
+  "largest_differences": {
+   "neff": 1.4442225193533886e-11,
+   "group_index": 4.122383323590384e-09,
+   "n_cladding": 0.0,
+   "guided": 0.0,
+   "confinement": 1.6030679006462378e-09,
+   "area": 2.2357885005702147e-08,
+   "rms_x": 2.8576948862824025e-09,
+   "rms_y": 3.28228666468533e-10,
+   "centre_y": 5.551115123125783e-17
+  },
+  "field": 4.03598497605703e-06
+ }
+}
