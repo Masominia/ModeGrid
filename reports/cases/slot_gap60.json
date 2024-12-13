@@ -1,0 +1,74 @@
+{
+ "case": "slot_gap60",
+ "title": "Slot waveguide: two 220 x 220 nm rails, 60 nm slot",
+ "notes": [
+  "The normal field jumps by the permittivity ratio at each wall, so the quasi-TE mode peaks inside the low-index slot.",
+  "Reference: the same grid solved with a sparse eigen-solver in SciPy."
+ ],
+ "metrics": {
+  "wavelength": 1.55,
+  "nx": 150.0,
+  "ny": 111.0,
+  "dx": 0.01,
+  "dy": 0.02,
+  "x0": 0.0,
+  "y0": -1.0,
+  "neff": 1.9190658874,
+  "group_index": 3.23341725,
+  "n_cladding": 1.444,
+  "guided": 1.0,
+  "converged": 1.0,
+  "iterations": 34.0,
+  "confinement": 0.19284181,
+  "area": 0.07675804,
+  "rms_x": 0.17307191,
+  "rms_y": 0.12771217,
+  "centre_y": 0.11
+ },
+ "checks": [
+  {
+   "check": "neff 1.919065887 2e-8",
+   "status": "PASS",
+   "detail": "1.91906589, expected 1.91906589, off by 4.24e-10"
+  },
+  {
+   "check": "group_index 3.233417250 2e-6",
+   "status": "PASS",
+   "detail": "3.23341725, expected 3.23341725, off by -1.57e-10"
+  },
+  {
+   "check": "confinement 0.192841813 1e-6",
+   "status": "PASS",
+   "detail": "0.19284181, expected 0.19284181, off by -2.67e-10"
+  },
+  {
+   "check": "area 0.076758041 1e-5",
+   "status": "PASS",
+   "detail": "0.076758, expected 0.076758, relative error 1.65e-09"
+  },
+  {
+   "check": "guided yes",
+   "status": "PASS",
+   "detail": "index 1.919066, cladding 1.444000, difference 4.75e-01"
+  },
+  {
+   "check": "cells 16650",
+   "status": "PASS",
+   "detail": "16650 cells (150 by 111)"
+  }
+ ],
+ "against_reference": {
+  "largest_differences": {
+   "neff": 2.4064972237169968e-11,
+   "group_index": 1.5812107179158374e-10,
+   "n_cladding": 0.0,
+   "guided": 0.0,
+   "confinement": 2.7332424934467525e-09,
+   "area": 1.467903822550242e-08,
+   "rms_x": 2.987657898856355e-09,
+   "rms_y": 3.4965657313978937e-09,
+   "centre_y": 2.0816681711721685e-16
+  },
+  "field": 3.980274068643317e-06
+ }
+}
