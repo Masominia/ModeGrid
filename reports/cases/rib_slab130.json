@@ -1,0 +1,84 @@
+{
+ "case": "rib_slab130",
+ "title": "Silicon rib 500 nm wide on a 130 nm slab",
+ "notes": [
+  "A partial etch leaves a slab; the mode spreads sideways and its index lies above the slab index of the etched region.",
+  "Reference: the same grid solved with a sparse eigen-solver in SciPy. Bounds: index of the thin slab and of the full slab."
+ ],
+ "metrics": {
+  "wavelength": 1.55,
+  "nx": 80.0,
+  "ny": 222.0,
+  "dx": 0.025,
+  "dy": 0.01,
+  "x0": 0.0,
+  "y0": -1.0,
+  "neff": 2.6471558385,
+  "group_index": 3.79395687,
+  "n_cladding": 2.41653814,
+  "guided": 1.0,
+  "converged": 1.0,
+  "iterations": 33.0,
+  "confinement": 0.73786847,
+  "area": 0.2100747,
+  "rms_x": 0.21113675,
+  "rms_y": 0.09214433,
+  "centre_y": 0.09819983
+ },
+ "checks": [
+  {
+   "check": "neff 2.647155839 2e-8",
+   "status": "PASS",
+   "detail": "2.64715584, expected 2.64715584, off by -4.91e-10"
+  },
+  {
+   "check": "group_index 3.793956871 2e-6",
+   "status": "PASS",
+   "detail": "3.79395687, expected 3.79395687, off by -4.71e-10"
+  },
+  {
+   "check": "confinement 0.737868472 1e-6",
+   "status": "PASS",
+   "detail": "0.73786847, expected 0.73786847, off by 1.96e-10"
+  },
+  {
+   "check": "area 0.210074696 1e-5",
+   "status": "PASS",
+   "detail": "0.210075, expected 0.210075, relative error -2.19e-09"
+  },
+  {
+   "check": "rms_x 0.211136750 1e-6",
+   "status": "PASS",
+   "detail": "0.21113675, expected 0.21113675, off by 2.71e-10"
+  },
+  {
+   "check": "guided yes",
+   "status": "PASS",
+   "detail": "index 2.647156, cladding 2.416538, difference 2.31e-01"
+  },
+  {
+   "check": "cells 17760",
+   "status": "PASS",
+   "detail": "17760 cells (80 by 222)"
+  },
+  {
+   "check": "neff_between 2.414845 2.847782",
+   "status": "PASS",
+   "detail": "2.647156, expected between 2.414845 and 2.847782"
+  }
+ ],
+ "against_reference": {
+  "largest_differences": {
+   "neff": 8.639755577632968e-12,
+   "group_index": 5.256013402288318e-10,
+   "n_cladding": 4.484185911479699e-09,
+   "guided": 0.0,
+   "confinement": 2.196245407759534e-09,
+   "area": 2.1234100191522086e-08,
+   "rms_x": 2.712909896729343e-10,
+   "rms_y": 2.73907366232784e-09,
+   "centre_y": 4.525043562075837e-09
+  },
+  "field": 6.953191028915209e-07
+ }
+}
